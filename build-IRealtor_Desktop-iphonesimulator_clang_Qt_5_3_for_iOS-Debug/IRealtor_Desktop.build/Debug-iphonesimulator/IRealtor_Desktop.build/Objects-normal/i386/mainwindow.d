@@ -95,7 +95,10 @@ dependencies: \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqlquery.h \
   /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.h \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWidget \
-  ui_mainwindow.h \
+  /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/settings.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QDialog \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qdialog.h \
+  /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/ui_mainwindow.h \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/QVariant \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QAction \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qaction.h \
@@ -156,4 +159,6 @@ dependencies: \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtableview.h \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QToolBar \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtoolbar.h \
-  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QVBoxLayout
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QVBoxLayout \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/QSettings \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsettings.h

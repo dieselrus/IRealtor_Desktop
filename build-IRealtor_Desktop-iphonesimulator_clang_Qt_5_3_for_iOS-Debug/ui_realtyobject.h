@@ -142,7 +142,7 @@ public:
     {
         if (RealtyObject->objectName().isEmpty())
             RealtyObject->setObjectName(QStringLiteral("RealtyObject"));
-        RealtyObject->resize(778, 503);
+        RealtyObject->resize(778, 514);
         QFont font;
         font.setPointSize(14);
         RealtyObject->setFont(font);
@@ -602,7 +602,7 @@ public:
         QObject::connect(buttonBox, SIGNAL(accepted()), RealtyObject, SLOT(saveData()));
         QObject::connect(buttonBox, SIGNAL(rejected()), RealtyObject, SLOT(close()));
 
-        tabWidget->setCurrentIndex(6);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(RealtyObject);

@@ -94,4 +94,7 @@ dependencies: \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlQuery \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqlquery.h \
   ../IRealtor_Desktop/realtyobject.h \
-  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWidget
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWidget \
+  ../IRealtor_Desktop/settings.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QDialog \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qdialog.h

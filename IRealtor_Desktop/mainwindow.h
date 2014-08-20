@@ -40,6 +40,8 @@ private:
 
 private slots:
     void openFormRealtyObjects();
+    void opensettings();
+
 };
 
 #endif // MAINWINDOW_H

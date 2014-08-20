@@ -15,6 +15,17 @@ MainWindow::MainWindow(QWidget *parent):
     getStatus();
 
     db.close();
+
+    // signal exit
+    connect(ui->action_close, SIGNAL(triggered()), this, SLOT(close()));
+    // signal open forn settings
+    connect(ui->action_settings, SIGNAL(triggered()), this, SLOT(opensettings()));
+    // signal change value
+    QObject::connect(ui->spnArea1, SIGNAL(valueChanged(int)), ui->sldArea1, SLOT(setValue(int)));
+    QObject::connect(ui->sldArea1, SIGNAL(valueChanged(int)), ui->spnArea1, SLOT(setValue(int)));
+    QObject::connect(ui->spnArea2, SIGNAL(valueChanged(int)), ui->sldArea2, SLOT(setValue(int)));
+    QObject::connect(ui->sldArea2, SIGNAL(valueChanged(int)), ui->spnArea2, SLOT(setValue(int)));
+
 }
 
 MainWindow::~MainWindow()
@@ -97,11 +108,19 @@ void MainWindow::getStatus(){
     }
 }
 
+// Open form realty objects
 void MainWindow::openFormRealtyObjects(){
     formRO = new RealtyObject();
     formRO->show();
 }
 
+// Open form settings
+void MainWindow::opensettings(){
+    formSettings = new settings();
+    formSettings->show();
+}
+
+// Read settings
 void MainWindow::getSettings(){
     QSettings options;
     strServerDB = options.value("server").toString();
@@ -109,3 +128,4 @@ void MainWindow::getSettings(){
     strUserDB = options.value("user").toString();
     strPasswordDB = options.value("password").toString();
 }
+

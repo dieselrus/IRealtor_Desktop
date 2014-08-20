@@ -39,6 +39,9 @@ class Ui_MainWindow
 {
 public:
     QAction *action_Exel;
+    QAction *action_cladr;
+    QAction *action_settings;
+    QAction *action_close;
     QWidget *centralWidget;
     QVBoxLayout *verticalLayout;
     QTabWidget *tabWidget;
@@ -49,10 +52,7 @@ public:
     QLabel *label_13;
     QLabel *label_11;
     QLabel *label_14;
-    QComboBox *cbxRegion;
     QSpinBox *spinBox;
-    QComboBox *cbxStatus;
-    QComboBox *cbxType;
     QGroupBox *groupBox_2;
     QGridLayout *gridLayout_4;
     QSpinBox *spinBox_4;
@@ -80,7 +80,10 @@ public:
     QComboBox *comboBox_6;
     QComboBox *comboBox_2;
     QLabel *label_20;
+    QComboBox *cbxRegion;
     QSpacerItem *horizontalSpacer;
+    QComboBox *cbxType;
+    QComboBox *cbxStatus;
     QPushButton *btnFind;
     QWidget *tab_4;
     QVBoxLayout *verticalLayout_3;
@@ -104,6 +107,12 @@ public:
         MainWindow->resize(847, 617);
         action_Exel = new QAction(MainWindow);
         action_Exel->setObjectName(QStringLiteral("action_Exel"));
+        action_cladr = new QAction(MainWindow);
+        action_cladr->setObjectName(QStringLiteral("action_cladr"));
+        action_settings = new QAction(MainWindow);
+        action_settings->setObjectName(QStringLiteral("action_settings"));
+        action_close = new QAction(MainWindow);
+        action_close->setObjectName(QStringLiteral("action_close"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         verticalLayout = new QVBoxLayout(centralWidget);
@@ -148,29 +157,11 @@ public:
 
         gridLayout_2->addWidget(label_14, 3, 0, 1, 1);
 
-        cbxRegion = new QComboBox(tab);
-        cbxRegion->setObjectName(QStringLiteral("cbxRegion"));
-        cbxRegion->setFont(font);
-
-        gridLayout_2->addWidget(cbxRegion, 0, 1, 1, 2);
-
         spinBox = new QSpinBox(tab);
         spinBox->setObjectName(QStringLiteral("spinBox"));
         spinBox->setFont(font);
 
         gridLayout_2->addWidget(spinBox, 1, 1, 1, 1);
-
-        cbxStatus = new QComboBox(tab);
-        cbxStatus->setObjectName(QStringLiteral("cbxStatus"));
-        cbxStatus->setFont(font);
-
-        gridLayout_2->addWidget(cbxStatus, 3, 1, 1, 2);
-
-        cbxType = new QComboBox(tab);
-        cbxType->setObjectName(QStringLiteral("cbxType"));
-        cbxType->setFont(font);
-
-        gridLayout_2->addWidget(cbxType, 2, 1, 1, 2);
 
         groupBox_2 = new QGroupBox(tab);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
@@ -314,9 +305,27 @@ public:
 
         gridLayout_2->addWidget(groupBox_3, 6, 0, 1, 4);
 
+        cbxRegion = new QComboBox(tab);
+        cbxRegion->setObjectName(QStringLiteral("cbxRegion"));
+        cbxRegion->setFont(font);
+
+        gridLayout_2->addWidget(cbxRegion, 0, 1, 1, 3);
+
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-        gridLayout_2->addItem(horizontalSpacer, 1, 2, 1, 1);
+        gridLayout_2->addItem(horizontalSpacer, 1, 2, 1, 2);
+
+        cbxType = new QComboBox(tab);
+        cbxType->setObjectName(QStringLiteral("cbxType"));
+        cbxType->setFont(font);
+
+        gridLayout_2->addWidget(cbxType, 2, 1, 1, 3);
+
+        cbxStatus = new QComboBox(tab);
+        cbxStatus->setObjectName(QStringLiteral("cbxStatus"));
+        cbxStatus->setFont(font);
+
+        gridLayout_2->addWidget(cbxStatus, 3, 1, 1, 3);
 
 
         verticalLayout_2->addLayout(gridLayout_2);
@@ -397,12 +406,16 @@ public:
 
         menuBar->addAction(menu->menuAction());
         menuBar->addAction(menu_2->menuAction());
+        menu->addSeparator();
+        menu->addAction(action_close);
         menu_2->addAction(action_Exel);
+        menu_2->addAction(action_cladr);
+        menu_2->addAction(action_settings);
 
         retranslateUi(MainWindow);
         QObject::connect(btnAdd, SIGNAL(clicked()), MainWindow, SLOT(openFormRealtyObjects()));
 
-        tabWidget->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -412,6 +425,9 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         action_Exel->setText(QApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\272\320\260 \320\270\320\267 Exel", 0));
+        action_cladr->setText(QApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \320\232\320\233\320\220\320\224\320\240", 0));
+        action_settings->setText(QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", 0));
+        action_close->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\271\321\202\320\270", 0));
         label_12->setText(QApplication::translate("MainWindow", "\320\232\320\276\320\273-\320\262\320\276 \320\272\320\276\320\274\320\275\320\260\321\202:", 0));
         label_13->setText(QApplication::translate("MainWindow", "\320\242\320\270\320\277 \320\275\320\265\320\264\320\262\320\270\320\266\320\270\320\274\320\276\321\201\321\202\320\270:", 0));
         label_11->setText(QApplication::translate("MainWindow", "\320\240\320\260\320\271\320\276\320\275:", 0));

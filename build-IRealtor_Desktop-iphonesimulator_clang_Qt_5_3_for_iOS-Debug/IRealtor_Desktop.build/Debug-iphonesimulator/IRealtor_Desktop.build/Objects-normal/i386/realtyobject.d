@@ -90,7 +90,7 @@ dependencies: \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvariant.h \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qset.h \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontiguouscache.h \
-  ui_realtyobject.h \
+  /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/ui_realtyobject.h \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/QVariant \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QAction \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qaction.h \
@@ -167,4 +167,6 @@ dependencies: \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qurl.h \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QToolButton \
   ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtoolbutton.h \
-  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QVBoxLayout
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QVBoxLayout \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/QSettings \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsettings.h

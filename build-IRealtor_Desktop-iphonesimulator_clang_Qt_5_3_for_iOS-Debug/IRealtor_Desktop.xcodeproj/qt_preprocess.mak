@@ -31,7 +31,7 @@ mocables: compiler_moc_header_make_all compiler_moc_source_make_all
 
 check: first
 
-compilers: qrc_res.cpp moc_mainwindow.cpp moc_realtyobject.cpp ui_mainwindow.h ui_realtyobject.h
+compilers: qrc_res.cpp moc_mainwindow.cpp moc_realtyobject.cpp moc_settings.cpp ui_mainwindow.h ui_realtyobject.h ui_settings.h
 compiler_objective_c_make_all:
 compiler_objective_c_clean:
 compiler_rcc_make_all: qrc_res.cpp
@@ -43,9 +43,9 @@ qrc_res.cpp: ../IRealtor_Desktop/res.qrc \
 		../IRealtor_Desktop/img/trade.png
 	/Users/diesel/DevTools/Qt5.3.1/5.3/ios/bin/rcc -name res ../IRealtor_Desktop/res.qrc -o qrc_res.cpp
 
-compiler_moc_header_make_all: moc_mainwindow.cpp moc_realtyobject.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_realtyobject.cpp moc_settings.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp moc_realtyobject.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_realtyobject.cpp moc_settings.cpp
 moc_mainwindow.cpp: ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QMainWindow \
 		../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/QDebug \
 		../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSql \
@@ -54,6 +54,8 @@ moc_mainwindow.cpp: ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QMain
 		../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlQuery \
 		../IRealtor_Desktop/realtyobject.h \
 		../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWidget \
+		../IRealtor_Desktop/settings.h \
+		../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QDialog \
 		../IRealtor_Desktop/mainwindow.h
 	/Users/diesel/DevTools/Qt5.3.1/5.3/ios/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. ../IRealtor_Desktop/mainwindow.h -o moc_mainwindow.cpp
 
@@ -66,16 +68,23 @@ moc_realtyobject.cpp: ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWi
 		../IRealtor_Desktop/realtyobject.h
 	/Users/diesel/DevTools/Qt5.3.1/5.3/ios/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. ../IRealtor_Desktop/realtyobject.h -o moc_realtyobject.cpp
 
+moc_settings.cpp: ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QDialog \
+		../IRealtor_Desktop/settings.h
+	/Users/diesel/DevTools/Qt5.3.1/5.3/ios/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. ../IRealtor_Desktop/settings.h -o moc_settings.cpp
+
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h ui_realtyobject.h
+compiler_uic_make_all: ui_mainwindow.h ui_realtyobject.h ui_settings.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h ui_realtyobject.h
+	-$(DEL_FILE) ui_mainwindow.h ui_realtyobject.h ui_settings.h
 ui_mainwindow.h: ../IRealtor_Desktop/mainwindow.ui
 	/Users/diesel/DevTools/Qt5.3.1/5.3/ios/bin/uic ../IRealtor_Desktop/mainwindow.ui -o ui_mainwindow.h
 
 ui_realtyobject.h: ../IRealtor_Desktop/realtyobject.ui
 	/Users/diesel/DevTools/Qt5.3.1/5.3/ios/bin/uic ../IRealtor_Desktop/realtyobject.ui -o ui_realtyobject.h
+
+ui_settings.h: ../IRealtor_Desktop/settings.ui
+	/Users/diesel/DevTools/Qt5.3.1/5.3/ios/bin/uic ../IRealtor_Desktop/settings.ui -o ui_settings.h
 
 compiler_rez_source_make_all:
 compiler_rez_source_clean:

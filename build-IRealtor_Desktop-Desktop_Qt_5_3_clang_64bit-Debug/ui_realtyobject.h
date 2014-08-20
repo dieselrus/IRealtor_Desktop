@@ -256,6 +256,7 @@ public:
         spnTotalArea = new QSpinBox(groupBox);
         spnTotalArea->setObjectName(QStringLiteral("spnTotalArea"));
         spnTotalArea->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        spnTotalArea->setMaximum(9999);
 
         horizontalLayout->addWidget(spnTotalArea);
 
@@ -272,6 +273,7 @@ public:
         spnFloorArea = new QSpinBox(groupBox);
         spnFloorArea->setObjectName(QStringLiteral("spnFloorArea"));
         spnFloorArea->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        spnFloorArea->setMaximum(9999);
 
         horizontalLayout->addWidget(spnFloorArea);
 
@@ -288,6 +290,7 @@ public:
         spnKitchenArea = new QSpinBox(groupBox);
         spnKitchenArea->setObjectName(QStringLiteral("spnKitchenArea"));
         spnKitchenArea->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        spnKitchenArea->setMaximum(9999);
 
         horizontalLayout->addWidget(spnKitchenArea);
 

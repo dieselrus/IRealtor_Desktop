@@ -203,6 +203,7 @@ Makefile: ../IRealtor_Desktop/IRealtor_Desktop.pro ../../../../DevTools/Qt5.3.1/
 		../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/features/qt_config.prf \
 		../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/qmake.conf \
 		../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/features/exclusive_builds.prf \
 		../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/features/default_pre.prf \
 		../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/features/mac/default_pre.prf \
@@ -329,6 +330,7 @@ Makefile: ../IRealtor_Desktop/IRealtor_Desktop.pro ../../../../DevTools/Qt5.3.1/
 ../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/features/qt_config.prf:
 ../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/qmake.conf:
 ../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/features/exclusive_builds.prf:
 ../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/features/default_pre.prf:
 ../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/features/mac/default_pre.prf:

@@ -60,6 +60,21 @@
 					);
 			};
 		};
+		2A2A101485401425D68C45B6 = {
+			isa = PBXFileReference;
+			path = "../IRealtor_Desktop/settings.cpp";
+			name = "settings.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		5E22E2869C36B015C51B7709 = {
+			fileRef = "2A2A101485401425D68C45B6";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
 		5F35DC56E749783CF8DB4773 = {
 			isa = PBXFileReference;
 			path = "irealtor_desktop_plugin_import.cpp";
@@ -116,6 +131,20 @@
 					);
 			};
 		};
+		DE9E032809334D2EE9E679D7 = {
+			isa = PBXFileReference;
+			path = "moc_settings.cpp";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.cpp.cpp";
+		};
+		0A3C87BF2D9DFB34776BC88D = {
+			fileRef = "DE9E032809334D2EE9E679D7";
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+					);
+			};
+		};
 		14C9776A4B2E34DB51106724 = {
 			isa = PBXFileReference;
 			path = "ui_mainwindow.h";
@@ -125,6 +154,12 @@
 		419202A4CDC35027B9C37569 = {
 			isa = PBXFileReference;
 			path = "ui_realtyobject.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		B0138AF5F405FF635A0F737B = {
+			isa = PBXFileReference;
+			path = "ui_settings.h";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
@@ -139,6 +174,13 @@
 			isa = PBXFileReference;
 			path = "../IRealtor_Desktop/realtyobject.h";
 			name = "realtyobject.h";
+			sourceTree = "<absolute>";
+			lastKnownFileType = "sourcecode.c.h";
+		};
+		6157A3F266E2C5FB75F7E1C8 = {
+			isa = PBXFileReference;
+			path = "../IRealtor_Desktop/settings.h";
+			name = "settings.h";
 			sourceTree = "<absolute>";
 			lastKnownFileType = "sourcecode.c.h";
 		};
@@ -803,6 +845,11 @@
 			name = "qmake.conf";
 			sourceTree = "<absolute>";
 		};
+		AB745978DF0F41D1801ABDA6 = {
+			isa = PBXFileReference;
+			path = ".qmake.stash";
+			sourceTree = "<absolute>";
+		};
 		40B4D37EA6B391F7111EF0BC = {
 			isa = PBXFileReference;
 			path = "../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/Default-568h@2x.png";
@@ -835,14 +882,22 @@
 			name = "realtyobject.ui";
 			sourceTree = "<absolute>";
 		};
+		E02F928F89CC04E238B749CE = {
+			isa = PBXFileReference;
+			path = "../IRealtor_Desktop/settings.ui";
+			name = "settings.ui";
+			sourceTree = "<absolute>";
+		};
 		25B08E2869634E9BCBA333A2 = {
 			isa = PBXGroup;
 			children = (
 				"491D647FB885630B9BBC2445",
 				"721C1DE06B327393E3F7D7E1",
 				"BC71073308019D025FFDA8AB",
+				"DE9E032809334D2EE9E679D7",
 				"14C9776A4B2E34DB51106724",
-				"419202A4CDC35027B9C37569");
+				"419202A4CDC35027B9C37569",
+				"B0138AF5F405FF635A0F737B");
 			name = "Generated Sources";
 			sourceTree = "<Group>";
 		};
@@ -871,7 +926,8 @@
 			isa = PBXGroup;
 			children = (
 				"986E70D9869F3194B7EC543C",
-				"6AEDF2EBF761CE537F14B83F");
+				"6AEDF2EBF761CE537F14B83F",
+				"E02F928F89CC04E238B749CE");
 			name = "IRealtor_Desktop";
 			sourceTree = "<Group>";
 		};
@@ -888,8 +944,10 @@
 				"BF4864CCC3ADEC963406A8F3",
 				"018AEDCC0A9E9B27BBAFAB04",
 				"6FD6610EB49D7F66781F1F50",
+				"2A2A101485401425D68C45B6",
 				"4966797A0B3259EEED9DF643",
-				"BF7DEB4D4866C4CC09ED2099");
+				"BF7DEB4D4866C4CC09ED2099",
+				"6157A3F266E2C5FB75F7E1C8");
 			name = "IRealtor_Desktop";
 			sourceTree = "<Group>";
 		};
@@ -1134,7 +1192,8 @@
 		74B182DB50CB5611B5C1C297 = {
 			isa = PBXGroup;
 			children = (
-				"A3E1AA9917EC82D3446C262A");
+				"A3E1AA9917EC82D3446C262A",
+				"AB745978DF0F41D1801ABDA6");
 			name = "Supporting Files";
 			sourceTree = "<Group>";
 		};
@@ -1154,10 +1213,12 @@
 				"16FB27906D2A7758760AD548",
 				"ABA30CC9CD3026A54B0AE633",
 				"3C009A8B7A95F3124E95FA3F",
+				"5E22E2869C36B015C51B7709",
 				"F2BC1B2742C1141AA77E2CEE",
 				"8A298891EC6F56C86649F13D",
 				"2F9983ACB124B74F32685F47",
-				"4627EE3DED3B0211A6915058");
+				"4627EE3DED3B0211A6915058",
+				"0A3C87BF2D9DFB34776BC88D");
 			isa = PBXSourcesBuildPhase;
 			runOnlyForDeploymentPostprocessing = 0;
 			name = "Compile Sources";
