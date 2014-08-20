@@ -7,6 +7,7 @@
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlDriver>
 #include <QtSql/QSqlQuery>
+#include "realtyobject.h"
 
 namespace Ui {
 class MainWindow;
@@ -27,6 +28,10 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    RealtyObject *formR;
+
+private slots:
+    void openFormRealtyObjects();
 };
 
 #endif // MAINWINDOW_H

@@ -18,12 +18,12 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="iconSize">
        <size>
-        <width>96</width>
-        <height>96</height>
+        <width>48</width>
+        <height>48</height>
        </size>
       </property>
       <widget class="QWidget" name="tab">
@@ -348,7 +348,7 @@
          </layout>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="btnFind">
           <property name="font">
            <font>
             <pointsize>14</pointsize>
@@ -376,14 +376,24 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QPushButton" name="btnAdd">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
             <property name="text">
-             <string>PushButton</string>
+             <string>Добавить</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_3">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>PushButton</string>
             </property>
@@ -391,6 +401,11 @@
           </item>
           <item>
            <widget class="QPushButton" name="pushButton_4">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>PushButton</string>
             </property>
@@ -464,5 +479,25 @@
  <resources>
   <include location="res.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openFormRealtyObjects()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>172</x>
+     <y>557</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>591</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openFormRealtyObjects()</slot>
+ </slots>
 </ui>

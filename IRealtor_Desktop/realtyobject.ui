@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>760</width>
+    <width>778</width>
     <height>503</height>
    </rect>
   </property>
@@ -25,13 +25,13 @@
    <item>
     <layout class="QGridLayout" name="gridLayout">
      <item row="1" column="1" colspan="2">
-      <widget class="QComboBox" name="comboBox_4"/>
+      <widget class="QComboBox" name="cmbRegion"/>
      </item>
      <item row="1" column="5" colspan="2">
-      <widget class="QComboBox" name="comboBox_2"/>
+      <widget class="QComboBox" name="cmbTradeType"/>
      </item>
      <item row="1" column="9" colspan="2">
-      <widget class="QComboBox" name="comboBox"/>
+      <widget class="QComboBox" name="cmbStatus"/>
      </item>
      <item row="1" column="3" colspan="2">
       <widget class="QLabel" name="label_2">
@@ -55,7 +55,7 @@
       </widget>
      </item>
      <item row="1" column="12" colspan="2">
-      <widget class="QComboBox" name="comboBox_3"/>
+      <widget class="QComboBox" name="cmbType"/>
      </item>
      <item row="1" column="11">
       <widget class="QLabel" name="label_4">
@@ -65,7 +65,7 @@
       </widget>
      </item>
      <item row="0" column="3" colspan="10">
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="leAddress"/>
      </item>
      <item row="0" column="0" colspan="3">
       <widget class="QLabel" name="label_5">
@@ -86,7 +86,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>5</number>
+      <number>6</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -127,7 +127,7 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QSpinBox" name="spinBox">
+        <widget class="QSpinBox" name="spnRooms">
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
@@ -141,7 +141,7 @@
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QDateEdit" name="dateEdit"/>
+        <widget class="QDateEdit" name="dtCreate"/>
        </item>
        <item row="2" column="0" colspan="3">
         <widget class="QGroupBox" name="groupBox">
@@ -157,7 +157,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spinBox_2">
+           <widget class="QSpinBox" name="spnTotalArea">
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
             </property>
@@ -166,7 +166,7 @@
           <item>
            <widget class="QLabel" name="label_11">
             <property name="text">
-             <string>м2</string>
+             <string>м2.</string>
             </property>
            </widget>
           </item>
@@ -178,7 +178,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spinBox_3">
+           <widget class="QSpinBox" name="spnFloorArea">
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
             </property>
@@ -187,7 +187,7 @@
           <item>
            <widget class="QLabel" name="label_12">
             <property name="text">
-             <string>м2</string>
+             <string>м2.</string>
             </property>
            </widget>
           </item>
@@ -199,7 +199,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spinBox_4">
+           <widget class="QSpinBox" name="spnKitchenArea">
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
             </property>
@@ -208,7 +208,7 @@
           <item>
            <widget class="QLabel" name="label_13">
             <property name="text">
-             <string>м2</string>
+             <string>м2.</string>
             </property>
            </widget>
           </item>
@@ -229,7 +229,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spinBox_5"/>
+           <widget class="QSpinBox" name="spnFloor"/>
           </item>
           <item>
            <widget class="QLabel" name="label_15">
@@ -239,7 +239,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spinBox_6"/>
+           <widget class="QSpinBox" name="spnFloors"/>
           </item>
           <item>
            <widget class="QLabel" name="label_16">
@@ -249,7 +249,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_5">
+           <widget class="QComboBox" name="cmbMaterial">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -264,16 +264,9 @@
        <item row="4" column="0" colspan="3">
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
-          <widget class="QLabel" name="label_17">
+          <widget class="QCheckBox" name="chbBalkony">
            <property name="text">
-            <string>Балкон:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="checkBox_2">
-           <property name="text">
-            <string/>
+            <string>Балкон</string>
            </property>
           </widget>
          </item>
@@ -295,16 +288,9 @@
        <item row="5" column="0" colspan="3">
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
-          <widget class="QLabel" name="label_18">
+          <widget class="QCheckBox" name="chbLoggia">
            <property name="text">
-            <string>Лоджия:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QCheckBox" name="checkBox">
-           <property name="text">
-            <string/>
+            <string>Лоджия</string>
            </property>
           </widget>
          </item>
@@ -333,7 +319,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QComboBox" name="comboBox_6"/>
+          <widget class="QComboBox" name="cmbTypeApartament"/>
          </item>
          <item>
           <spacer name="horizontalSpacer_5">
@@ -365,7 +351,7 @@
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="leOwner"/>
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="label_21">
@@ -375,7 +361,7 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QComboBox" name="comboBox_7"/>
+        <widget class="QComboBox" name="cmbDocProperty"/>
        </item>
        <item row="2" column="0">
         <widget class="QLabel" name="label_22">
@@ -385,7 +371,7 @@
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_3"/>
+        <widget class="QLineEdit" name="lePhone"/>
        </item>
       </layout>
      </widget>
@@ -401,21 +387,21 @@
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_6">
           <item>
-           <widget class="QCheckBox" name="checkBox_3">
+           <widget class="QCheckBox" name="chbInternet">
             <property name="text">
              <string>Интернет</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_5">
+           <widget class="QCheckBox" name="chbPhone">
             <property name="text">
              <string>Телефон</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_4">
+           <widget class="QCheckBox" name="chbCableTV">
             <property name="text">
              <string>Кабельное телевидение</string>
             </property>
@@ -431,21 +417,21 @@
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <widget class="QCheckBox" name="checkBox_8">
+           <widget class="QCheckBox" name="chbCentralHeating">
             <property name="text">
              <string>Центральное отопление</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_7">
+           <widget class="QCheckBox" name="chbCentralWater">
             <property name="text">
              <string>Центральное водоснабжение</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="checkBox_6">
+           <widget class="QCheckBox" name="chbCentralSewage">
             <property name="text">
              <string>Центральная канализация</string>
             </property>
@@ -491,7 +477,7 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QSpinBox" name="spinBox_7">
+           <widget class="QSpinBox" name="spnPrice">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -524,7 +510,7 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QSpinBox" name="spinBox_9">
+           <widget class="QSpinBox" name="spnAmountCommission">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -543,7 +529,7 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QDoubleSpinBox" name="doubleSpinBox">
+           <widget class="QDoubleSpinBox" name="spnPercentageCommission">
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
             </property>
@@ -617,17 +603,7 @@
       <attribute name="title">
        <string>Карта</string>
       </attribute>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QWebView" name="webView">
-         <property name="url">
-          <url>
-           <string>about:blank</string>
-          </url>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <layout class="QVBoxLayout" name="verticalLayout_2"/>
      </widget>
      <widget class="QWidget" name="tab_6">
       <attribute name="title">
@@ -635,7 +611,7 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QTextEdit" name="textEdit"/>
+        <widget class="QTextEdit" name="teDescription"/>
        </item>
       </layout>
      </widget>
@@ -650,13 +626,42 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>QWebView</class>
-   <extends>QWidget</extends>
-   <header>QtWebKitWidgets/QWebView</header>
-  </customwidget>
- </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>RealtyObject</receiver>
+   <slot>saveData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>636</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>580</x>
+     <y>461</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>RealtyObject</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>715</x>
+     <y>477</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>770</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>saveData()</slot>
+ </slots>
 </ui>

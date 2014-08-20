@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-MainWindow::MainWindow(QWidget *parent) :
+MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
@@ -10,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent) :
     getRegion();
     getType();
     getStatus();
+
+    db.close();
 }
 
 MainWindow::~MainWindow()
@@ -35,7 +37,7 @@ void MainWindow::getRegion(){
         qDebug() << "Not connected!";
     }
     else{
-        qDebug() << "Connected!";
+        qDebug() << "Connected region!";
         QSqlQuery query;
         query.exec("SELECT name FROM region");
 
@@ -56,7 +58,7 @@ void MainWindow::getType(){
         qDebug() << "Not connected!";
     }
     else{
-        qDebug() << "Connected!";
+        qDebug() << "Connected type!";
         QSqlQuery query;
         query.exec("SELECT name FROM type");
 
@@ -73,7 +75,7 @@ void MainWindow::getType(){
 
 void MainWindow::getStatus(){
     if (!db.open() && !createConnection()){
-        qDebug() << "Not connected!";
+        qDebug() << "Not connected status!";
     }
     else{
         qDebug() << "Connected!";
@@ -89,4 +91,9 @@ void MainWindow::getStatus(){
 
         ui->cbxStatus->insertItems(0, lstStatus);
     }
+}
+
+void MainWindow::openFormRealtyObjects(){
+    formR = new RealtyObject();
+    formR->show();
 }
