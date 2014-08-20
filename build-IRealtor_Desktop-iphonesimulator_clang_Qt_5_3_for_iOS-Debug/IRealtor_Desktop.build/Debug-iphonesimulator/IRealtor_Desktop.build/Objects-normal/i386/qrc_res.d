@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/qrc_res.cpp \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobal.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qconfig.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qfeatures.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsystemdetection.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qprocessordetection.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcompilerdetection.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypeinfo.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypetraits.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsysinfo.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlogging.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qflags.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbasicatomic.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic_x86.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qgenericatomic.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobalstatic.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmutex.h \
+  ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnumeric.h

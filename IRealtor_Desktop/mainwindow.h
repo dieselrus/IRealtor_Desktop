@@ -8,6 +8,7 @@
 #include <QtSql/QSqlDriver>
 #include <QtSql/QSqlQuery>
 #include "realtyobject.h"
+#include "settings.h"
 
 namespace Ui {
 class MainWindow;
@@ -25,10 +26,17 @@ public:
     void getRegion();
     void getType();
     void getStatus();
+    void getSettings();
 
 private:
     Ui::MainWindow *ui;
-    RealtyObject *formR;
+    RealtyObject *formRO;
+    settings *formSettings;
+
+    QString strServerDB;
+    QString strPortDB;
+    QString strUserDB;
+    QString strPasswordDB;
 
 private slots:
     void openFormRealtyObjects();

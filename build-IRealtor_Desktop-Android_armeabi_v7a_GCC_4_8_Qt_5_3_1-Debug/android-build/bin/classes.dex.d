@@ -1,0 +1,26 @@
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes.dex : \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/kde/necessitas/ministro/IMinistro$Stub$Proxy.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/kde/necessitas/ministro/IMinistro$Stub.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/kde/necessitas/ministro/IMinistro.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/kde/necessitas/ministro/IMinistroCallback$Stub$Proxy.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/kde/necessitas/ministro/IMinistroCallback$Stub.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/kde/necessitas/ministro/IMinistroCallback.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/example/IRealtor_Desktop/BuildConfig.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/example/IRealtor_Desktop/R$array.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/example/IRealtor_Desktop/R$attr.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/example/IRealtor_Desktop/R$layout.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/example/IRealtor_Desktop/R$string.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/example/IRealtor_Desktop/R.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$1.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$2.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$3$1$1.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$3$1.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$3.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$4.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$5.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity$6.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtActivity.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtApplication$InvokeResult.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/classes/org/qtproject/qt5/android/bindings/QtApplication.class \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/dexedLibs/QtAndroid-bundled-d8296ac4092d7d3f52f3d082642b482b.jar \
+/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-Android_armeabi_v7a_GCC_4_8_Qt_5_3_1-Debug/android-build/bin/dexedLibs/QtAndroidAccessibility-bundled-41eab5081ddd9cbf306cf515d2895d4a.jar \

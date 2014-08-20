@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/img">
-        <file>img/Здание.png</file>
-        <file>img/ОбщаяКартинка2.png</file>
-        <file>img/Сделка.png</file>
+        <file>img/Haus.png</file>
+        <file>img/journal.png</file>
+        <file>img/trade.png</file>
     </qresource>
 </RCC>

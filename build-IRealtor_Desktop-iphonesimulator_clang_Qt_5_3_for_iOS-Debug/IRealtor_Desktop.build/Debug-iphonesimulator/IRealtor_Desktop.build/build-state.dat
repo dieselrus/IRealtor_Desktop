@@ -1,0 +1,1182 @@
+TIRealtor_Desktop
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/Info.plist /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Info.plist
+cCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/irealtor_desktop_plugin_import.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/qrc_res.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_mainwindow.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_realtyobject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cPhaseScriptExecution Qt\ Prelink /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Script-3DA90DAE39A0C9D07C6F6B0F.sh
+cLd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/IRealtor_Desktop normal i386
+cCpResource IRealtor_Desktop.xcodeproj/Default-568h@2x.png Debug-iphonesimulator/IRealtor_Desktop.app/Default-568h@2x.png
+cTouch /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c0000000053928C7000000000000003B4
+t1402113136
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053928C75000000000000019E
+t1402113141
+s414
+
+N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c0000000053B7BD0F0000000000688600
+t1404550415
+s6850048
+
+N/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000053B7BD100000000000EDACF0
+t1404550416
+s15576304
+
+N/System/Library/Frameworks/CoreText.framework/CoreText
+c0000000053B7BD1200000000002559F0
+t1404550418
+s2447856
+
+N/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000053B7BD1200000000009FB090
+t1404550418
+s10465424
+
+N/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c0000000053B7BD2600000000004D4020
+t1404550438
+s5062688
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5Core_iphonesimulator_debug.a
+c0000000053A30F7600000000051EAB70
+t1403195254
+s85896048
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5Gui_iphonesimulator_debug.a
+c0000000053A31062000000000AB141D8
+t1403195490
+s179388888
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5PlatformSupport_iphonesimulator_debug.a
+c0000000053A3107C000000000082FE10
+t1403195516
+s8584720
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5Sql_iphonesimulator_debug.a
+c0000000053A30FB1000000000066AEC8
+t1403195313
+s6729416
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5Widgets_iphonesimulator_debug.a
+c0000000053A31167000000000E4ECE40
+t1403195751
+s240045632
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libqtharfbuzzng_iphonesimulator_debug.a
+c0000000053A30FBE00000000002FACB0
+t1403195326
+s3124400
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/accessible/libqtaccessiblewidgets_iphonesimulator_debug.a
+c0000000053A311AE000000000068C840
+t1403195822
+s6867008
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqdds_iphonesimulator_debug.a
+c0000000053A317C100000000000D3F80
+t1403197377
+s868224
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqicns_iphonesimulator_debug.a
+c0000000053A317C400000000000A9D08
+t1403197380
+s695560
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqico_iphonesimulator_debug.a
+c0000000053A3119700000000000E83A8
+t1403195799
+s951208
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqjp2_iphonesimulator_debug.a
+c0000000053A317CB00000000002E2888
+t1403197387
+s3025032
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqmng_iphonesimulator_debug.a
+c0000000053A317CF00000000001CA530
+t1403197391
+s1877296
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqtga_iphonesimulator_debug.a
+c0000000053A317D300000000001098A8
+t1403197395
+s1087656
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqtiff_iphonesimulator_debug.a
+c0000000053A317D600000000001E9968
+t1403197398
+s2005352
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqwbmp_iphonesimulator_debug.a
+c0000000053A317D9000000000008F7D0
+t1403197401
+s587728
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqwebp_iphonesimulator_debug.a
+c0000000053A317DD00000000001E8BC8
+t1403197405
+s2001864
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/platforms/libqios_iphonesimulator_debug.a
+c0000000053A311A400000000009D2008
+t1403195812
+s10297352
+
+N/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/sqldrivers/libqsqlite_iphonesimulator_debug.a
+c0000000053A3119100000000002CDD98
+t1403195793
+s2940312
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp
+c0000000053F49BEE00000000000000D9
+t1408539630
+s217
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp
+c0000000053F49BEE00000000000008C0
+t1408539630
+s2240
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp
+c0000000053F49BEE0000000000001752
+t1408539630
+s5970
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app
+t1408540150
+s204
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/Default-568h@2x.png
+t1408540150
+s18594
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/IRealtor_Desktop
+t1408540150
+s33057352
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/Info.plist
+t1408540137
+s607
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/PkgInfo
+t1408540137
+s8
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/*.o
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/IRealtor_Desktop.LinkFileList
+t1408540137
+s1493
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.o
+t1408540138
+s18596
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.o
+t1408540140
+s491752
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.o
+t1408540139
+s877032
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.o
+t1408540139
+s465432
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.o
+t1408540140
+s444388
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.o
+t1408540138
+s26112
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.o
+t1408540139
+s1028648
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Script-3DA90DAE39A0C9D07C6F6B0F.sh
+c0000000053F49DE9000000000000008D
+t1408540137
+s141
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.xcodeproj/Default-568h@2x.png
+c0000000053F49DE700000000000048A2
+t1408540135
+s18594
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Info.plist
+c0000000053F49DE70000000000000379
+t1408540135
+s889
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/irealtor_desktop_plugin_import.cpp
+c0000000053F49DE700000000000001FC
+t1408540135
+s508
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_mainwindow.cpp
+c0000000053F49DE90000000000000CC9
+t1408540137
+s3273
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_realtyobject.cpp
+c0000000053F49DE90000000000000D58
+t1408540137
+s3416
+
+N/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/qrc_res.cpp
+c0000000053F49DE80000000000015526
+t1408540136
+s87334
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesddb64769d5a4b941^1f654869d5a4b941^---0#1#1#--18"Check dependencies36"E5703091-3BCA-4AC6-8D3F-7A4D65EFCE7D-
+
+CCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/irealtor_desktop_plugin_import.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s430232937.287858
+e430232938.198099
+r1
+xCompileC
+xIRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.o
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/irealtor_desktop_plugin_import.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/irealtor_desktop_plugin_import.cpp
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/QtPlugin
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qplugin.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnamespace.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobal.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qconfig.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qfeatures.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsystemdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qprocessordetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcompilerdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypeinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypetraits.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsysinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlogging.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qflags.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbasicatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic_x86.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qgenericatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobalstatic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmutex.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnumeric.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstring.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qchar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbytearray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrefcount.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qarraydata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qalgorithms.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiterator.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qscopedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmetatype.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvarlengtharray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontainerfwd.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qisenum.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qshareddata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qhash.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpair.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qjsonobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qjsonvalue.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection151"Compile /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/irealtor_desktop_plugin_import.cpp224"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.o irealtor_desktop_plugin_import.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compileracc74969d5a4b941^39b6326ad5a4b941^---0#0#1#-19%DVTDocumentLocation2@150"file:///Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/irealtor_desktop_plugin_import.cpp0000000000000000^4744"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.o irealtor_desktop_plugin_import.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=5.0 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/IRealtor_Desktop.hmap -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I../../../../DevTools/Qt5.3.1/5.3/ios/include -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtGui -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. -I../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources/i386 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources -F/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator -pipe -fvisibility=hidden -fpascal-strings -fmessage-length=0 -Wno-trigraphs -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-sign-conversion -fexceptions -fasm-blocks -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wno-unused-function -Wno-unused-label -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Winvalid-offsetof -Wno-conversion -fvisibility-inlines-hidden -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -g -std=c++11 -stdlib=libc++ -Wall -W -fPIE -DDARWIN_NO_CARBON -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.d --serialize-diagnostics /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.dia -c /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/irealtor_desktop_plugin_import.cpp -o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.o36"14F40628-A0F5-4A49-9288-A0DD618BEDE8-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s430232937.286111
+e430232938.821839
+r1
+xCompileC
+xIRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.o
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QMainWindow
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qmainwindow.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qwidget.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qwindowdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobal.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qconfig.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qfeatures.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsystemdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qprocessordetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcompilerdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypeinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypetraits.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsysinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlogging.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qflags.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbasicatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic_x86.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qgenericatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobalstatic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmutex.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnumeric.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnamespace.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstring.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qchar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbytearray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrefcount.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qarraydata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qalgorithms.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiterator.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qscopedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmetatype.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvarlengtharray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontainerfwd.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qisenum.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmargins.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpaintdevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrect.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsize.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpoint.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpalette.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcolor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qrgb.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdatastream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiodevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpair.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qregexp.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringmatcher.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qbrush.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvector.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qmatrix.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpolygon.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qregion.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qline.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qtransform.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpainterpath.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qimage.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpixmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qshareddata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qhash.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfont.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontmetrics.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qsizepolicy.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcursor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qkeysequence.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtabwidget.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qicon.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/QDebug
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdebug.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtextstream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlocale.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvariant.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qset.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontiguouscache.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSql
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsql.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDatabase
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldatabase.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDriver
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldriver.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlQuery
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqlquery.h
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWidget
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QApplication
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qapplication.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcoreapplication.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcoreevent.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qeventloop.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qguiapplication.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qinputmethod.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp232"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compileref534969d5a4b941^5e64d26ad5a4b941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp0000000000000000^4599"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=5.0 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/IRealtor_Desktop.hmap -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I../../../../DevTools/Qt5.3.1/5.3/ios/include -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtGui -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. -I../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources/i386 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources -F/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator -pipe -fvisibility=hidden -fpascal-strings -fmessage-length=0 -Wno-trigraphs -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-sign-conversion -fexceptions -fasm-blocks -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wno-unused-function -Wno-unused-label -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Winvalid-offsetof -Wno-conversion -fvisibility-inlines-hidden -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -g -std=c++11 -stdlib=libc++ -Wall -W -fPIE -DDARWIN_NO_CARBON -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.dia -c /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/main.cpp -o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.o36"29B1F822-5808-4F12-B5D0-46C22D26D400-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s430232937.286369
+e430232939.412302
+r1
+xCompileC
+xIRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.o
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QMainWindow
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qmainwindow.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qwidget.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qwindowdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobal.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qconfig.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qfeatures.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsystemdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qprocessordetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcompilerdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypeinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypetraits.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsysinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlogging.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qflags.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbasicatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic_x86.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qgenericatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobalstatic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmutex.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnumeric.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnamespace.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstring.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qchar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbytearray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrefcount.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qarraydata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qalgorithms.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiterator.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qscopedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmetatype.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvarlengtharray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontainerfwd.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qisenum.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmargins.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpaintdevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrect.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsize.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpoint.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpalette.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcolor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qrgb.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdatastream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiodevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpair.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qregexp.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringmatcher.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qbrush.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvector.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qmatrix.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpolygon.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qregion.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qline.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qtransform.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpainterpath.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qimage.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpixmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qshareddata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qhash.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfont.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontmetrics.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qsizepolicy.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcursor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qkeysequence.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtabwidget.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qicon.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/QDebug
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdebug.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtextstream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlocale.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvariant.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qset.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontiguouscache.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSql
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsql.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDatabase
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldatabase.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDriver
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldriver.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlQuery
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqlquery.h
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWidget
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/ui_mainwindow.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/QVariant
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QAction
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qaction.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qactiongroup.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QApplication
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qapplication.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcoreapplication.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcoreevent.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qeventloop.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qguiapplication.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qinputmethod.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QButtonGroup
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qbuttongroup.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QComboBox
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qcombobox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractitemdelegate.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qstyleoption.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractspinbox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qvalidator.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qregularexpression.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qslider.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractslider.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qstyle.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtabbar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qrubberband.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qframe.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qabstractitemmodel.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QGridLayout
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qgridlayout.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qlayout.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qlayoutitem.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qboxlayout.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QGroupBox
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qgroupbox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QHBoxLayout
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QHeaderView
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qheaderview.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractitemview.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractscrollarea.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qitemselectionmodel.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QLabel
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qlabel.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QMenu
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qmenu.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QMenuBar
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qmenubar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QPushButton
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qpushbutton.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractbutton.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QSlider
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QSpacerItem
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QSpinBox
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qspinbox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QStatusBar
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qstatusbar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QTabWidget
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QTableView
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtableview.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QToolBar
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtoolbar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QVBoxLayout
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp244"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler34674969d5a4b941^fbb1696bd5a4b941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp0000000000000000^4635"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=5.0 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/IRealtor_Desktop.hmap -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I../../../../DevTools/Qt5.3.1/5.3/ios/include -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtGui -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. -I../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources/i386 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources -F/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator -pipe -fvisibility=hidden -fpascal-strings -fmessage-length=0 -Wno-trigraphs -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-sign-conversion -fexceptions -fasm-blocks -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wno-unused-function -Wno-unused-label -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Winvalid-offsetof -Wno-conversion -fvisibility-inlines-hidden -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -g -std=c++11 -stdlib=libc++ -Wall -W -fPIE -DDARWIN_NO_CARBON -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.d --serialize-diagnostics /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.dia -c /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.cpp -o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.o36"B002FE36-46FC-4C69-B2F9-6E6865026D17-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_mainwindow.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s430232938.453067
+e430232939.815748
+r1
+xCompileC
+xIRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.o
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_mainwindow.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_mainwindow.cpp
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/mainwindow.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QMainWindow
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qmainwindow.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qwidget.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qwindowdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobal.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qconfig.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qfeatures.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsystemdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qprocessordetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcompilerdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypeinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypetraits.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsysinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlogging.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qflags.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbasicatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic_x86.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qgenericatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobalstatic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmutex.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnumeric.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnamespace.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstring.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qchar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbytearray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrefcount.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qarraydata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qalgorithms.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiterator.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qscopedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmetatype.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvarlengtharray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontainerfwd.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qisenum.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmargins.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpaintdevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrect.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsize.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpoint.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpalette.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcolor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qrgb.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdatastream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiodevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpair.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qregexp.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringmatcher.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qbrush.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvector.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qmatrix.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpolygon.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qregion.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qline.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qtransform.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpainterpath.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qimage.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpixmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qshareddata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qhash.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfont.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontmetrics.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qsizepolicy.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcursor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qkeysequence.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtabwidget.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qicon.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/QDebug
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdebug.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtextstream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlocale.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvariant.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qset.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontiguouscache.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSql
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsql.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDatabase
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldatabase.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDriver
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldriver.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlQuery
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqlquery.h
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWidget
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection135"Compile /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_mainwindow.cpp192"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.o moc_mainwindow.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerc362746ad5a4b941^63d5d06bd5a4b941^---0#0#1#-19%DVTDocumentLocation2@134"file:///Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_mainwindow.cpp0000000000000000^4648"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.o moc_mainwindow.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=5.0 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/IRealtor_Desktop.hmap -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I../../../../DevTools/Qt5.3.1/5.3/ios/include -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtGui -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. -I../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources/i386 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources -F/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator -pipe -fvisibility=hidden -fpascal-strings -fmessage-length=0 -Wno-trigraphs -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-sign-conversion -fexceptions -fasm-blocks -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wno-unused-function -Wno-unused-label -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Winvalid-offsetof -Wno-conversion -fvisibility-inlines-hidden -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -g -std=c++11 -stdlib=libc++ -Wall -W -fPIE -DDARWIN_NO_CARBON -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.d --serialize-diagnostics /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.dia -c /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_mainwindow.cpp -o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.o36"C22CEE29-2B27-4C08-85E7-A124DFBDC9B7-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_realtyobject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s430232938.822280
+e430232940.027511
+r1
+xCompileC
+xIRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.o
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_realtyobject.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_realtyobject.cpp
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWidget
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qwidget.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qwindowdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobal.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qconfig.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qfeatures.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsystemdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qprocessordetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcompilerdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypeinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypetraits.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsysinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlogging.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qflags.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbasicatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic_x86.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qgenericatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobalstatic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmutex.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnumeric.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnamespace.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstring.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qchar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbytearray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrefcount.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qarraydata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qalgorithms.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiterator.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qscopedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmetatype.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvarlengtharray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontainerfwd.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qisenum.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmargins.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpaintdevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrect.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsize.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpoint.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpalette.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcolor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qrgb.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdatastream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiodevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpair.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qregexp.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringmatcher.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qbrush.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvector.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qmatrix.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpolygon.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qregion.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qline.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qtransform.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpainterpath.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qimage.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpixmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qshareddata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qhash.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfont.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontmetrics.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qsizepolicy.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcursor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qkeysequence.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSql
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsql.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDatabase
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldatabase.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDriver
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldriver.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlQuery
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqlquery.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/QDebug
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdebug.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtextstream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlocale.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvariant.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qset.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontiguouscache.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection137"Compile /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_realtyobject.cpp196"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.o moc_realtyobject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerd999d26ad5a4b941^6b0b076cd5a4b941^---0#0#1#-19%DVTDocumentLocation2@136"file:///Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_realtyobject.cpp0000000000000000^4660"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.o moc_realtyobject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=5.0 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/IRealtor_Desktop.hmap -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I../../../../DevTools/Qt5.3.1/5.3/ios/include -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtGui -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. -I../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources/i386 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources -F/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator -pipe -fvisibility=hidden -fpascal-strings -fmessage-length=0 -Wno-trigraphs -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-sign-conversion -fexceptions -fasm-blocks -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wno-unused-function -Wno-unused-label -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Winvalid-offsetof -Wno-conversion -fvisibility-inlines-hidden -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -g -std=c++11 -stdlib=libc++ -Wall -W -fPIE -DDARWIN_NO_CARBON -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.d --serialize-diagnostics /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.dia -c /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/moc_realtyobject.cpp -o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.o36"DEAE063A-3F29-4F8B-B393-1DD4AC593D3E-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/qrc_res.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s430232938.199480
+e430232938.452827
+r1
+xCompileC
+xIRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.o
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/qrc_res.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/qrc_res.cpp
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobal.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qconfig.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qfeatures.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsystemdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qprocessordetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcompilerdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypeinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypetraits.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsysinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlogging.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qflags.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbasicatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic_x86.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qgenericatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobalstatic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmutex.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnumeric.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/qrc_res.cpp178"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.o qrc_res.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerfe27336ad5a4b941^abec736ad5a4b941^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/qrc_res.cpp0000000000000000^4606"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.o qrc_res.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=5.0 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/IRealtor_Desktop.hmap -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I../../../../DevTools/Qt5.3.1/5.3/ios/include -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtGui -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. -I../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources/i386 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources -F/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator -pipe -fvisibility=hidden -fpascal-strings -fmessage-length=0 -Wno-trigraphs -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-sign-conversion -fexceptions -fasm-blocks -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wno-unused-function -Wno-unused-label -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Winvalid-offsetof -Wno-conversion -fvisibility-inlines-hidden -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -g -std=c++11 -stdlib=libc++ -Wall -W -fPIE -DDARWIN_NO_CARBON -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.d --serialize-diagnostics /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.dia -c /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/qrc_res.cpp -o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.o36"735E0524-D3C8-4ED2-BD5D-3A711E229358-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CCompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s430232937.286646
+e430232939.830942
+r1
+xCompileC
+xIRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.o
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QWidget
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qwidget.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qwindowdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobal.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qconfig.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qfeatures.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsystemdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qprocessordetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcompilerdetection.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypeinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtypetraits.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsysinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlogging.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qflags.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbasicatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qatomic_x86.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qgenericatomic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qglobalstatic.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmutex.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnumeric.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qnamespace.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobjectdefs_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstring.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qchar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qbytearray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrefcount.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qarraydata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qalgorithms.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiterator.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qscopedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmetatype.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvarlengtharray.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontainerfwd.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qisenum.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qobject_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmargins.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpaintdevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qrect.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsize.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpoint.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpalette.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcolor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qrgb.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringlist.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdatastream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qiodevice.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qpair.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qregexp.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qstringmatcher.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qbrush.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvector.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qmatrix.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpolygon.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qregion.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qline.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qtransform.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpainterpath.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qimage.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpixmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qshareddata.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qsharedpointer_impl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qhash.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfont.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontmetrics.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qfontinfo.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qsizepolicy.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qcursor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qkeysequence.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSql
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsql.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDatabase
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldatabase.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlDriver
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqldriver.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/QSqlQuery
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtSql/qsqlquery.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/QDebug
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdebug.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qmap.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qtextstream.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qlocale.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qvariant.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qset.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcontiguouscache.h
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/ui_realtyobject.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/QVariant
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QAction
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qaction.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qicon.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qactiongroup.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QApplication
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qapplication.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcoreapplication.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qcoreevent.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qeventloop.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qguiapplication.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qinputmethod.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QButtonGroup
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qbuttongroup.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QCheckBox
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qcheckbox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractbutton.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QComboBox
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qcombobox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractitemdelegate.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qstyleoption.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractspinbox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qvalidator.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qregularexpression.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qslider.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractslider.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qstyle.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtabbar.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtabwidget.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qrubberband.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qframe.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qabstractitemmodel.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QDateEdit
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qdatetimeedit.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qdatetime.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QDialogButtonBox
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qdialogbuttonbox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QDoubleSpinBox
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qspinbox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QFormLayout
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qformlayout.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QLayout
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qlayout.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qlayoutitem.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qboxlayout.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qgridlayout.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QGridLayout
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QGroupBox
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qgroupbox.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QHBoxLayout
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QHeaderView
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qheaderview.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractitemview.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qabstractscrollarea.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qitemselectionmodel.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QLabel
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qlabel.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QLineEdit
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qlineedit.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qtextcursor.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qtextformat.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qpen.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qtextoption.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QListView
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qlistview.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QPushButton
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qpushbutton.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QSpacerItem
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QSpinBox
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QTabWidget
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QTextEdit
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtextedit.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtGui/qtextdocument.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtCore/qurl.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QToolButton
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/qtoolbutton.h
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/include/QtWidgets/QVBoxLayout
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp248"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler8cd64969d5a4b941^13b9d46bd5a4b941^---0#0#1#-19%DVTDocumentLocation2@83"file:///Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp0000000000000000^4647"CompileC IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.o /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=5.0 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/IRealtor_Desktop.hmap -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/include -I/Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios -I../../../../DevTools/Qt5.3.1/5.3/ios/include -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtGui -I../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore -I. -I../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources/i386 -I/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources -F/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator -pipe -fvisibility=hidden -fpascal-strings -fmessage-length=0 -Wno-trigraphs -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-sign-conversion -fexceptions -fasm-blocks -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wno-unused-function -Wno-unused-label -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Winvalid-offsetof -Wno-conversion -fvisibility-inlines-hidden -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -g -std=c++11 -stdlib=libc++ -Wall -W -fPIE -DDARWIN_NO_CARBON -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -MMD -MT dependencies -MF /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.d --serialize-diagnostics /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.dia -c /Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop/realtyobject.cpp -o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.o36"6578CFCF-6C08-4B4E-8DA8-5C61DBA6E00C-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CCpResource IRealtor_Desktop.xcodeproj/Default-568h@2x.png Debug-iphonesimulator/IRealtor_Desktop.app/Default-568h@2x.png
+s430232950.940127
+e430232950.942255
+r1
+xCpResource
+xIRealtor_Desktop.xcodeproj/Default-568h@2x.png
+xDebug-iphonesimulator/IRealtor_Desktop.app/Default-568h@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy Debug-iphonesimulator/IRealtor_Desktop.app/Default-568h@2x.png120"CpResource IRealtor_Desktop.xcodeproj/Default-568h@2x.png Debug-iphonesimulator/IRealtor_Desktop.app/Default-568h@2x.png8cbcf076d5a4b941^863df176d5a4b941^---0#0#1#-19%DVTDocumentLocation2@178"file:///Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/Default-568h@2x.png0034f831deffdf42^939"CpResource IRealtor_Desktop.xcodeproj/Default-568h@2x.png Debug-iphonesimulator/IRealtor_Desktop.app/Default-568h@2x.png    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.xcodeproj/Default-568h@2x.png /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app36"158173EC-2833-46F9-BDBB-D96FE72DDFAB-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CLd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/IRealtor_Desktop normal i386
+s430232940.240999
+e430232950.939238
+r1
+xLd
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/IRealtor_Desktop
+xnormal
+xi386
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/IRealtor_Desktop.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/main.o
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/mainwindow.o
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/realtyobject.o
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/irealtor_desktop_plugin_import.o
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/qrc_res.o
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_mainwindow.o
+d/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/moc_realtyobject.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libz.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libm.dylib
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/platforms/libqios_iphonesimulator_debug.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5PlatformSupport_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/accessible/libqtaccessiblewidgets_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5Widgets_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/sqldrivers/libqsqlite_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5Sql_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqdds_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqicns_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqico_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqjp2_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqmng_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqtga_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqtiff_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqwbmp_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats/libqwebp_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5Gui_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libqtharfbuzzng_iphonesimulator_debug.a
+d/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib/libQt5Core_iphonesimulator_debug.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.A.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libc++abi.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection173"Link /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/IRealtor_Desktop74"Ld Debug-iphonesimulator/IRealtor_Desktop.app/IRealtor_Desktop normal i3868fc63d6cd5a4b941^6d72f076d5a4b941^---0#0#1#--3322"Ld Debug-iphonesimulator/IRealtor_Desktop.app/IRealtor_Desktop normal i386    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export IPHONEOS_DEPLOYMENT_TARGET=5.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/platforms -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/accessible -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/sqldrivers -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats -F/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator -filelist /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/IRealtor_Desktop.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -headerpad_max_install_names -stdlib=libc++ -u _qt_registerPlatformPlugin -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/platforms -framework UIKit -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib -framework OpenGLES -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/accessible -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/sqldrivers -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats -lz -lm -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.0 -lqios_iphonesimulator_debug -framework Foundation -framework QuartzCore -framework CoreFoundation -framework CoreText -framework CoreGraphics -lQt5PlatformSupport_iphonesimulator_debug -lqtaccessiblewidgets_iphonesimulator_debug -lQt5Widgets_iphonesimulator_debug -lqsqlite_iphonesimulator_debug -lQt5Sql_iphonesimulator_debug -lqdds_iphonesimulator_debug -lqicns_iphonesimulator_debug -lqico_iphonesimulator_debug -lqjp2_iphonesimulator_debug -lqmng_iphonesimulator_debug -lqtga_iphonesimulator_debug -lqtiff_iphonesimulator_debug -lqwbmp_iphonesimulator_debug -lqwebp_iphonesimulator_debug -lQt5Gui_iphonesimulator_debug -lqtharfbuzzng_iphonesimulator_debug -lQt5Core_iphonesimulator_debug -Xlinker -dependency_info -Xlinker /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/IRealtor_Desktop_dependency_info.dat -o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/IRealtor_Desktop36"2C640245-8CC8-4F99-A836-9A7AE2484273-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CPhaseScriptExecution Qt\ Prelink /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Script-3DA90DAE39A0C9D07C6F6B0F.sh
+s430232940.028768
+e430232940.239840
+r1
+xPhaseScriptExecution
+xQt Prelink
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Script-3DA90DAE39A0C9D07C6F6B0F.sh
+oFound main() in main.o
+o  Renaming '_main' at offset 491521 to '_qtmn'
+o  Renaming '_main.eh' at offset 491527 to '_qtmn.eh'
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Qt Prelink'135"PhaseScriptExecution Qt\ Prelink IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Script-3DA90DAE39A0C9D07C6F6B0F.shff07086cd5a4b941^be663d6cd5a4b941^-123"Found main() in main.o  Renaming '_main' at offset 491521 to '_qtmn'  Renaming '_main.eh' at offset 491527 to '_qtmn.eh'3(21%IDEActivityLogMessage2@23"Found main() in main.o-430232940#0#23#-0#-----2@47"  Renaming '_main' at offset 491521 to '_qtmn'-430232940#23#47#-0#-----2@53"  Renaming '_main.eh' at offset 491527 to '_qtmn.eh'-430232940#70#53#-0#-----0#0#1#--27762"PhaseScriptExecution Qt\ Prelink IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Script-3DA90DAE39A0C9D07C6F6B0F.sh    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export ACTION=build    export AD_HOC_CODE_SIGNING_ALLOWED=NO    export ALTERNATE_GROUP=staff    export ALTERNATE_MODE=u+w,go-w,a+rX    export ALTERNATE_OWNER=diesel    export ALWAYS_SEARCH_USER_PATHS=YES    export ALWAYS_USE_SEPARATE_HEADERMAPS=YES    export APPLE_INTERNAL_DEVELOPER_DIR=/AppleInternal/Developer    export APPLE_INTERNAL_DIR=/AppleInternal    export APPLE_INTERNAL_DOCUMENTATION_DIR=/AppleInternal/Documentation    export APPLE_INTERNAL_LIBRARY_DIR=/AppleInternal/Library    export APPLE_INTERNAL_TOOLS=/AppleInternal/Developer/Tools    export APPLY_RULES_IN_COPY_FILES=NO    export ARCHS=i386    export ARCHS_STANDARD="i386 x86_64"    export ARCHS_STANDARD_32_64_BIT="i386 x86_64"    export ARCHS_STANDARD_32_BIT=i386    export ARCHS_STANDARD_64_BIT=x86_64    export ARCHS_STANDARD_INCLUDING_64_BIT="i386 x86_64"    export AVAILABLE_PLATFORMS="iphonesimulator macosx iphoneos"    export BUILD_COMPONENTS="headers build"    export BUILD_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export BUILD_ROOT=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export BUILD_STYLE=    export BUILD_VARIANTS=normal    export BUILT_PRODUCTS_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator    export CACHE_ROOT=/var/folders/tn/tdbvnmns5ygg1bl8c8q5m41h0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode    export CC=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang    export CCHROOT=/var/folders/tn/tdbvnmns5ygg1bl8c8q5m41h0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode    export CHMOD=/bin/chmod    export CHOWN=/usr/sbin/chown    export CLASS_FILE_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/JavaClasses    export CLEAN_PRECOMPS=YES    export CLONE_HEADERS=NO    export CODESIGNING_FOLDER_PATH=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app    export CODE_SIGNING_ALLOWED=NO    export CODE_SIGN_CONTEXT_CLASS=XCiPhoneSimulatorCodeSignContext    export CODE_SIGN_IDENTITY="iPhone Developer"    export COLOR_DIAGNOSTICS=NO    export COMBINE_HIDPI_IMAGES=NO    export COMMAND_MODE=legacy    export COMPOSITE_SDK_DIRS=/var/folders/tn/tdbvnmns5ygg1bl8c8q5m41h0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/CompositeSDKs    export COMPRESS_PNG_FILES=YES    export CONFIGURATION=Debug    export CONFIGURATION_BUILD_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator    export CONFIGURATION_TEMP_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator    export CONTENTS_FOLDER_PATH=IRealtor_Desktop.app    export COPYING_PRESERVES_HFS_DATA=NO    export COPY_PHASE_STRIP=NO    export COPY_RESOURCES_FROM_STATIC_FRAMEWORKS=YES    export CP=/bin/cp    export CREATE_INFOPLIST_SECTION_IN_BINARY=NO    export CURRENT_ARCH=i386    export CURRENT_VARIANT=normal    export DEAD_CODE_STRIPPING=NO    export DEBUGGING_SYMBOLS=YES    export DEBUG_INFORMATION_FORMAT=dwarf    export DEFAULT_COMPILER=com.apple.compilers.llvm.clang.1_0    export DEFAULT_KEXT_INSTALL_PATH=/System/Library/Extensions    export DEPLOYMENT_LOCATION=NO    export DEPLOYMENT_POSTPROCESSING=NO    export DERIVED_FILES_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources    export DERIVED_FILE_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources    export DERIVED_SOURCES_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/DerivedSources    export DEVELOPER_APPLICATIONS_DIR=/Applications/Xcode.app/Contents/Developer/Applications    export DEVELOPER_BIN_DIR=/Applications/Xcode.app/Contents/Developer/usr/bin    export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer    export DEVELOPER_FRAMEWORKS_DIR=/Applications/Xcode.app/Contents/Developer/Library/Frameworks    export DEVELOPER_FRAMEWORKS_DIR_QUOTED=/Applications/Xcode.app/Contents/Developer/Library/Frameworks    export DEVELOPER_LIBRARY_DIR=/Applications/Xcode.app/Contents/Developer/Library    export DEVELOPER_SDK_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    export DEVELOPER_TOOLS_DIR=/Applications/Xcode.app/Contents/Developer/Tools    export DEVELOPER_USR_DIR=/Applications/Xcode.app/Contents/Developer/usr    export DEVELOPMENT_LANGUAGE=English    export DOCUMENTATION_FOLDER_PATH=IRealtor_Desktop.app/English.lproj/Documentation    export DO_HEADER_SCANNING_IN_JAM=NO    export DSTROOT=/tmp/IRealtor_Desktop.dst    export DT_TOOLCHAIN_DIR=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    export DWARF_DSYM_FILE_NAME=IRealtor_Desktop.app.dSYM    export DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT=NO    export DWARF_DSYM_FOLDER_PATH=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator    export DYLIB_COMPATIBILITY_VERSION=1.0    export DYLIB_CURRENT_VERSION=1.0.0    export EFFECTIVE_PLATFORM_NAME=-iphonesimulator    export ENABLE_HEADER_DEPENDENCIES=YES    export EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS=".DS_Store .svn .git .hg CVS"    export EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES="*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    export EXECUTABLES_FOLDER_PATH=IRealtor_Desktop.app/Executables    export EXECUTABLE_FOLDER_PATH=IRealtor_Desktop.app    export EXECUTABLE_NAME=IRealtor_Desktop    export EXECUTABLE_PATH=IRealtor_Desktop.app/IRealtor_Desktop    export FILE_LIST=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects/LinkFileList    export FIXED_FILES_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/FixedFiles    export FRAMEWORKS_FOLDER_PATH=IRealtor_Desktop.app/Frameworks    export FRAMEWORK_FLAG_PREFIX=-framework    export FRAMEWORK_SEARCH_PATHS="/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator "    export FRAMEWORK_VERSION=A    export FULL_PRODUCT_NAME=IRealtor_Desktop.app    export GCC3_VERSION=3.3    export GCC_DYNAMIC_NO_PIC=NO    export GCC_GENERATE_DEBUGGING_SYMBOLS=YES    export GCC_INLINES_ARE_PRIVATE_EXTERN=YES    export GCC_OBJC_LEGACY_DISPATCH=YES    export GCC_OPTIMIZATION_LEVEL=0    export GCC_PFE_FILE_C_DIALECTS="c objective-c c++ objective-c++"    export GCC_SYMBOLS_PRIVATE_EXTERN=YES    export GCC_TREAT_WARNINGS_AS_ERRORS=NO    export GCC_VERSION=com.apple.compilers.llvm.clang.1_0    export GCC_VERSION_IDENTIFIER=com_apple_compilers_llvm_clang_1_0    export GENERATE_MASTER_OBJECT_FILE=NO    export GENERATE_PKGINFO_FILE=YES    export GENERATE_PROFILING_CODE=NO    export GID=20    export GROUP=staff    export HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT=YES    export HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES=YES    export HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS=YES    export HEADERMAP_INCLUDES_PROJECT_HEADERS=YES    export HEADER_SEARCH_PATHS="/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/include /Users/diesel/DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang/ios ../../../../DevTools/Qt5.3.1/5.3/ios/include ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtWidgets ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtSql ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtGui ../../../../DevTools/Qt5.3.1/5.3/ios/include/QtCore . ../../../../DevTools/Qt5.3.1/5.3/ios/mkspecs/macx-ios-clang"    export ICONV=/usr/bin/iconv    export INFOPLIST_EXPAND_BUILD_SETTINGS=YES    export INFOPLIST_FILE=Info.plist    export INFOPLIST_OUTPUT_FORMAT=binary    export INFOPLIST_PATH=IRealtor_Desktop.app/Info.plist    export INFOPLIST_PREPROCESS=NO    export INFOSTRINGS_PATH=IRealtor_Desktop.app/English.lproj/InfoPlist.strings    export INSTALL_DIR=/tmp/IRealtor_Desktop.dst/Applications    export INSTALL_GROUP=staff    export INSTALL_MODE_FLAG=u+w,go-w,a+rX    export INSTALL_OWNER=diesel    export INSTALL_PATH=/Applications    export INSTALL_ROOT=/tmp/IRealtor_Desktop.dst    export IPHONEOS_DEPLOYMENT_TARGET=5.0    export JAVAC_DEFAULT_FLAGS="-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    export JAVA_APP_STUB=/System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    export JAVA_ARCHIVE_CLASSES=YES    export JAVA_ARCHIVE_TYPE=JAR    export JAVA_COMPILER=/usr/bin/javac    export JAVA_FOLDER_PATH=IRealtor_Desktop.app/Java    export JAVA_FRAMEWORK_RESOURCES_DIRS=Resources    export JAVA_JAR_FLAGS=cv    export JAVA_SOURCE_SUBDIR=.    export JAVA_USE_DEPENDENCIES=YES    export JAVA_ZIP_FLAGS=-urg    export JIKES_DEFAULT_FLAGS="+E +OLDCSO"    export KEEP_PRIVATE_EXTERNS=NO    export LDPLUSPLUS=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++    export LD_DEPENDENCY_INFO_FILE=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/IRealtor_Desktop_dependency_info.dat    export LD_GENERATE_MAP_FILE=NO    export LD_MAP_FILE_PATH=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/IRealtor_Desktop-LinkMap-normal-i386.txt    export LD_NO_PIE=NO    export LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER=YES    export LEGACY_DEVELOPER_DIR=/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    export LEX=lex    export LIBRARY_FLAG_NOSPACE=YES    export LIBRARY_FLAG_PREFIX=-l    export LIBRARY_KEXT_INSTALL_PATH=/Library/Extensions    export LIBRARY_SEARCH_PATHS="/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator /Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/platforms /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks /Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib /Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/accessible /Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/sqldrivers /Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats"    export LINKER_DISPLAYS_MANGLED_NAMES=NO    export LINK_FILE_LIST_normal_i386=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/IRealtor_Desktop.LinkFileList    export LINK_WITH_STANDARD_LIBRARIES=YES    export LOCALIZED_RESOURCES_FOLDER_PATH=IRealtor_Desktop.app/English.lproj    export LOCAL_ADMIN_APPS_DIR=/Applications/Utilities    export LOCAL_APPS_DIR=/Applications    export LOCAL_DEVELOPER_DIR=/Library/Developer    export LOCAL_LIBRARY_DIR=/Library    export MACH_O_TYPE=mh_execute    export MACOSX_DEPLOYMENT_TARGET=10.6    export MAC_OS_X_PRODUCT_BUILD_VERSION=13E28    export MAC_OS_X_VERSION_ACTUAL=1094    export MAC_OS_X_VERSION_MAJOR=1090    export MAC_OS_X_VERSION_MINOR=0904    export NATIVE_ARCH=i386    export NATIVE_ARCH_32_BIT=i386    export NATIVE_ARCH_64_BIT=x86_64    export NATIVE_ARCH_ACTUAL=x86_64    export NO_COMMON=YES    export OBJC_ABI_VERSION=2    export OBJECT_FILE_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects    export OBJECT_FILE_DIR_normal=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal    export OBJROOT=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export ONLY_ACTIVE_ARCH=NO    export OPTIMIZATION_LEVEL=0    export OS=MACOS    export OSAC=/usr/bin/osacompile    export OTHER_CFLAGS="-pipe -fvisibility=hidden -fpascal-strings -fmessage-length=0 -Wno-trigraphs -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-sign-conversion -fexceptions -fasm-blocks -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wno-unused-function -Wno-unused-label -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Winvalid-offsetof -Wno-conversion -g -Wall -W -fPIE -DDARWIN_NO_CARBON -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB"    export OTHER_CPLUSPLUSFLAGS="-pipe -fvisibility=hidden -fpascal-strings -fmessage-length=0 -Wno-trigraphs -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -Wno-sign-conversion -fexceptions -fasm-blocks -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wno-unused-function -Wno-unused-label -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Winvalid-offsetof -Wno-conversion -fvisibility-inlines-hidden -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -g -std=c++11 -stdlib=libc++ -Wall -W -fPIE -DDARWIN_NO_CARBON -DQT_NO_PRINTER -DQT_NO_PRINTDIALOG -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB"    export OTHER_LDFLAGS="-headerpad_max_install_names -stdlib=libc++ -u _qt_registerPlatformPlugin -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/platforms -framework UIKit -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/lib -framework OpenGLES -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/accessible -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/sqldrivers -L/Users/diesel/DevTools/Qt5.3.1/5.3/ios/plugins/imageformats -lz -lm"    export PACKAGE_TYPE=com.apple.package-type.wrapper.application    export PASCAL_STRINGS=YES    export PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    export PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES="/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    export PBDEVELOPMENTPLIST_PATH=IRealtor_Desktop.app/pbdevelopment.plist    export PFE_FILE_C_DIALECTS=c++    export PKGINFO_FILE_PATH=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/PkgInfo    export PKGINFO_PATH=IRealtor_Desktop.app/PkgInfo    export PLATFORM_DEVELOPER_APPLICATIONS_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    export PLATFORM_DEVELOPER_BIN_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    export PLATFORM_DEVELOPER_LIBRARY_DIR=/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    export PLATFORM_DEVELOPER_SDK_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    export PLATFORM_DEVELOPER_TOOLS_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    export PLATFORM_DEVELOPER_USR_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    export PLATFORM_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    export PLATFORM_NAME=iphonesimulator    export PLATFORM_PREFERRED_ARCH=i386    export PLATFORM_PRODUCT_BUILD_VERSION=11D167    export PLATFORM_VERSION_AVAILABILITY_H_FORMAT=70100    export PLIST_FILE_OUTPUT_FORMAT=binary    export PLUGINS_FOLDER_PATH=IRealtor_Desktop.app/PlugIns    export PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR=YES    export PRECOMP_DESTINATION_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/PrefixHeaders    export PRESERVE_DEAD_CODE_INITS_AND_TERMS=NO    export PRIVATE_HEADERS_FOLDER_PATH=IRealtor_Desktop.app/PrivateHeaders    export PRODUCT_NAME=IRealtor_Desktop    export PRODUCT_SETTINGS_PATH=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Info.plist    export PRODUCT_TYPE=com.apple.product-type.application    export PROFILING_CODE=NO    export PROJECT=IRealtor_Desktop    export PROJECT_DERIVED_FILE_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/DerivedSources    export PROJECT_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export PROJECT_FILE_PATH=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.xcodeproj    export PROJECT_NAME=IRealtor_Desktop    export PROJECT_TEMP_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build    export PROJECT_TEMP_ROOT=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export PUBLIC_HEADERS_FOLDER_PATH=IRealtor_Desktop.app/Headers    export QT_LIBRARY_SUFFIX=_iphonesimulator_debug    export RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS=YES    export REMOVE_CVS_FROM_RESOURCES=YES    export REMOVE_GIT_FROM_RESOURCES=YES    export REMOVE_HG_FROM_RESOURCES=YES    export REMOVE_SVN_FROM_RESOURCES=YES    export REZ_COLLECTOR_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/ResourceManagerResources    export REZ_OBJECTS_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/ResourceManagerResources/Objects    export REZ_SEARCH_PATHS="/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator "    export SCAN_ALL_SOURCE_FILES_FOR_INCLUDES=NO    export SCRIPTS_FOLDER_PATH=IRealtor_Desktop.app/Scripts    export SCRIPT_INPUT_FILE_0="/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/*.o"    export SCRIPT_INPUT_FILE_COUNT=1    export SCRIPT_OUTPUT_FILE_0=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Objects-normal/i386/IRealtor_Desktop.LinkFileList    export SCRIPT_OUTPUT_FILE_COUNT=1    export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk    export SDK_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk    export SDK_NAME=iphonesimulator7.1    export SDK_PRODUCT_BUILD_VERSION=11D167    export SED=/usr/bin/sed    export SEPARATE_STRIP=NO    export SEPARATE_SYMBOL_EDIT=NO    export SET_DIR_MODE_OWNER_GROUP=YES    export SET_FILE_MODE_OWNER_GROUP=NO    export SHALLOW_BUNDLE=YES    export SHARED_DERIVED_FILE_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/DerivedSources    export SHARED_FRAMEWORKS_FOLDER_PATH=IRealtor_Desktop.app/SharedFrameworks    export SHARED_PRECOMPS_DIR=/var/folders/tn/tdbvnmns5ygg1bl8c8q5m41h0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders    export SHARED_SUPPORT_FOLDER_PATH=IRealtor_Desktop.app/SharedSupport    export SKIP_INSTALL=NO    export SOURCE_ROOT=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export SRCROOT=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export STRINGS_FILE_OUTPUT_ENCODING=binary    export STRIP_INSTALLED_PRODUCT=YES    export STRIP_STYLE=all    export SUPPORTED_DEVICE_FAMILIES="1 2"    export SUPPORTED_PLATFORMS="iphonesimulator iphoneos"    export SYMROOT=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export SYSTEM_ADMIN_APPS_DIR=/Applications/Utilities    export SYSTEM_APPS_DIR=/Applications    export SYSTEM_CORE_SERVICES_DIR=/System/Library/CoreServices    export SYSTEM_DEMOS_DIR=/Applications/Extras    export SYSTEM_DEVELOPER_APPS_DIR=/Applications/Xcode.app/Contents/Developer/Applications    export SYSTEM_DEVELOPER_BIN_DIR=/Applications/Xcode.app/Contents/Developer/usr/bin    export SYSTEM_DEVELOPER_DEMOS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    export SYSTEM_DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer    export SYSTEM_DEVELOPER_DOC_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    export SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    export SYSTEM_DEVELOPER_JAVA_TOOLS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    export SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    export SYSTEM_DEVELOPER_RELEASENOTES_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    export SYSTEM_DEVELOPER_TOOLS=/Applications/Xcode.app/Contents/Developer/Tools    export SYSTEM_DEVELOPER_TOOLS_DOC_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    export SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    export SYSTEM_DEVELOPER_USR_DIR=/Applications/Xcode.app/Contents/Developer/usr    export SYSTEM_DEVELOPER_UTILITIES_DIR=/Applications/Xcode.app/Contents/Developer/Applications/Utilities    export SYSTEM_DOCUMENTATION_DIR=/Library/Documentation    export SYSTEM_KEXT_INSTALL_PATH=/System/Library/Extensions    export SYSTEM_LIBRARY_DIR=/System/Library    export TARGETED_DEVICE_FAMILY=1,2    export TARGETNAME=IRealtor_Desktop    export TARGET_BUILD_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator    export TARGET_NAME=IRealtor_Desktop    export TARGET_TEMP_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build    export TEMP_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build    export TEMP_FILES_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build    export TEMP_FILE_DIR=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build    export TEMP_ROOT=/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export TOOLCHAINS=com.apple.dt.toolchain.XcodeDefault    export UID=501    export UNLOCALIZED_RESOURCES_FOLDER_PATH=IRealtor_Desktop.app    export UNSTRIPPED_PRODUCT=NO    export USER=diesel    export USER_APPS_DIR=/Users/diesel/Applications    export USER_LIBRARY_DIR=/Users/diesel/Library    export USE_DYNAMIC_NO_PIC=YES    export USE_HEADERMAP=YES    export USE_HEADER_SYMLINKS=NO    export VALIDATE_PRODUCT=NO    export VALID_ARCHS="i386 x86_64"    export VERBOSE_PBXCP=NO    export VERSIONPLIST_PATH=IRealtor_Desktop.app/version.plist    export VERSION_INFO_BUILDER=diesel    export VERSION_INFO_FILE=IRealtor_Desktop_vers.c    export VERSION_INFO_STRING="\"@(#)PROGRAM:IRealtor_Desktop  PROJECT:IRealtor_Desktop-\""    export WRAPPER_EXTENSION=app    export WRAPPER_NAME=IRealtor_Desktop.app    export WRAPPER_SUFFIX=.app    export XCODE_APP_SUPPORT_DIR=/Applications/Xcode.app/Contents/Developer/Library/Xcode    export XCODE_PRODUCT_BUILD_VERSION=5B1008    export XCODE_VERSION_ACTUAL=0511    export XCODE_VERSION_MAJOR=0500    export XCODE_VERSION_MINOR=0510    export XPCSERVICES_FOLDER_PATH=IRealtor_Desktop.app/XPCServices    export YACC=yacc    export arch=i386    export variant=normal    /bin/sh -c /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/IRealtor_Desktop.build/Debug-iphonesimulator/IRealtor_Desktop.build/Script-3DA90DAE39A0C9D07C6F6B0F.sh36"878BECA6-4D37-4D8B-8387-D48FB8793D45-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CProcessInfoPlistFile /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/Info.plist /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Info.plist
+s430232937.283368
+e430232937.285646
+r1
+xProcessInfoPlistFile
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/Info.plist
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Process /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Info.plist85"ProcessInfoPlistFile Debug-iphonesimulator/IRealtor_Desktop.app/Info.plist Info.plist309b4869d5a4b941^7d204969d5a4b941^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Info.plist0000000000000000^1033"ProcessInfoPlistFile Debug-iphonesimulator/IRealtor_Desktop.app/Info.plist Info.plist    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Info.plist -genpkginfo /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app/Info.plist36"285B5F3A-DBD4-44F1-823A-DD86D1B90173-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+
+CTouch /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app
+s430232950.942837
+e430232950.947312
+r1
+xTouch
+x/Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection157"Touch /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app48"Touch Debug-iphonesimulator/IRealtor_Desktop.appf06af176d5a4b941^b283f276d5a4b941^---0#0#1#--621"Touch Debug-iphonesimulator/IRealtor_Desktop.app    cd /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/diesel/Projects/Qt/IRealtor_Desktop/build-IRealtor_Desktop-iphonesimulator_clang_Qt_5_3_for_iOS-Debug/Debug-iphonesimulator/IRealtor_Desktop.app36"D8309CCA-5DE4-4AEC-98B6-57BB4B7CE6CE-
+b96AF2E9E-0EC2-41E9-8AC1-F7E4AC590C33
+

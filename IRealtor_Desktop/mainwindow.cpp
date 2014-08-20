@@ -1,11 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QSettings>
 
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    getSettings();
 
     getRegion();
     getType();
@@ -21,10 +24,11 @@ MainWindow::~MainWindow()
 
 bool MainWindow::createConnection(){
     db = QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("192.168.1.21");
+    db.setHostName(strServerDB);
+    //db.port(strPortDB);
     db.setDatabaseName("IRealtor");
-    db.setUserName("test");
-    db.setPassword("123456");
+    db.setUserName(strUserDB);
+    db.setPassword(strPasswordDB);
     if (!db.open()) {
         qDebug() << "Database error occurred";
         return false;
@@ -94,6 +98,14 @@ void MainWindow::getStatus(){
 }
 
 void MainWindow::openFormRealtyObjects(){
-    formR = new RealtyObject();
-    formR->show();
+    formRO = new RealtyObject();
+    formRO->show();
+}
+
+void MainWindow::getSettings(){
+    QSettings options;
+    strServerDB = options.value("server").toString();
+    //strPortDB = options.value("port").toString();
+    strUserDB = options.value("user").toString();
+    strPasswordDB = options.value("password").toString();
 }

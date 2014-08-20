@@ -25,10 +25,15 @@ public:
 
 private:
     Ui::RealtyObject *ui;
+    QString strServerDB;
+    QString strPortDB;
+    QString strUserDB;
+    QString strPasswordDB;
 
 private slots:
     void saveData();
     void getData();
+    void getSettings();
 };
 
 #endif // REALTYOBJECT_H

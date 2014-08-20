@@ -29,7 +29,7 @@
       <widget class="QWidget" name="tab">
        <attribute name="icon">
         <iconset resource="res.qrc">
-         <normaloff>:/img/img/Здание.png</normaloff>:/img/img/Здание.png</iconset>
+         <normaloff>:/img/img/Haus.png</normaloff>:/img/img/Haus.png</iconset>
        </attribute>
        <attribute name="title">
         <string>Поиск</string>
@@ -364,7 +364,7 @@
       <widget class="QWidget" name="tab_4">
        <attribute name="icon">
         <iconset resource="res.qrc">
-         <normaloff>:/img/img/Здание.png</normaloff>:/img/img/Здание.png</iconset>
+         <normaloff>:/img/img/Haus.png</normaloff>:/img/img/Haus.png</iconset>
        </attribute>
        <attribute name="title">
         <string>Объекты недвижимости</string>
@@ -418,7 +418,7 @@
       <widget class="QWidget" name="tab_2">
        <attribute name="icon">
         <iconset resource="res.qrc">
-         <normaloff>:/img/img/Сделка.png</normaloff>:/img/img/Сделка.png</iconset>
+         <normaloff>:/img/img/trade.png</normaloff>:/img/img/trade.png</iconset>
        </attribute>
        <attribute name="title">
         <string>Tab 2</string>
@@ -427,7 +427,7 @@
       <widget class="QWidget" name="tab_3">
        <attribute name="icon">
         <iconset resource="res.qrc">
-         <normaloff>:/img/img/ОбщаяКартинка2.png</normaloff>:/img/img/ОбщаяКартинка2.png</iconset>
+         <normaloff>:/img/img/journal.png</normaloff>:/img/img/journal.png</iconset>
        </attribute>
        <attribute name="title">
         <string>Страница</string>
@@ -443,19 +443,23 @@
      <x>0</x>
      <y>0</y>
      <width>847</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
      <string>Файл</string>
     </property>
+    <addaction name="separator"/>
+    <addaction name="action_close"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
      <string>Утилиты</string>
     </property>
     <addaction name="action_Exel"/>
+    <addaction name="action_cladr"/>
+    <addaction name="action_settings"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -472,6 +476,21 @@
   <action name="action_Exel">
    <property name="text">
     <string>Загрузка из Exel</string>
+   </property>
+  </action>
+  <action name="action_cladr">
+   <property name="text">
+    <string>Загрузить КЛАДР</string>
+   </property>
+  </action>
+  <action name="action_settings">
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="text">
+    <string>Выйти</string>
    </property>
   </action>
  </widget>

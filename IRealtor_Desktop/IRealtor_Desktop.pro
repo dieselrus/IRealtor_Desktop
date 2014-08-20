@@ -14,13 +14,16 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    realtyobject.cpp
+    realtyobject.cpp \
+    settings.cpp
 
 HEADERS  += mainwindow.h \
-    realtyobject.h
+    realtyobject.h \
+    settings.h
 
 FORMS    += mainwindow.ui \
-    realtyobject.ui
+    realtyobject.ui \
+    settings.ui
 
 RESOURCES += \
     res.qrc

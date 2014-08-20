@@ -1,11 +1,14 @@
 #include "realtyobject.h"
 #include "ui_realtyobject.h"
+#include <QSettings>
 
 RealtyObject::RealtyObject(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::RealtyObject)
 {
     ui->setupUi(this);
+
+    getSettings();
 
     getData();
 
@@ -19,10 +22,11 @@ RealtyObject::~RealtyObject()
 
 bool RealtyObject::createConnection(){
     db = QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("192.168.1.21");
+    db.setHostName(strServerDB);
+    //db.port(strPortDB);
     db.setDatabaseName("IRealtor");
-    db.setUserName("test");
-    db.setPassword("123456");
+    db.setUserName(strUserDB);
+    db.setPassword(strPasswordDB);
     if (!db.open()) {
         qDebug() << "Database error occurred";
         return false;
@@ -155,4 +159,12 @@ void RealtyObject::saveData(){
         }
 
     }
+}
+
+void RealtyObject::getSettings(){
+    QSettings options;
+    strServerDB = options.value("server").toString();
+    strPortDB = options.value("port").toString();
+    strUserDB = options.value("user").toString();
+    strPasswordDB = options.value("password").toString();
 }
