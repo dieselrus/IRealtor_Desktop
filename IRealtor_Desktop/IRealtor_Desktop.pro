@@ -15,15 +15,18 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     realtyobject.cpp \
-    settings.cpp
+    settings.cpp \
+    exportxls.cpp
 
 HEADERS  += mainwindow.h \
     realtyobject.h \
-    settings.h
+    settings.h \
+    exportxls.h
 
 FORMS    += mainwindow.ui \
     realtyobject.ui \
-    settings.ui
+    settings.ui \
+    exportxls.ui
 
 RESOURCES += \
     res.qrc

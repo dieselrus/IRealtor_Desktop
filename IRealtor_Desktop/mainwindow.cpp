@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QSettings>
+#include <QSqlError>
+#include <QSqlTableModel>
 
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent),
@@ -13,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent):
     getRegion();
     getType();
     getStatus();
+    readRealtyObjects();
 
     db.close();
 
@@ -37,11 +40,11 @@ bool MainWindow::createConnection(){
     db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName(strServerDB);
     //db.port(strPortDB);
-    db.setDatabaseName("IRealtor");
+    db.setDatabaseName("IRealtor2");
     db.setUserName(strUserDB);
     db.setPassword(strPasswordDB);
     if (!db.open()) {
-        qDebug() << "Database error occurred";
+        qDebug() << "Database error occurred! " << db.lastError().text();
         return false;
     }
     return true;
@@ -49,7 +52,7 @@ bool MainWindow::createConnection(){
 
 void MainWindow::getRegion(){
     if (!db.open() && !createConnection()){
-        qDebug() << "Not connected!";
+        qDebug() << "Not connected! " << db.lastError().text();
     }
     else{
         qDebug() << "Connected region!";
@@ -70,7 +73,7 @@ void MainWindow::getRegion(){
 
 void MainWindow::getType(){
     if (!db.open() && !createConnection()){
-        qDebug() << "Not connected!";
+        qDebug() << "Not connected! " << db.lastError().text();
     }
     else{
         qDebug() << "Connected type!";
@@ -122,10 +125,26 @@ void MainWindow::opensettings(){
 
 // Read settings
 void MainWindow::getSettings(){
-    QSettings options;
+    QSettings options("DSoft", "IRealtor");
+
     strServerDB = options.value("server").toString();
     //strPortDB = options.value("port").toString();
     strUserDB = options.value("user").toString();
     strPasswordDB = options.value("password").toString();
+}
+
+// Real realty objects
+void MainWindow::readRealtyObjects(){
+    QSqlTableModel *model = new QSqlTableModel();
+    model->setTable("realtyobjects");          // Имя таблицы базы данных.
+    //model->setFilter("salary >= 1000");   // Условие WHERE.
+    model->setSort(0, Qt::DescendingOrder); // Сортировка по убыванию id.
+    model->select();                      // Получить данные.
+
+    ui->tvRealtyObjects->setModel(model);
+    ui->tvRealtyObjects->setAlternatingRowColors(true);
+    ui->tvRealtyObjects->resizeRowsToContents();
+    ui->tvRealtyObjects->resizeColumnsToContents();
+
 }
 

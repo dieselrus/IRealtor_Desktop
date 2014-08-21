@@ -30,6 +30,8 @@ private:
     QString strUserDB;
     QString strPasswordDB;
 
+     QHash<QString, int> hRegion;
+
 private slots:
     void saveData();
     void getData();

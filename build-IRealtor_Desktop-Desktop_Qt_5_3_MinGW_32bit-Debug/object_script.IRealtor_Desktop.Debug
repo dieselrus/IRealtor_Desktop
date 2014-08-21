@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\realtyobject.o
+./debug\settings.o
+./debug\exportxls.o
+./debug\qrc_res.o
+./debug\moc_mainwindow.o
+./debug\moc_realtyobject.o
+./debug\moc_settings.o
+./debug\moc_exportxls.o
+);

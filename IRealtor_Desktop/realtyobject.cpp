@@ -1,6 +1,7 @@
 #include "realtyobject.h"
 #include "ui_realtyobject.h"
 #include <QSettings>
+#include <QSqlError>
 
 RealtyObject::RealtyObject(QWidget *parent) :
     QWidget(parent),
@@ -24,7 +25,7 @@ bool RealtyObject::createConnection(){
     db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName(strServerDB);
     //db.port(strPortDB);
-    db.setDatabaseName("IRealtor");
+    db.setDatabaseName("IRealtor2");
     db.setUserName(strUserDB);
     db.setPassword(strPasswordDB);
     if (!db.open()) {
@@ -83,7 +84,7 @@ void RealtyObject::getData(){
         while (query.next()) {
             int index =  query.value(0).toInt();
             QString name = query.value(1).toString();
-
+            hRegion.insert(name, index);
             ui->cmbRegion->insertItem(index, name);
         }
 
@@ -109,6 +110,49 @@ void RealtyObject::getData(){
             ui->cmbStatus->insertItem(index, name);
         }
 
+        // Material
+        query.clear();
+        query.exec("SELECT id, name FROM material");
+
+        while (query.next()) {
+            int index =  query.value(0).toInt();
+            QString name = query.value(1).toString();
+
+            ui->cmbMaterial->insertItem(index, name);
+        }
+
+        // Document property
+        query.clear();
+        query.exec("SELECT id, name FROM document_property");
+
+        while (query.next()) {
+            int index =  query.value(0).toInt();
+            QString name = query.value(1).toString();
+
+            ui->cmbDocProperty->insertItem(index, name);
+        }
+
+        // trade
+        query.clear();
+        query.exec("SELECT id, name FROM trade");
+
+        while (query.next()) {
+            int index =  query.value(0).toInt();
+            QString name = query.value(1).toString();
+
+            ui->cmbTradeType->insertItem(index, name);
+        }
+
+        // type_apartment
+        query.clear();
+        query.exec("SELECT id, name FROM type_apartment");
+
+        while (query.next()) {
+            int index =  query.value(0).toInt();
+            QString name = query.value(1).toString();
+
+            ui->cmbTypeApartament->insertItem(index, name);
+        }
 
     }
 }
@@ -122,6 +166,7 @@ void RealtyObject::saveData(){
         QSqlQuery query;
         query.prepare("INSERT INTO realtyobjects (address, region_id, type_id, status_id, trade_id, date_create, rooms, total_area, floor_area, kitchen_area, floors, floor, material_id, balkony, loggia, type_apartment_id, owner_id, document_property_id, contact_phone, internet, phone, cabletv, central_heating, central_water, central_sewage, price, percentage_commission, amount_commission, coordinates, description) VALUES (:address, :region_id, :type_id, :status_id, :trade_id, :date_create, :rooms, :total_area, :floor_area, :kitchen_area, :floors, :floor, :material_id, :balkony, :loggia, :type_apartment_id, :owner_id, :document_property_id, :contact_phone, :internet, :phone, :cabletv, :central_heating, :central_water, :central_sewage, :price, :percentage_commission, :amount_commission, :coordinates, :description);");
         query.bindValue(":address",             ui->leAddress->text());
+        int a = hRegion.find(ui->cmbRegion->currentText())[0]; // http://www.qtcentre.org/threads/3887-QComboBox-insertItem()-not-honoring-id
         query.bindValue(":region_id",           ui->cmbRegion->currentIndex());
         query.bindValue(":type_id",             ui->cmbType->currentIndex());
         query.bindValue(":status_id",           ui->cmbStatus->currentIndex());
@@ -153,7 +198,7 @@ void RealtyObject::saveData(){
         query.bindValue(":description",         "");
 
         if( !query.exec() ){
-            qDebug() << "Failed to add tag";
+            qDebug() << "Failed to add tag " << query.lastError().text();
         } else {
             close();
         }
@@ -162,7 +207,8 @@ void RealtyObject::saveData(){
 }
 
 void RealtyObject::getSettings(){
-    QSettings options;
+    QSettings options("DSoft", "IRealtor");
+
     strServerDB = options.value("server").toString();
     strPortDB = options.value("port").toString();
     strUserDB = options.value("user").toString();

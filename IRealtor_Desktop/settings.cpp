@@ -16,7 +16,8 @@ settings::~settings()
 }
 
 void settings::saveSettings(){
-    QSettings options;
+    QSettings options("DSoft", "IRealtor");
+
     options.setValue("server", ui->leServer->text());
     options.setValue("port", ui->lePort->text());
     options.setValue("user", ui->leUser->text());
@@ -24,9 +25,12 @@ void settings::saveSettings(){
 }
 
 void settings::getSettings(){
-    QSettings options;
+    QSettings options("DSoft", "IRealtor");
+
     ui->leServer->setText(options.value("server").toString());
     ui->lePort->setText(options.value("port").toString());
     ui->leUser->setText(options.value("user").toString());
     ui->lePassword->setText(options.value("password").toString());
+
+    options.sync();
 }
