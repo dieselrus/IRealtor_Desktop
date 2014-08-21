@@ -84,8 +84,7 @@ void RealtyObject::getData(){
         while (query.next()) {
             int index =  query.value(0).toInt();
             QString name = query.value(1).toString();
-            hRegion.insert(name, index);
-            ui->cmbRegion->insertItem(index, name);
+            ui->cmbRegion->insertItem(index, name, QVariant(index));
         }
 
         // Type
@@ -166,7 +165,7 @@ void RealtyObject::saveData(){
         QSqlQuery query;
         query.prepare("INSERT INTO realtyobjects (address, region_id, type_id, status_id, trade_id, date_create, rooms, total_area, floor_area, kitchen_area, floors, floor, material_id, balkony, loggia, type_apartment_id, owner_id, document_property_id, contact_phone, internet, phone, cabletv, central_heating, central_water, central_sewage, price, percentage_commission, amount_commission, coordinates, description) VALUES (:address, :region_id, :type_id, :status_id, :trade_id, :date_create, :rooms, :total_area, :floor_area, :kitchen_area, :floors, :floor, :material_id, :balkony, :loggia, :type_apartment_id, :owner_id, :document_property_id, :contact_phone, :internet, :phone, :cabletv, :central_heating, :central_water, :central_sewage, :price, :percentage_commission, :amount_commission, :coordinates, :description);");
         query.bindValue(":address",             ui->leAddress->text());
-        int a = hRegion.find(ui->cmbRegion->currentText())[0]; // http://www.qtcentre.org/threads/3887-QComboBox-insertItem()-not-honoring-id
+        QVariant a = ui->cmbRegion->currentData(ui->cmbRegion->currentIndex()); // http://www.qtcentre.org/threads/3887-QComboBox-insertItem()-not-honoring-id
         query.bindValue(":region_id",           ui->cmbRegion->currentIndex());
         query.bindValue(":type_id",             ui->cmbType->currentIndex());
         query.bindValue(":status_id",           ui->cmbStatus->currentIndex());

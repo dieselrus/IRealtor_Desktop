@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>778</width>
-    <height>514</height>
+    <width>1000</width>
+    <height>524</height>
    </rect>
   </property>
   <property name="font">
@@ -24,26 +24,41 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="1" colspan="2">
-      <widget class="QComboBox" name="cmbRegion"/>
-     </item>
-     <item row="1" column="5" colspan="2">
-      <widget class="QComboBox" name="cmbTradeType"/>
-     </item>
-     <item row="1" column="9" colspan="2">
-      <widget class="QComboBox" name="cmbStatus"/>
-     </item>
-     <item row="1" column="3" colspan="2">
-      <widget class="QLabel" name="label_2">
+     <item row="1" column="8">
+      <widget class="QPushButton" name="pushButton_3">
        <property name="text">
-        <string>Тип сделки:</string>
+        <string>+</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="7" colspan="2">
-      <widget class="QLabel" name="label_3">
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pushButton_2">
        <property name="text">
-        <string>Тек. статус:</string>
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" colspan="13">
+      <widget class="QLineEdit" name="leAddress"/>
+     </item>
+     <item row="0" column="16">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="3">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Фактический адрес:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="14">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Тип:</string>
        </property>
       </widget>
      </item>
@@ -54,28 +69,41 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="12" colspan="2">
+     <item row="1" column="4" colspan="2">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Тип сделки:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="9" colspan="2">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Тек. статус:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="11" colspan="2">
+      <widget class="QComboBox" name="cmbStatus"/>
+     </item>
+     <item row="1" column="6" colspan="2">
+      <widget class="QComboBox" name="cmbTradeType"/>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QComboBox" name="cmbRegion"/>
+     </item>
+     <item row="1" column="13">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="text">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="15">
       <widget class="QComboBox" name="cmbType"/>
      </item>
-     <item row="1" column="11">
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>Тип:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3" colspan="10">
-      <widget class="QLineEdit" name="leAddress"/>
-     </item>
-     <item row="0" column="0" colspan="3">
-      <widget class="QLabel" name="label_5">
-       <property name="text">
-        <string>Фактический адрес:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="13">
-      <widget class="QPushButton" name="pushButton">
+     <item row="1" column="16">
+      <widget class="QPushButton" name="pushButton_5">
        <property name="text">
         <string>+</string>
        </property>
@@ -267,6 +295,13 @@
             </property>
            </widget>
           </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_6">
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
@@ -331,6 +366,13 @@
           <widget class="QComboBox" name="cmbTypeApartament"/>
          </item>
          <item>
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
           <spacer name="horizontalSpacer_5">
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -351,36 +393,81 @@
       <attribute name="title">
        <string>Правовой статус</string>
       </attribute>
-      <layout class="QFormLayout" name="formLayout">
-       <item row="0" column="0">
-        <widget class="QLabel" name="label_20">
-         <property name="text">
-          <string>Собственник:</string>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>Собственник:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="leOwner"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>Док собственности:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cmbDocProperty">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>Контактный телефон:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lePhone"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
          </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QLineEdit" name="leOwner"/>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label_21">
-         <property name="text">
-          <string>Док собственности:</string>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
          </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QComboBox" name="cmbDocProperty"/>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_22">
-         <property name="text">
-          <string>Контактный телефон:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLineEdit" name="lePhone"/>
+        </spacer>
        </item>
       </layout>
      </widget>
@@ -628,6 +715,12 @@
    </item>
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="standardButtons">
       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
      </property>

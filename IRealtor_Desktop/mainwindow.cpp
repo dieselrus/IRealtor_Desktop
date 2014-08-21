@@ -3,6 +3,7 @@
 #include <QSettings>
 #include <QSqlError>
 #include <QSqlTableModel>
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent),
@@ -45,6 +46,7 @@ bool MainWindow::createConnection(){
     db.setPassword(strPasswordDB);
     if (!db.open()) {
         qDebug() << "Database error occurred! " << db.lastError().text();
+        QMessageBox::critical(0, QObject::tr("Database Error"),db.lastError().text());
         return false;
     }
     return true;
