@@ -49,21 +49,25 @@ SOURCES       = ../IRealtor_Desktop/main.cpp \
 		../IRealtor_Desktop/mainwindow.cpp \
 		../IRealtor_Desktop/realtyobject.cpp \
 		../IRealtor_Desktop/settings.cpp \
-		../IRealtor_Desktop/exportxls.cpp qrc_res.cpp \
+		../IRealtor_Desktop/exportxls.cpp \
+		../IRealtor_Desktop/dialogadd.cpp qrc_res.cpp \
 		moc_mainwindow.cpp \
 		moc_realtyobject.cpp \
 		moc_settings.cpp \
-		moc_exportxls.cpp
+		moc_exportxls.cpp \
+		moc_dialogadd.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
 		realtyobject.o \
 		settings.o \
 		exportxls.o \
+		dialogadd.o \
 		qrc_res.o \
 		moc_mainwindow.o \
 		moc_realtyobject.o \
 		moc_settings.o \
-		moc_exportxls.o
+		moc_exportxls.o \
+		moc_dialogadd.o
 DIST          = ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_pre.prf \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/qdevice.pri \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/device_config.prf \
@@ -159,6 +163,7 @@ DIST          = ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/qt_config.prf \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_post.prf \
+		../IRealtor_Desktop/.qmake.stash \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/default_pre.prf \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -183,7 +188,8 @@ DIST          = ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_
 		../IRealtor_Desktop/mainwindow.cpp \
 		../IRealtor_Desktop/realtyobject.cpp \
 		../IRealtor_Desktop/settings.cpp \
-		../IRealtor_Desktop/exportxls.cpp
+		../IRealtor_Desktop/exportxls.cpp \
+		../IRealtor_Desktop/dialogadd.cpp
 QMAKE_TARGET  = IRealtor_Desktop
 DESTDIR       = #avoid trailing-slash linebreak
 TARGET        = IRealtor_Desktop.app/Contents/MacOS/IRealtor_Desktop
@@ -223,7 +229,7 @@ first: all
 
 all: Makefile IRealtor_Desktop.app/Contents/PkgInfo IRealtor_Desktop.app/Contents/Resources/empty.lproj IRealtor_Desktop.app/Contents/Info.plist $(TARGET)
 
-$(TARGET): ui_mainwindow.h ui_realtyobject.h ui_settings.h ui_exportxls.h $(OBJECTS)  
+$(TARGET): ui_mainwindow.h ui_realtyobject.h ui_settings.h ui_exportxls.h ui_dialogadd.h $(OBJECTS)  
 	@test -d IRealtor_Desktop.app/Contents/MacOS/ || mkdir -p IRealtor_Desktop.app/Contents/MacOS/
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
@@ -322,6 +328,7 @@ Makefile: ../IRealtor_Desktop/IRealtor_Desktop.pro ../../../../DevTools/Qt5.3.1/
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/qt_config.prf \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang/qmake.conf \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/exclusive_builds.prf \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/default_pre.prf \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/mac/default_pre.prf \
@@ -444,6 +451,7 @@ Makefile: ../IRealtor_Desktop/IRealtor_Desktop.pro ../../../../DevTools/Qt5.3.1/
 ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/qt_config.prf:
 ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang/qmake.conf:
 ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/exclusive_builds.prf:
 ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/default_pre.prf:
 ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/features/mac/default_pre.prf:
@@ -489,7 +497,7 @@ IRealtor_Desktop.app/Contents/Info.plist:
 	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,@TYPEINFO@,????,g" -e "s,@ICON@,,g" -e "s,@BUNDLEIDENTIFIER@,com.yourcompany.IRealtor_Desktop,g" -e "s,@EXECUTABLE@,IRealtor_Desktop,g" -e "s,@TYPEINFO@,????,g" ../../../../DevTools/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang/Info.plist.app >IRealtor_Desktop.app/Contents/Info.plist
 dist: 
 	@test -d .tmp/IRealtor_Desktop1.0.0 || mkdir -p .tmp/IRealtor_Desktop1.0.0
-	$(COPY_FILE) --parents $(DIST) .tmp/IRealtor_Desktop1.0.0/ && $(COPY_FILE) --parents ../IRealtor_Desktop/res.qrc .tmp/IRealtor_Desktop1.0.0/ && $(COPY_FILE) --parents ../IRealtor_Desktop/mainwindow.h ../IRealtor_Desktop/realtyobject.h ../IRealtor_Desktop/settings.h ../IRealtor_Desktop/exportxls.h .tmp/IRealtor_Desktop1.0.0/ && $(COPY_FILE) --parents ../IRealtor_Desktop/main.cpp ../IRealtor_Desktop/mainwindow.cpp ../IRealtor_Desktop/realtyobject.cpp ../IRealtor_Desktop/settings.cpp ../IRealtor_Desktop/exportxls.cpp .tmp/IRealtor_Desktop1.0.0/ && $(COPY_FILE) --parents ../IRealtor_Desktop/mainwindow.ui ../IRealtor_Desktop/realtyobject.ui ../IRealtor_Desktop/settings.ui ../IRealtor_Desktop/exportxls.ui .tmp/IRealtor_Desktop1.0.0/ && (cd `dirname .tmp/IRealtor_Desktop1.0.0` && $(TAR) IRealtor_Desktop1.0.0.tar IRealtor_Desktop1.0.0 && $(COMPRESS) IRealtor_Desktop1.0.0.tar) && $(MOVE) `dirname .tmp/IRealtor_Desktop1.0.0`/IRealtor_Desktop1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/IRealtor_Desktop1.0.0
+	$(COPY_FILE) --parents $(DIST) .tmp/IRealtor_Desktop1.0.0/ && $(COPY_FILE) --parents ../IRealtor_Desktop/res.qrc .tmp/IRealtor_Desktop1.0.0/ && $(COPY_FILE) --parents ../IRealtor_Desktop/mainwindow.h ../IRealtor_Desktop/realtyobject.h ../IRealtor_Desktop/settings.h ../IRealtor_Desktop/exportxls.h ../IRealtor_Desktop/dialogadd.h .tmp/IRealtor_Desktop1.0.0/ && $(COPY_FILE) --parents ../IRealtor_Desktop/main.cpp ../IRealtor_Desktop/mainwindow.cpp ../IRealtor_Desktop/realtyobject.cpp ../IRealtor_Desktop/settings.cpp ../IRealtor_Desktop/exportxls.cpp ../IRealtor_Desktop/dialogadd.cpp .tmp/IRealtor_Desktop1.0.0/ && $(COPY_FILE) --parents ../IRealtor_Desktop/mainwindow.ui ../IRealtor_Desktop/realtyobject.ui ../IRealtor_Desktop/settings.ui ../IRealtor_Desktop/exportxls.ui ../IRealtor_Desktop/dialogadd.ui .tmp/IRealtor_Desktop1.0.0/ && (cd `dirname .tmp/IRealtor_Desktop1.0.0` && $(TAR) IRealtor_Desktop1.0.0.tar IRealtor_Desktop1.0.0 && $(COMPRESS) IRealtor_Desktop1.0.0.tar) && $(MOVE) `dirname .tmp/IRealtor_Desktop1.0.0`/IRealtor_Desktop1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/IRealtor_Desktop1.0.0
 
 
 clean:compiler_clean 
@@ -521,9 +529,9 @@ qrc_res.cpp: ../IRealtor_Desktop/res.qrc \
 		../IRealtor_Desktop/img/trade.png
 	/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/bin/rcc -name res ../IRealtor_Desktop/res.qrc -o qrc_res.cpp
 
-compiler_moc_header_make_all: moc_mainwindow.cpp moc_realtyobject.cpp moc_settings.cpp moc_exportxls.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_realtyobject.cpp moc_settings.cpp moc_exportxls.cpp moc_dialogadd.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp moc_realtyobject.cpp moc_settings.cpp moc_exportxls.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_realtyobject.cpp moc_settings.cpp moc_exportxls.cpp moc_dialogadd.cpp
 moc_mainwindow.cpp: ../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QDebug \
@@ -531,9 +539,14 @@ moc_mainwindow.cpp: ../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.fram
 		../IRealtor_Desktop/realtyobject.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
-		../IRealtor_Desktop/settings.h \
+		../IRealtor_Desktop/dialogadd.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QDialog \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qdialog.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QLineEdit \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QPushButton \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qpushbutton.h \
+		../IRealtor_Desktop/settings.h \
 		../IRealtor_Desktop/mainwindow.h
 	/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib ../IRealtor_Desktop/mainwindow.h -o moc_mainwindow.cpp
 
@@ -541,6 +554,13 @@ moc_realtyobject.cpp: ../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.fr
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QDebug \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qdebug.h \
+		../IRealtor_Desktop/dialogadd.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QDialog \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qdialog.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QLineEdit \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QPushButton \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qpushbutton.h \
 		../IRealtor_Desktop/realtyobject.h
 	/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib ../IRealtor_Desktop/realtyobject.h -o moc_realtyobject.cpp
 
@@ -554,11 +574,16 @@ moc_exportxls.cpp: ../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.frame
 		../IRealtor_Desktop/exportxls.h
 	/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib ../IRealtor_Desktop/exportxls.h -o moc_exportxls.cpp
 
+moc_dialogadd.cpp: ../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QDialog \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qdialog.h \
+		../IRealtor_Desktop/dialogadd.h
+	/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/mkspecs/macx-clang -I/Users/diesel/Projects/Qt/IRealtor_Desktop/IRealtor_Desktop -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtGui.framework/Headers -I/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Headers -I. -F/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/lib ../IRealtor_Desktop/dialogadd.h -o moc_dialogadd.cpp
+
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h ui_realtyobject.h ui_settings.h ui_exportxls.h
+compiler_uic_make_all: ui_mainwindow.h ui_realtyobject.h ui_settings.h ui_exportxls.h ui_dialogadd.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h ui_realtyobject.h ui_settings.h ui_exportxls.h
+	-$(DEL_FILE) ui_mainwindow.h ui_realtyobject.h ui_settings.h ui_exportxls.h ui_dialogadd.h
 ui_mainwindow.h: ../IRealtor_Desktop/mainwindow.ui
 	/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/bin/uic ../IRealtor_Desktop/mainwindow.ui -o ui_mainwindow.h
 
@@ -570,6 +595,9 @@ ui_settings.h: ../IRealtor_Desktop/settings.ui
 
 ui_exportxls.h: ../IRealtor_Desktop/exportxls.ui
 	/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/bin/uic ../IRealtor_Desktop/exportxls.ui -o ui_exportxls.h
+
+ui_dialogadd.h: ../IRealtor_Desktop/dialogadd.ui
+	/Users/diesel/DevTools/Qt5.3.1/5.3/clang_64/bin/uic ../IRealtor_Desktop/dialogadd.ui -o ui_dialogadd.h
 
 compiler_rez_source_make_all:
 compiler_rez_source_clean:
@@ -591,9 +619,14 @@ main.o: ../IRealtor_Desktop/main.cpp ../IRealtor_Desktop/mainwindow.h \
 		../IRealtor_Desktop/realtyobject.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
-		../IRealtor_Desktop/settings.h \
+		../IRealtor_Desktop/dialogadd.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QDialog \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qdialog.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QLineEdit \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QPushButton \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qpushbutton.h \
+		../IRealtor_Desktop/settings.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QApplication \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../IRealtor_Desktop/main.cpp
@@ -606,16 +639,23 @@ mainwindow.o: ../IRealtor_Desktop/mainwindow.cpp ../IRealtor_Desktop/mainwindow.
 		../IRealtor_Desktop/realtyobject.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QWidget \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
-		../IRealtor_Desktop/settings.h \
+		../IRealtor_Desktop/dialogadd.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QDialog \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qdialog.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QLineEdit \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QPushButton \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qpushbutton.h \
+		../IRealtor_Desktop/settings.h \
 		ui_mainwindow.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QSettings \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qsettings.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Versions/5/Headers/QSqlError \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Versions/5/Headers/qsqlerror.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Versions/5/Headers/QSqlTableModel \
-		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Versions/5/Headers/qsqltablemodel.h
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Versions/5/Headers/qsqltablemodel.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMessageBox \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../IRealtor_Desktop/mainwindow.cpp
 
 realtyobject.o: ../IRealtor_Desktop/realtyobject.cpp ../IRealtor_Desktop/realtyobject.h \
@@ -623,11 +663,20 @@ realtyobject.o: ../IRealtor_Desktop/realtyobject.cpp ../IRealtor_Desktop/realtyo
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qwidget.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QDebug \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qdebug.h \
+		../IRealtor_Desktop/dialogadd.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QDialog \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qdialog.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QLineEdit \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qlineedit.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QPushButton \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qpushbutton.h \
 		ui_realtyobject.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/QSettings \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtCore.framework/Versions/5/Headers/qsettings.h \
 		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Versions/5/Headers/QSqlError \
-		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Versions/5/Headers/qsqlerror.h
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtSql.framework/Versions/5/Headers/qsqlerror.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QMessageBox \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o realtyobject.o ../IRealtor_Desktop/realtyobject.cpp
 
 settings.o: ../IRealtor_Desktop/settings.cpp ../IRealtor_Desktop/settings.h \
@@ -644,6 +693,12 @@ exportxls.o: ../IRealtor_Desktop/exportxls.cpp ../IRealtor_Desktop/exportxls.h \
 		ui_exportxls.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o exportxls.o ../IRealtor_Desktop/exportxls.cpp
 
+dialogadd.o: ../IRealtor_Desktop/dialogadd.cpp ../IRealtor_Desktop/dialogadd.h \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/QDialog \
+		../../../../DevTools/Qt5.3.1/5.3/clang_64/lib/QtWidgets.framework/Versions/5/Headers/qdialog.h \
+		ui_dialogadd.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dialogadd.o ../IRealtor_Desktop/dialogadd.cpp
+
 qrc_res.o: qrc_res.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_res.o qrc_res.cpp
 
@@ -658,6 +713,9 @@ moc_settings.o: moc_settings.cpp
 
 moc_exportxls.o: moc_exportxls.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_exportxls.o moc_exportxls.cpp
+
+moc_dialogadd.o: moc_dialogadd.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_dialogadd.o moc_dialogadd.cpp
 
 ####### Install
 

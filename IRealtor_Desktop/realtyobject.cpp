@@ -2,6 +2,7 @@
 #include "ui_realtyobject.h"
 #include <QSettings>
 #include <QSqlError>
+#include <QMessageBox>
 
 RealtyObject::RealtyObject(QWidget *parent) :
     QWidget(parent),
@@ -19,6 +20,7 @@ RealtyObject::RealtyObject(QWidget *parent) :
 RealtyObject::~RealtyObject()
 {
     delete ui;
+    db.close();
 }
 
 bool RealtyObject::createConnection(){
@@ -59,6 +61,7 @@ void RealtyObject::getObjectData(){
 void RealtyObject::getData(){
     if (!db.open() && !createConnection()){
         qDebug() << "Not connected status!";
+        QMessageBox::critical(0, QObject::tr("Database Error"),db.lastError().text());
     }
     else{
         qDebug() << "Connected get data!";
@@ -95,7 +98,7 @@ void RealtyObject::getData(){
             int index =  query.value(0).toInt();
             QString name = query.value(1).toString();
 
-            ui->cmbType->insertItem(index, name);
+            ui->cmbType->insertItem(index, name, QVariant(index));
         }
 
         // Status
@@ -106,7 +109,7 @@ void RealtyObject::getData(){
             int index =  query.value(0).toInt();
             QString name = query.value(1).toString();
 
-            ui->cmbStatus->insertItem(index, name);
+            ui->cmbStatus->insertItem(index, name, QVariant(index));
         }
 
         // Material
@@ -117,7 +120,7 @@ void RealtyObject::getData(){
             int index =  query.value(0).toInt();
             QString name = query.value(1).toString();
 
-            ui->cmbMaterial->insertItem(index, name);
+            ui->cmbMaterial->insertItem(index, name, QVariant(index));
         }
 
         // Document property
@@ -128,7 +131,7 @@ void RealtyObject::getData(){
             int index =  query.value(0).toInt();
             QString name = query.value(1).toString();
 
-            ui->cmbDocProperty->insertItem(index, name);
+            ui->cmbDocProperty->insertItem(index, name, QVariant(index));
         }
 
         // trade
@@ -139,7 +142,7 @@ void RealtyObject::getData(){
             int index =  query.value(0).toInt();
             QString name = query.value(1).toString();
 
-            ui->cmbTradeType->insertItem(index, name);
+            ui->cmbTradeType->insertItem(index, name, QVariant(index));
         }
 
         // type_apartment
@@ -150,10 +153,12 @@ void RealtyObject::getData(){
             int index =  query.value(0).toInt();
             QString name = query.value(1).toString();
 
-            ui->cmbTypeApartament->insertItem(index, name);
+            ui->cmbTypeApartament->insertItem(index, name, QVariant(index));
         }
 
     }
+
+    db.close();
 }
 
 void RealtyObject::saveData(){
@@ -165,11 +170,11 @@ void RealtyObject::saveData(){
         QSqlQuery query;
         query.prepare("INSERT INTO realtyobjects (address, region_id, type_id, status_id, trade_id, date_create, rooms, total_area, floor_area, kitchen_area, floors, floor, material_id, balkony, loggia, type_apartment_id, owner_id, document_property_id, contact_phone, internet, phone, cabletv, central_heating, central_water, central_sewage, price, percentage_commission, amount_commission, coordinates, description) VALUES (:address, :region_id, :type_id, :status_id, :trade_id, :date_create, :rooms, :total_area, :floor_area, :kitchen_area, :floors, :floor, :material_id, :balkony, :loggia, :type_apartment_id, :owner_id, :document_property_id, :contact_phone, :internet, :phone, :cabletv, :central_heating, :central_water, :central_sewage, :price, :percentage_commission, :amount_commission, :coordinates, :description);");
         query.bindValue(":address",             ui->leAddress->text());
-        QVariant a = ui->cmbRegion->currentData(ui->cmbRegion->currentIndex()); // http://www.qtcentre.org/threads/3887-QComboBox-insertItem()-not-honoring-id
-        query.bindValue(":region_id",           ui->cmbRegion->currentIndex());
-        query.bindValue(":type_id",             ui->cmbType->currentIndex());
-        query.bindValue(":status_id",           ui->cmbStatus->currentIndex());
-        query.bindValue(":trade_id",            ui->cmbTradeType->currentIndex());
+        // http://www.qtcentre.org/threads/3887-QComboBox-insertItem()-not-honoring-id
+        query.bindValue(":region_id",           ui->cmbRegion->currentData());
+        query.bindValue(":type_id",             ui->cmbType->currentData());
+        query.bindValue(":status_id",           ui->cmbStatus->currentData());
+        query.bindValue(":trade_id",            ui->cmbTradeType->currentData());
         query.bindValue(":date_create",         ui->dtCreate->date());
         query.bindValue(":rooms",               ui->spnRooms->value());
         query.bindValue(":total_area",          ui->spnTotalArea->value());
@@ -177,12 +182,12 @@ void RealtyObject::saveData(){
         query.bindValue(":kitchen_area",        ui->spnKitchenArea->value());
         query.bindValue(":floors",              ui->spnFloors->value());
         query.bindValue(":floor",               ui->spnFloor->value());
-        query.bindValue(":material_id",         ui->cmbMaterial->currentIndex());
+        query.bindValue(":material_id",         ui->cmbMaterial->currentData());
         query.bindValue(":balkony",             ui->chbBalkony->checkState());
         query.bindValue(":loggia",              ui->chbLoggia->checkState());
-        query.bindValue(":type_apartment_id",   ui->cmbTypeApartament->currentIndex());
+        query.bindValue(":type_apartment_id",   ui->cmbTypeApartament->currentData());
         query.bindValue(":owner_id",            ui->leOwner->text());
-        query.bindValue(":document_property_id", ui->cmbDocProperty->currentIndex());
+        query.bindValue(":document_property_id", ui->cmbDocProperty->currentData());
         query.bindValue(":contact_phone",       ui->lePhone->text());
         query.bindValue(":internet",            ui->chbInternet->checkState());
         query.bindValue(":phone",               ui->chbPhone->checkState());
@@ -198,11 +203,14 @@ void RealtyObject::saveData(){
 
         if( !query.exec() ){
             qDebug() << "Failed to add tag " << query.lastError().text();
+            QMessageBox::critical(0, QObject::tr("Database Error"),db.lastError().text());
         } else {
             close();
         }
 
     }
+
+    db.close();
 }
 
 void RealtyObject::getSettings(){
@@ -212,4 +220,34 @@ void RealtyObject::getSettings(){
     strPortDB = options.value("port").toString();
     strUserDB = options.value("user").toString();
     strPasswordDB = options.value("password").toString();
+}
+
+void RealtyObject::addRegion(){
+
+    DialogAdd dial; // создаём диалог
+
+    dial.strTableName = "region";
+    dial.getData();
+    dial.exec();
+
+}
+
+void RealtyObject::addType(){
+
+    DialogAdd dial; // создаём диалог
+
+    dial.strTableName = "type";
+    dial.getData();
+    dial.exec();
+
+}
+
+void RealtyObject::addStatus(){
+
+    DialogAdd dial; // создаём диалог
+
+    dial.strTableName = "status";
+    dial.getData();
+    dial.exec();
+
 }

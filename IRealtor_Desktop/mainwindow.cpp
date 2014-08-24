@@ -32,9 +32,12 @@ MainWindow::MainWindow(QWidget *parent):
 
 }
 
+// SELECT `realtyobjects`.`region_id`, `realtyobjects`.`type_id`, `realtyobjects`.`status_id`, `realtyobjects`.`trade_id`, `region`.`name` AS `Region`, `type`.`name` AS `Type` FROM `realtyobjects` JOIN `region` ON `realtyobjects`.`region_id` = `region`.`id` JOIN `type` ON `realtyobjects`.`type_id` = `type`.`id`
+
 MainWindow::~MainWindow()
 {
     delete ui;
+    db.close();
 }
 
 bool MainWindow::createConnection(){
@@ -140,13 +143,12 @@ void MainWindow::readRealtyObjects(){
     QSqlTableModel *model = new QSqlTableModel();
     model->setTable("realtyobjects");          // Имя таблицы базы данных.
     //model->setFilter("salary >= 1000");   // Условие WHERE.
-    model->setSort(0, Qt::DescendingOrder); // Сортировка по убыванию id.
+    model->setSort(0, Qt::AscendingOrder); // Сортировка по возрастанию id.
     model->select();                      // Получить данные.
 
     ui->tvRealtyObjects->setModel(model);
     ui->tvRealtyObjects->setAlternatingRowColors(true);
     ui->tvRealtyObjects->resizeRowsToContents();
     ui->tvRealtyObjects->resizeColumnsToContents();
-
 }
 

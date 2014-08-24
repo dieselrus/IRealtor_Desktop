@@ -6,7 +6,9 @@
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlDriver>
 #include <QtSql/QSqlQuery>
+
 #include <QDebug>
+#include "dialogadd.h"
 
 namespace Ui {
 class RealtyObject;
@@ -30,12 +32,13 @@ private:
     QString strUserDB;
     QString strPasswordDB;
 
-     QHash<QString, int> hRegion;
-
 private slots:
     void saveData();
     void getData();
     void getSettings();
+    void addRegion();
+    void addType();
+    void addStatus();
 };
 
 #endif // REALTYOBJECT_H

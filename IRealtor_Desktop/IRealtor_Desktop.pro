@@ -16,17 +16,20 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     realtyobject.cpp \
     settings.cpp \
-    exportxls.cpp
+    exportxls.cpp \
+    dialogadd.cpp
 
 HEADERS  += mainwindow.h \
     realtyobject.h \
     settings.h \
-    exportxls.h
+    exportxls.h \
+    dialogadd.h
 
 FORMS    += mainwindow.ui \
     realtyobject.ui \
     settings.ui \
-    exportxls.ui
+    exportxls.ui \
+    dialogadd.ui
 
 RESOURCES += \
     res.qrc

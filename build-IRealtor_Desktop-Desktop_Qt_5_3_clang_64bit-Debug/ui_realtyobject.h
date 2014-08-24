@@ -153,7 +153,7 @@ public:
     {
         if (RealtyObject->objectName().isEmpty())
             RealtyObject->setObjectName(QStringLiteral("RealtyObject"));
-        RealtyObject->resize(1000, 524);
+        RealtyObject->resize(1000, 526);
         QFont font;
         font.setPointSize(14);
         RealtyObject->setFont(font);
@@ -678,6 +678,8 @@ public:
         retranslateUi(RealtyObject);
         QObject::connect(buttonBox, SIGNAL(accepted()), RealtyObject, SLOT(saveData()));
         QObject::connect(buttonBox, SIGNAL(rejected()), RealtyObject, SLOT(close()));
+        QObject::connect(pushButton_2, SIGNAL(clicked()), RealtyObject, SLOT(addRegion()));
+        QObject::connect(pushButton_5, SIGNAL(clicked()), RealtyObject, SLOT(addType()));
 
         tabWidget->setCurrentIndex(0);
 
