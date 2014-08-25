@@ -27,7 +27,7 @@ bool RealtyObject::createConnection(){
     db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName(strServerDB);
     //db.port(strPortDB);
-    db.setDatabaseName("IRealtor2");
+    db.setDatabaseName("IRealtor");
     db.setUserName(strUserDB);
     db.setPassword(strPasswordDB);
     if (!db.open()) {
@@ -156,6 +156,17 @@ void RealtyObject::getData(){
             ui->cmbTypeApartament->insertItem(index, name, QVariant(index));
         }
 
+        // address
+        query.clear();
+        query.exec("SELECT id, view FROM address");
+
+        while (query.next()) {
+            //int index =  query.value(0).toInt();
+            QString name = query.value(1).toString();
+
+            ui->leAddress->setText(name);
+        }
+
     }
 
     db.close();
@@ -167,9 +178,27 @@ void RealtyObject::saveData(){
     }
     else{
         //qDebug() << "Connected realty objects!";
+
+        db.transaction();
+
+        QSqlQuery query_address;
+        // add address
+        QString sql_address = "INSERT INTO address (view)  VALUE ('" + ui->leAddress->text() + "');";
+
+        if( !query_address.exec(sql_address) ){
+            qDebug() << "Failed to add region. " << query_address.lastError().text();
+            QMessageBox::critical(0, QObject::tr("Database Error"), db.lastError().text());
+            db.rollback();
+            return;
+        } else {
+            //close();
+            qDebug()<<"last inserted address id:" << query_address.lastInsertId().toString();
+        }
+
+        // add realty objects
         QSqlQuery query;
         query.prepare("INSERT INTO realtyobjects (address, region_id, type_id, status_id, trade_id, date_create, rooms, total_area, floor_area, kitchen_area, floors, floor, material_id, balkony, loggia, type_apartment_id, owner_id, document_property_id, contact_phone, internet, phone, cabletv, central_heating, central_water, central_sewage, price, percentage_commission, amount_commission, coordinates, description) VALUES (:address, :region_id, :type_id, :status_id, :trade_id, :date_create, :rooms, :total_area, :floor_area, :kitchen_area, :floors, :floor, :material_id, :balkony, :loggia, :type_apartment_id, :owner_id, :document_property_id, :contact_phone, :internet, :phone, :cabletv, :central_heating, :central_water, :central_sewage, :price, :percentage_commission, :amount_commission, :coordinates, :description);");
-        query.bindValue(":address",             ui->leAddress->text());
+        query.bindValue(":address",             query_address.lastInsertId().toString());
         // http://www.qtcentre.org/threads/3887-QComboBox-insertItem()-not-honoring-id
         query.bindValue(":region_id",           ui->cmbRegion->currentData());
         query.bindValue(":type_id",             ui->cmbType->currentData());
@@ -210,7 +239,9 @@ void RealtyObject::saveData(){
 
     }
 
+    db.commit();
     db.close();
+
 }
 
 void RealtyObject::getSettings(){
@@ -227,6 +258,7 @@ void RealtyObject::addRegion(){
     DialogAdd dial; // создаём диалог
 
     dial.strTableName = "region";
+    dial.strWindowName = "Район";
     dial.getData();
     dial.exec();
 
@@ -237,6 +269,7 @@ void RealtyObject::addType(){
     DialogAdd dial; // создаём диалог
 
     dial.strTableName = "type";
+    dial.strWindowName = "Тип объекта";
     dial.getData();
     dial.exec();
 
@@ -247,7 +280,57 @@ void RealtyObject::addStatus(){
     DialogAdd dial; // создаём диалог
 
     dial.strTableName = "status";
+    dial.strWindowName = "Статус объекта";
     dial.getData();
     dial.exec();
 
+}
+
+void RealtyObject::addTradeType(){
+
+    DialogAdd dial; // создаём диалог
+
+    dial.strTableName = "trade";
+    dial.strWindowName = "Тип сделки";
+    dial.getData();
+    dial.exec();
+
+}
+
+void RealtyObject::addMaterial(){
+
+    DialogAdd dial; // создаём диалог
+
+    dial.strTableName = "material";
+    dial.strWindowName = "Материал изготовления";
+    dial.getData();
+    dial.exec();
+
+}
+
+void RealtyObject::addTypeApartament(){
+
+    DialogAdd dial; // создаём диалог
+
+    dial.strTableName = "type_apartment";
+    dial.strWindowName = "Тип";
+    dial.getData();
+    dial.exec();
+
+}
+
+void RealtyObject::addDocumentProperty(){
+
+    DialogAdd dial; // создаём диалог
+
+    dial.strTableName = "document_property";
+    dial.strWindowName = "Документ собственности";
+    dial.getData();
+    dial.exec();
+
+}
+
+
+void RealtyObject::updateData(){
+    getData();
 }

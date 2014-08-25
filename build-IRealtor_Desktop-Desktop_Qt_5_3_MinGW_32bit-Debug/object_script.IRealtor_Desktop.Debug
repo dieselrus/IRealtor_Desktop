@@ -4,9 +4,11 @@ INPUT(
 ./debug\realtyobject.o
 ./debug\settings.o
 ./debug\exportxls.o
+./debug\dialogadd.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_realtyobject.o
 ./debug\moc_settings.o
 ./debug\moc_exportxls.o
+./debug\moc_dialogadd.o
 );

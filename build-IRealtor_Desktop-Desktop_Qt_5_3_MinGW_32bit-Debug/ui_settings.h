@@ -103,6 +103,7 @@ public:
 
         lePassword = new QLineEdit(groupBox);
         lePassword->setObjectName(QStringLiteral("lePassword"));
+        lePassword->setEchoMode(QLineEdit::PasswordEchoOnEdit);
 
         formLayout->setWidget(3, QFormLayout::FieldRole, lePassword);
 

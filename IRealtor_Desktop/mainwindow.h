@@ -41,6 +41,8 @@ private:
 private slots:
     void openFormRealtyObjects();
     void opensettings();
+
+public slots:
     void readRealtyObjects();
 
 };

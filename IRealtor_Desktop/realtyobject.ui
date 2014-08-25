@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
+    <width>1078</width>
     <height>526</height>
    </rect>
   </property>
@@ -737,8 +737,8 @@
    <slot>saveData()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>642</x>
-     <y>521</y>
+     <x>651</x>
+     <y>516</y>
     </hint>
     <hint type="destinationlabel">
      <x>580</x>
@@ -753,8 +753,8 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>721</x>
-     <y>521</y>
+     <x>730</x>
+     <y>516</y>
     </hint>
     <hint type="destinationlabel">
      <x>770</x>
@@ -785,12 +785,92 @@
    <slot>addType()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>960</x>
-     <y>61</y>
+     <x>1067</x>
+     <y>77</y>
     </hint>
     <hint type="destinationlabel">
      <x>994</x>
      <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>RealtyObject</receiver>
+   <slot>addTradeType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>538</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>551</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>RealtyObject</receiver>
+   <slot>addMaterial()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1025</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1081</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>RealtyObject</receiver>
+   <slot>addTypeApartament()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>293</x>
+     <y>453</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>360</x>
+     <y>482</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>RealtyObject</receiver>
+   <slot>addStatus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>820</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>934</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>RealtyObject</receiver>
+   <slot>addDocumentProperty()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1018</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1061</x>
+     <y>84</y>
     </hint>
    </hints>
   </connection>
@@ -799,5 +879,10 @@
   <slot>saveData()</slot>
   <slot>addRegion()</slot>
   <slot>addType()</slot>
+  <slot>addTradeType()</slot>
+  <slot>addTypeApartament()</slot>
+  <slot>addMaterial()</slot>
+  <slot>addStatus()</slot>
+  <slot>addDocumentProperty()</slot>
  </slots>
 </ui>

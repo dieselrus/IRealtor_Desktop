@@ -4,9 +4,11 @@ INPUT(
 ./release\realtyobject.o
 ./release\settings.o
 ./release\exportxls.o
+./release\dialogadd.o
 ./release\qrc_res.o
 ./release\moc_mainwindow.o
 ./release\moc_realtyobject.o
 ./release\moc_settings.o
 ./release\moc_exportxls.o
+./release\moc_dialogadd.o
 );

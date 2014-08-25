@@ -3,6 +3,7 @@
 #include <QSettings>
 #include <QSqlError>
 #include <QSqlTableModel>
+#include <QSqlQueryModel>
 #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent):
@@ -44,7 +45,7 @@ bool MainWindow::createConnection(){
     db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName(strServerDB);
     //db.port(strPortDB);
-    db.setDatabaseName("IRealtor2");
+    db.setDatabaseName("IRealtor");
     db.setUserName(strUserDB);
     db.setPassword(strPasswordDB);
     if (!db.open()) {
@@ -119,12 +120,17 @@ void MainWindow::getStatus(){
 // Open form realty objects
 void MainWindow::openFormRealtyObjects(){
     formRO = new RealtyObject();
+    formRO->setAttribute(Qt::WA_DeleteOnClose);
+    //ui->MainWindow->addSubWindow(formRO);
     formRO->show();
+    formRO->activateWindow();
 }
 
 // Open form settings
 void MainWindow::opensettings(){
     formSettings = new settings();
+    formSettings->setAttribute(Qt::WA_DeleteOnClose);
+    //ui->MainWindow->addSubWindow(formSettings);
     formSettings->show();
 }
 
@@ -146,7 +152,15 @@ void MainWindow::readRealtyObjects(){
     model->setSort(0, Qt::AscendingOrder); // Сортировка по возрастанию id.
     model->select();                      // Получить данные.
 
-    ui->tvRealtyObjects->setModel(model);
+    QSqlQueryModel *_model = new QSqlQueryModel();
+    _model->setQuery("SELECT `realtyobjects`.`id` , `address`.`view` , `region`.`name`, `status`.`name` \
+                     FROM `realtyobjects` \
+                     JOIN `region` ON `realtyobjects`.`region_id` = `region`.`id` \
+                     JOIN `status` ON `realtyobjects`.`status_id` = `status`.`id` \
+                     JOIN `address` ON `realtyobjects`.`address` = `address`.`id`");
+    _model->setHeaderData(2, Qt::Horizontal, tr("Name"));
+
+    ui->tvRealtyObjects->setModel(_model);
     ui->tvRealtyObjects->setAlternatingRowColors(true);
     ui->tvRealtyObjects->resizeRowsToContents();
     ui->tvRealtyObjects->resizeColumnsToContents();

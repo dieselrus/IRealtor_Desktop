@@ -42,17 +42,21 @@ class Ui_RealtyObject
 public:
     QVBoxLayout *verticalLayout;
     QGridLayout *gridLayout;
-    QComboBox *cmbRegion;
-    QComboBox *cmbTradeType;
-    QComboBox *cmbStatus;
+    QPushButton *pushButton_3;
+    QPushButton *pushButton_2;
+    QLineEdit *leAddress;
+    QPushButton *pushButton;
+    QLabel *label_5;
+    QLabel *label_4;
+    QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
-    QLabel *label;
+    QComboBox *cmbStatus;
+    QComboBox *cmbTradeType;
+    QComboBox *cmbRegion;
+    QPushButton *pushButton_4;
     QComboBox *cmbType;
-    QLabel *label_4;
-    QLineEdit *leAddress;
-    QLabel *label_5;
-    QPushButton *pushButton;
+    QPushButton *pushButton_5;
     QTabWidget *tabWidget;
     QWidget *tab;
     QGridLayout *gridLayout_2;
@@ -81,6 +85,7 @@ public:
     QSpinBox *spnFloors;
     QLabel *label_16;
     QComboBox *cmbMaterial;
+    QPushButton *pushButton_6;
     QHBoxLayout *horizontalLayout_4;
     QCheckBox *chbBalkony;
     QSpacerItem *horizontalSpacer_4;
@@ -90,15 +95,21 @@ public:
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_19;
     QComboBox *cmbTypeApartament;
+    QPushButton *pushButton_7;
     QSpacerItem *horizontalSpacer_5;
     QWidget *tab_2;
-    QFormLayout *formLayout;
+    QVBoxLayout *verticalLayout_8;
+    QHBoxLayout *horizontalLayout_8;
     QLabel *label_20;
     QLineEdit *leOwner;
+    QHBoxLayout *horizontalLayout_9;
     QLabel *label_21;
     QComboBox *cmbDocProperty;
+    QPushButton *pushButton_8;
+    QHBoxLayout *horizontalLayout_10;
     QLabel *label_22;
     QLineEdit *lePhone;
+    QSpacerItem *verticalSpacer_2;
     QWidget *tab_3;
     QVBoxLayout *verticalLayout_4;
     QGroupBox *groupBox_3;
@@ -142,7 +153,7 @@ public:
     {
         if (RealtyObject->objectName().isEmpty())
             RealtyObject->setObjectName(QStringLiteral("RealtyObject"));
-        RealtyObject->resize(778, 514);
+        RealtyObject->resize(1078, 526);
         QFont font;
         font.setPointSize(14);
         RealtyObject->setFont(font);
@@ -151,60 +162,80 @@ public:
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        cmbRegion = new QComboBox(RealtyObject);
-        cmbRegion->setObjectName(QStringLiteral("cmbRegion"));
+        pushButton_3 = new QPushButton(RealtyObject);
+        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
 
-        gridLayout->addWidget(cmbRegion, 1, 1, 1, 2);
+        gridLayout->addWidget(pushButton_3, 1, 8, 1, 1);
 
-        cmbTradeType = new QComboBox(RealtyObject);
-        cmbTradeType->setObjectName(QStringLiteral("cmbTradeType"));
+        pushButton_2 = new QPushButton(RealtyObject);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
 
-        gridLayout->addWidget(cmbTradeType, 1, 5, 1, 2);
-
-        cmbStatus = new QComboBox(RealtyObject);
-        cmbStatus->setObjectName(QStringLiteral("cmbStatus"));
-
-        gridLayout->addWidget(cmbStatus, 1, 9, 1, 2);
-
-        label_2 = new QLabel(RealtyObject);
-        label_2->setObjectName(QStringLiteral("label_2"));
-
-        gridLayout->addWidget(label_2, 1, 3, 1, 2);
-
-        label_3 = new QLabel(RealtyObject);
-        label_3->setObjectName(QStringLiteral("label_3"));
-
-        gridLayout->addWidget(label_3, 1, 7, 1, 2);
-
-        label = new QLabel(RealtyObject);
-        label->setObjectName(QStringLiteral("label"));
-
-        gridLayout->addWidget(label, 1, 0, 1, 1);
-
-        cmbType = new QComboBox(RealtyObject);
-        cmbType->setObjectName(QStringLiteral("cmbType"));
-
-        gridLayout->addWidget(cmbType, 1, 12, 1, 2);
-
-        label_4 = new QLabel(RealtyObject);
-        label_4->setObjectName(QStringLiteral("label_4"));
-
-        gridLayout->addWidget(label_4, 1, 11, 1, 1);
+        gridLayout->addWidget(pushButton_2, 1, 3, 1, 1);
 
         leAddress = new QLineEdit(RealtyObject);
         leAddress->setObjectName(QStringLiteral("leAddress"));
 
-        gridLayout->addWidget(leAddress, 0, 3, 1, 10);
+        gridLayout->addWidget(leAddress, 0, 3, 1, 13);
+
+        pushButton = new QPushButton(RealtyObject);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+
+        gridLayout->addWidget(pushButton, 0, 16, 1, 1);
 
         label_5 = new QLabel(RealtyObject);
         label_5->setObjectName(QStringLiteral("label_5"));
 
         gridLayout->addWidget(label_5, 0, 0, 1, 3);
 
-        pushButton = new QPushButton(RealtyObject);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
+        label_4 = new QLabel(RealtyObject);
+        label_4->setObjectName(QStringLiteral("label_4"));
 
-        gridLayout->addWidget(pushButton, 0, 13, 1, 1);
+        gridLayout->addWidget(label_4, 1, 14, 1, 1);
+
+        label = new QLabel(RealtyObject);
+        label->setObjectName(QStringLiteral("label"));
+
+        gridLayout->addWidget(label, 1, 0, 1, 1);
+
+        label_2 = new QLabel(RealtyObject);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        gridLayout->addWidget(label_2, 1, 4, 1, 2);
+
+        label_3 = new QLabel(RealtyObject);
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        gridLayout->addWidget(label_3, 1, 9, 1, 2);
+
+        cmbStatus = new QComboBox(RealtyObject);
+        cmbStatus->setObjectName(QStringLiteral("cmbStatus"));
+
+        gridLayout->addWidget(cmbStatus, 1, 11, 1, 2);
+
+        cmbTradeType = new QComboBox(RealtyObject);
+        cmbTradeType->setObjectName(QStringLiteral("cmbTradeType"));
+
+        gridLayout->addWidget(cmbTradeType, 1, 6, 1, 2);
+
+        cmbRegion = new QComboBox(RealtyObject);
+        cmbRegion->setObjectName(QStringLiteral("cmbRegion"));
+
+        gridLayout->addWidget(cmbRegion, 1, 1, 1, 2);
+
+        pushButton_4 = new QPushButton(RealtyObject);
+        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+
+        gridLayout->addWidget(pushButton_4, 1, 13, 1, 1);
+
+        cmbType = new QComboBox(RealtyObject);
+        cmbType->setObjectName(QStringLiteral("cmbType"));
+
+        gridLayout->addWidget(cmbType, 1, 15, 1, 1);
+
+        pushButton_5 = new QPushButton(RealtyObject);
+        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+
+        gridLayout->addWidget(pushButton_5, 1, 16, 1, 1);
 
 
         verticalLayout->addLayout(gridLayout);
@@ -341,6 +372,11 @@ public:
 
         horizontalLayout_2->addWidget(cmbMaterial);
 
+        pushButton_6 = new QPushButton(groupBox_2);
+        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
+
+        horizontalLayout_2->addWidget(pushButton_6);
+
 
         gridLayout_2->addWidget(groupBox_2, 3, 0, 1, 3);
 
@@ -384,6 +420,11 @@ public:
 
         horizontalLayout_5->addWidget(cmbTypeApartament);
 
+        pushButton_7 = new QPushButton(tab);
+        pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
+
+        horizontalLayout_5->addWidget(pushButton_7);
+
         horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_5->addItem(horizontalSpacer_5);
@@ -394,37 +435,68 @@ public:
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
-        formLayout = new QFormLayout(tab_2);
-        formLayout->setObjectName(QStringLiteral("formLayout"));
+        verticalLayout_8 = new QVBoxLayout(tab_2);
+        verticalLayout_8->setObjectName(QStringLiteral("verticalLayout_8"));
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
         label_20 = new QLabel(tab_2);
         label_20->setObjectName(QStringLiteral("label_20"));
 
-        formLayout->setWidget(0, QFormLayout::LabelRole, label_20);
+        horizontalLayout_8->addWidget(label_20);
 
         leOwner = new QLineEdit(tab_2);
         leOwner->setObjectName(QStringLiteral("leOwner"));
 
-        formLayout->setWidget(0, QFormLayout::FieldRole, leOwner);
+        horizontalLayout_8->addWidget(leOwner);
 
+
+        verticalLayout_8->addLayout(horizontalLayout_8);
+
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
         label_21 = new QLabel(tab_2);
         label_21->setObjectName(QStringLiteral("label_21"));
 
-        formLayout->setWidget(1, QFormLayout::LabelRole, label_21);
+        horizontalLayout_9->addWidget(label_21);
 
         cmbDocProperty = new QComboBox(tab_2);
         cmbDocProperty->setObjectName(QStringLiteral("cmbDocProperty"));
+        sizePolicy.setHeightForWidth(cmbDocProperty->sizePolicy().hasHeightForWidth());
+        cmbDocProperty->setSizePolicy(sizePolicy);
 
-        formLayout->setWidget(1, QFormLayout::FieldRole, cmbDocProperty);
+        horizontalLayout_9->addWidget(cmbDocProperty);
 
+        pushButton_8 = new QPushButton(tab_2);
+        pushButton_8->setObjectName(QStringLiteral("pushButton_8"));
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(pushButton_8->sizePolicy().hasHeightForWidth());
+        pushButton_8->setSizePolicy(sizePolicy1);
+
+        horizontalLayout_9->addWidget(pushButton_8);
+
+
+        verticalLayout_8->addLayout(horizontalLayout_9);
+
+        horizontalLayout_10 = new QHBoxLayout();
+        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
         label_22 = new QLabel(tab_2);
         label_22->setObjectName(QStringLiteral("label_22"));
 
-        formLayout->setWidget(2, QFormLayout::LabelRole, label_22);
+        horizontalLayout_10->addWidget(label_22);
 
         lePhone = new QLineEdit(tab_2);
         lePhone->setObjectName(QStringLiteral("lePhone"));
 
-        formLayout->setWidget(2, QFormLayout::FieldRole, lePhone);
+        horizontalLayout_10->addWidget(lePhone);
+
+
+        verticalLayout_8->addLayout(horizontalLayout_10);
+
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_8->addItem(verticalSpacer_2);
 
         tabWidget->addTab(tab_2, QString());
         tab_3 = new QWidget();
@@ -496,11 +568,11 @@ public:
 
         spnPrice = new QSpinBox(groupBox_5);
         spnPrice->setObjectName(QStringLiteral("spnPrice"));
-        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Expanding);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(spnPrice->sizePolicy().hasHeightForWidth());
-        spnPrice->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Expanding);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(spnPrice->sizePolicy().hasHeightForWidth());
+        spnPrice->setSizePolicy(sizePolicy2);
         spnPrice->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         spnPrice->setMaximum(999999999);
         spnPrice->setDisplayIntegerBase(10);
@@ -519,8 +591,8 @@ public:
 
         spnAmountCommission = new QSpinBox(groupBox_5);
         spnAmountCommission->setObjectName(QStringLiteral("spnAmountCommission"));
-        sizePolicy1.setHeightForWidth(spnAmountCommission->sizePolicy().hasHeightForWidth());
-        spnAmountCommission->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(spnAmountCommission->sizePolicy().hasHeightForWidth());
+        spnAmountCommission->setSizePolicy(sizePolicy2);
         spnAmountCommission->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         spnAmountCommission->setMaximum(999999999);
         spnAmountCommission->setDisplayIntegerBase(10);
@@ -596,6 +668,8 @@ public:
 
         buttonBox = new QDialogButtonBox(RealtyObject);
         buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        sizePolicy.setHeightForWidth(buttonBox->sizePolicy().hasHeightForWidth());
+        buttonBox->setSizePolicy(sizePolicy);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
         verticalLayout->addWidget(buttonBox);
@@ -604,6 +678,13 @@ public:
         retranslateUi(RealtyObject);
         QObject::connect(buttonBox, SIGNAL(accepted()), RealtyObject, SLOT(saveData()));
         QObject::connect(buttonBox, SIGNAL(rejected()), RealtyObject, SLOT(close()));
+        QObject::connect(pushButton_2, SIGNAL(clicked()), RealtyObject, SLOT(addRegion()));
+        QObject::connect(pushButton_5, SIGNAL(clicked()), RealtyObject, SLOT(addType()));
+        QObject::connect(pushButton_3, SIGNAL(clicked()), RealtyObject, SLOT(addTradeType()));
+        QObject::connect(pushButton_6, SIGNAL(clicked()), RealtyObject, SLOT(addMaterial()));
+        QObject::connect(pushButton_7, SIGNAL(clicked()), RealtyObject, SLOT(addTypeApartament()));
+        QObject::connect(pushButton_4, SIGNAL(clicked()), RealtyObject, SLOT(addStatus()));
+        QObject::connect(pushButton_8, SIGNAL(clicked()), RealtyObject, SLOT(addDocumentProperty()));
 
         tabWidget->setCurrentIndex(0);
 
@@ -614,12 +695,16 @@ public:
     void retranslateUi(QWidget *RealtyObject)
     {
         RealtyObject->setWindowTitle(QApplication::translate("RealtyObject", "Form", 0));
+        pushButton_3->setText(QApplication::translate("RealtyObject", "+", 0));
+        pushButton_2->setText(QApplication::translate("RealtyObject", "+", 0));
+        pushButton->setText(QApplication::translate("RealtyObject", "+", 0));
+        label_5->setText(QApplication::translate("RealtyObject", "\320\244\320\260\320\272\321\202\320\270\321\207\320\265\321\201\320\272\320\270\320\271 \320\260\320\264\321\200\320\265\321\201:", 0));
+        label_4->setText(QApplication::translate("RealtyObject", "\320\242\320\270\320\277:", 0));
+        label->setText(QApplication::translate("RealtyObject", "\320\240\320\260\320\271\320\276\320\275:", 0));
         label_2->setText(QApplication::translate("RealtyObject", "\320\242\320\270\320\277 \321\201\320\264\320\265\320\273\320\272\320\270:", 0));
         label_3->setText(QApplication::translate("RealtyObject", "\320\242\320\265\320\272. \321\201\321\202\320\260\321\202\321\203\321\201:", 0));
-        label->setText(QApplication::translate("RealtyObject", "\320\240\320\260\320\271\320\276\320\275:", 0));
-        label_4->setText(QApplication::translate("RealtyObject", "\320\242\320\270\320\277:", 0));
-        label_5->setText(QApplication::translate("RealtyObject", "\320\244\320\260\320\272\321\202\320\270\321\207\320\265\321\201\320\272\320\270\320\271 \320\260\320\264\321\200\320\265\321\201:", 0));
-        pushButton->setText(QApplication::translate("RealtyObject", "+", 0));
+        pushButton_4->setText(QApplication::translate("RealtyObject", "+", 0));
+        pushButton_5->setText(QApplication::translate("RealtyObject", "+", 0));
         label_6->setText(QApplication::translate("RealtyObject", "\320\224\320\260\321\202\320\260 \321\201\320\276\320\267\320\264\320\260\320\275\320\270\321\217\321\217:", 0));
         label_7->setText(QApplication::translate("RealtyObject", "\320\232\320\276\320\273\320\270\321\207\320\265\321\201\321\202\320\262\320\276 \320\272\320\276\320\274\320\275\320\260\321\202:", 0));
         groupBox->setTitle(QApplication::translate("RealtyObject", "\320\237\320\273\320\276\321\211\320\260\320\264\321\214", 0));
@@ -633,12 +718,15 @@ public:
         label_14->setText(QApplication::translate("RealtyObject", "\320\255\321\202\320\260\320\266:", 0));
         label_15->setText(QApplication::translate("RealtyObject", "\320\255\321\202\320\260\320\266\320\275\320\276\321\201\321\202\321\214:", 0));
         label_16->setText(QApplication::translate("RealtyObject", "\320\234\320\260\321\202\320\265\321\200\320\270\320\260\320\273:", 0));
+        pushButton_6->setText(QApplication::translate("RealtyObject", "+", 0));
         chbBalkony->setText(QApplication::translate("RealtyObject", "\320\221\320\260\320\273\320\272\320\276\320\275", 0));
         chbLoggia->setText(QApplication::translate("RealtyObject", "\320\233\320\276\320\264\320\266\320\270\321\217", 0));
         label_19->setText(QApplication::translate("RealtyObject", "\320\242\320\270\320\277 \320\272\320\262\320\260\321\200\321\202\320\270\321\200\321\213:", 0));
+        pushButton_7->setText(QApplication::translate("RealtyObject", "+", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("RealtyObject", "\320\242\320\265\321\205\320\277\320\260\321\200\320\260\320\274\320\265\321\202\321\200\321\213", 0));
         label_20->setText(QApplication::translate("RealtyObject", "\320\241\320\276\320\261\321\201\321\202\320\262\320\265\320\275\320\275\320\270\320\272:", 0));
         label_21->setText(QApplication::translate("RealtyObject", "\320\224\320\276\320\272 \321\201\320\276\320\261\321\201\321\202\320\262\320\265\320\275\320\275\320\276\321\201\321\202\320\270:", 0));
+        pushButton_8->setText(QApplication::translate("RealtyObject", "+", 0));
         label_22->setText(QApplication::translate("RealtyObject", "\320\232\320\276\320\275\321\202\320\260\320\272\321\202\320\275\321\213\320\271 \321\202\320\265\320\273\320\265\321\204\320\276\320\275:", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("RealtyObject", "\320\237\321\200\320\260\320\262\320\276\320\262\320\276\320\271 \321\201\321\202\320\260\321\202\321\203\321\201", 0));
         groupBox_3->setTitle(QApplication::translate("RealtyObject", "\320\242\320\265\320\273\320\265\320\272\320\276\320\274\320\274\321\203\320\275\320\270\320\272\320\260\321\206\320\270\320\270", 0));

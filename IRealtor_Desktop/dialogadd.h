@@ -21,6 +21,7 @@ public:
     explicit DialogAdd(QWidget *parent = 0);
     ~DialogAdd();
     QString strTableName;
+    QString strWindowName;
     void getData();
 
 private:

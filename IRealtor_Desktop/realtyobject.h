@@ -31,6 +31,7 @@ private:
     QString strPortDB;
     QString strUserDB;
     QString strPasswordDB;
+    void updateData();
 
 private slots:
     void saveData();
@@ -39,6 +40,10 @@ private slots:
     void addRegion();
     void addType();
     void addStatus();
+    void addTradeType();
+    void addMaterial();
+    void addTypeApartament();
+    void addDocumentProperty();
 };
 
 #endif // REALTYOBJECT_H

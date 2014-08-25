@@ -11,6 +11,7 @@ DialogAdd::DialogAdd(QWidget *parent) :
     ui(new Ui::DialogAdd)
 {
     ui->setupUi(this);
+
     //QPushButton *pOkButton = ui->buttonBox->button(QDialogButtonBox::Ok);
     //pOkButton->setText("Добавить");
 
@@ -32,7 +33,7 @@ bool DialogAdd::createConnection(){
     db = QSqlDatabase::addDatabase("QMYSQL", "DialogAdd");
     db.setHostName(strServerDB);
     //db.port(strPortDB);
-    db.setDatabaseName("IRealtor2");
+    db.setDatabaseName("IRealtor");
     db.setUserName(strUserDB);
     db.setPassword(strPasswordDB);
     if (!db.open()) {
@@ -61,10 +62,13 @@ void DialogAdd::addData()
             qDebug() << "Failed to add region. " << query.lastError().text();
             QMessageBox::critical(0, QObject::tr("Database Error"), db.lastError().text());
         } else {
-            close();
+            //close();
+            qDebug()<<"last inserted id:"<<query.lastInsertId().toString();
         }
 
         db.close();
+        // Update model
+        getData();
     }
 }
 
@@ -108,6 +112,8 @@ void DialogAdd::getSettings(){
 
 // Real data to tabViewe
 void DialogAdd::getData(){
+
+    setWindowTitle(strWindowName);
 
     qDebug() << parent();
     QSqlTableModel *model = new QSqlTableModel();
