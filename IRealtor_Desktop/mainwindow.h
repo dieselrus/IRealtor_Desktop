@@ -9,6 +9,7 @@
 #include <QtSql/QSqlQuery>
 #include "realtyobject.h"
 #include "settings.h"
+#include "importkladr.h"
 
 namespace Ui {
 class MainWindow;
@@ -28,10 +29,12 @@ public:
     void getStatus();
     void getSettings();
 
+
 private:
     Ui::MainWindow *ui;
     RealtyObject *formRO;
     settings *formSettings;
+    ImportKLADR *formKLADRimport;
 
     QString strServerDB;
     QString strPortDB;
@@ -41,6 +44,7 @@ private:
 private slots:
     void openFormRealtyObjects();
     void opensettings();
+    void KLADRimport();
 
 public slots:
     void readRealtyObjects();

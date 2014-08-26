@@ -491,7 +491,7 @@
      <string>Утилиты</string>
     </property>
     <addaction name="action_Exel"/>
-    <addaction name="action_cladr"/>
+    <addaction name="action_kladr"/>
     <addaction name="separator"/>
     <addaction name="action_settings"/>
    </widget>
@@ -512,7 +512,7 @@
     <string>Загрузка из Exel</string>
    </property>
   </action>
-  <action name="action_cladr">
+  <action name="action_kladr">
    <property name="text">
     <string>Загрузить КЛАДР</string>
    </property>

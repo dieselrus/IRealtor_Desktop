@@ -39,7 +39,7 @@ class Ui_MainWindow
 {
 public:
     QAction *action_Exel;
-    QAction *action_cladr;
+    QAction *action_kladr;
     QAction *action_settings;
     QAction *action_close;
     QWidget *centralWidget;
@@ -108,8 +108,8 @@ public:
         MainWindow->resize(847, 617);
         action_Exel = new QAction(MainWindow);
         action_Exel->setObjectName(QStringLiteral("action_Exel"));
-        action_cladr = new QAction(MainWindow);
-        action_cladr->setObjectName(QStringLiteral("action_cladr"));
+        action_kladr = new QAction(MainWindow);
+        action_kladr->setObjectName(QStringLiteral("action_kladr"));
         action_settings = new QAction(MainWindow);
         action_settings->setObjectName(QStringLiteral("action_settings"));
         action_close = new QAction(MainWindow);
@@ -420,7 +420,7 @@ public:
         menu->addSeparator();
         menu->addAction(action_close);
         menu_2->addAction(action_Exel);
-        menu_2->addAction(action_cladr);
+        menu_2->addAction(action_kladr);
         menu_2->addSeparator();
         menu_2->addAction(action_settings);
 
@@ -437,7 +437,7 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         action_Exel->setText(QApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\272\320\260 \320\270\320\267 Exel", 0));
-        action_cladr->setText(QApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \320\232\320\233\320\220\320\224\320\240", 0));
+        action_kladr->setText(QApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \320\232\320\233\320\220\320\224\320\240", 0));
         action_settings->setText(QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", 0));
         action_close->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\271\321\202\320\270", 0));
         groupBox_3->setTitle(QApplication::translate("MainWindow", "\320\221\320\273\320\260\320\263\320\276\321\203\321\201\321\202\321\200\320\276\320\271\321\201\321\202\320\262\320\276", 0));

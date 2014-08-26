@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mainwindow.h'
+** Meta object code from reading C++ file 'importkladr.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../IRealtor_Desktop/mainwindow.h"
+#include "../../IRealtor_Desktop/importkladr.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mainwindow.h' doesn't include <QObject>."
+#error "The header file 'importkladr.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.3.1. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,30 +18,30 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_MainWindow_t {
+struct qt_meta_stringdata_ImportKLADR_t {
     QByteArrayData data[6];
-    char stringdata[77];
+    char stringdata[69];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_MainWindow_t, stringdata) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_ImportKLADR_t, stringdata) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
+static const qt_meta_stringdata_ImportKLADR_t qt_meta_stringdata_ImportKLADR = {
     {
-QT_MOC_LITERAL(0, 0, 10),
-QT_MOC_LITERAL(1, 11, 21),
-QT_MOC_LITERAL(2, 33, 0),
-QT_MOC_LITERAL(3, 34, 12),
-QT_MOC_LITERAL(4, 47, 11),
-QT_MOC_LITERAL(5, 59, 17)
+QT_MOC_LITERAL(0, 0, 11),
+QT_MOC_LITERAL(1, 12, 9),
+QT_MOC_LITERAL(2, 22, 0),
+QT_MOC_LITERAL(3, 23, 10),
+QT_MOC_LITERAL(4, 34, 15),
+QT_MOC_LITERAL(5, 50, 18)
     },
-    "MainWindow\0openFormRealtyObjects\0\0"
-    "opensettings\0KLADRimport\0readRealtyObjects"
+    "ImportKLADR\0browseDir\0\0importData\0"
+    "addRegionToList\0removeRegionOnList"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_MainWindow[] = {
+static const uint qt_meta_data_ImportKLADR[] = {
 
  // content:
        7,       // revision
@@ -58,7 +58,7 @@ static const uint qt_meta_data_MainWindow[] = {
        1,    0,   34,    2, 0x08 /* Private */,
        3,    0,   35,    2, 0x08 /* Private */,
        4,    0,   36,    2, 0x08 /* Private */,
-       5,    0,   37,    2, 0x0a /* Public */,
+       5,    0,   37,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -69,43 +69,43 @@ static const uint qt_meta_data_MainWindow[] = {
        0        // eod
 };
 
-void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void ImportKLADR::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        MainWindow *_t = static_cast<MainWindow *>(_o);
+        ImportKLADR *_t = static_cast<ImportKLADR *>(_o);
         switch (_id) {
-        case 0: _t->openFormRealtyObjects(); break;
-        case 1: _t->opensettings(); break;
-        case 2: _t->KLADRimport(); break;
-        case 3: _t->readRealtyObjects(); break;
+        case 0: _t->browseDir(); break;
+        case 1: _t->importData(); break;
+        case 2: _t->addRegionToList(); break;
+        case 3: _t->removeRegionOnList(); break;
         default: ;
         }
     }
     Q_UNUSED(_a);
 }
 
-const QMetaObject MainWindow::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_MainWindow.data,
-      qt_meta_data_MainWindow,  qt_static_metacall, 0, 0}
+const QMetaObject ImportKLADR::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_ImportKLADR.data,
+      qt_meta_data_ImportKLADR,  qt_static_metacall, 0, 0}
 };
 
 
-const QMetaObject *MainWindow::metaObject() const
+const QMetaObject *ImportKLADR::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MainWindow::qt_metacast(const char *_clname)
+void *ImportKLADR::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata))
-        return static_cast<void*>(const_cast< MainWindow*>(this));
-    return QMainWindow::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_ImportKLADR.stringdata))
+        return static_cast<void*>(const_cast< ImportKLADR*>(this));
+    return QDialog::qt_metacast(_clname);
 }
 
-int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int ImportKLADR::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

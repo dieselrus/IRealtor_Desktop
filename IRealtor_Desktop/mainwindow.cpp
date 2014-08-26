@@ -23,8 +23,10 @@ MainWindow::MainWindow(QWidget *parent):
 
     // signal exit
     connect(ui->action_close, SIGNAL(triggered()), this, SLOT(close()));
-    // signal open forn settings
+    // signal open form settings
     connect(ui->action_settings, SIGNAL(triggered()), this, SLOT(opensettings()));
+    // signal open form kladrimport
+    connect(ui->action_kladr, SIGNAL(triggered()), this, SLOT(KLADRimport()));
     // signal change value
     QObject::connect(ui->spnArea1, SIGNAL(valueChanged(int)), ui->sldArea1, SLOT(setValue(int)));
     QObject::connect(ui->sldArea1, SIGNAL(valueChanged(int)), ui->spnArea1, SLOT(setValue(int)));
@@ -124,6 +126,7 @@ void MainWindow::openFormRealtyObjects(){
     //ui->MainWindow->addSubWindow(formRO);
     formRO->show();
     formRO->activateWindow();
+
 }
 
 // Open form settings
@@ -142,6 +145,16 @@ void MainWindow::getSettings(){
     //strPortDB = options.value("port").toString();
     strUserDB = options.value("user").toString();
     strPasswordDB = options.value("password").toString();
+}
+
+// Open KLADR import form
+void MainWindow::KLADRimport(){
+
+    formKLADRimport = new ImportKLADR;
+    formKLADRimport->setAttribute(Qt::WA_DeleteOnClose);
+    //ui->MainWindow->addSubWindow(formKLADRimport);
+    formKLADRimport->show();
+
 }
 
 // Real realty objects

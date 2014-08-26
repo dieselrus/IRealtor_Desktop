@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    //qDebug() << QSqlDatabase::drivers();
+    qDebug() << QSqlDatabase::drivers();
 
     MainWindow w;
     w.show();
