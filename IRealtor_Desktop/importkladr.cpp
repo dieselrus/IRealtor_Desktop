@@ -4,6 +4,7 @@
 #include <QMessageBox>
 #include <QtSql>
 #include <QSqlError>
+#include <QTableWidgetItem>
 
 ImportKLADR::ImportKLADR(QWidget *parent) :
     QDialog(parent),
@@ -12,8 +13,8 @@ ImportKLADR::ImportKLADR(QWidget *parent) :
     ui->setupUi(this);
     getSettings();
 
-    modelBrowse = new QStringListModel(this);
-     modelKladr = new QStringListModel(this);
+    modelBrowse = new QSqlTableModel(this);
+    modelKladr = new QStandardItemModel(this);
 }
 
 ImportKLADR::~ImportKLADR()
@@ -85,31 +86,57 @@ void ImportKLADR::browseDir(){
         QSqlQuery odbc_query = QSqlQuery("SELECT distinct `name` , `socr` FROM KLADR WHERE `code` LIKE '%00000000000'", db2);
         odbc_query.executedQuery();
 
+        QStandardItemModel *model = new QStandardItemModel(this);
+        model->insertColumn(0);
+        model->insertColumn(2);
+        model->setHeaderData(0, Qt::Horizontal, QString::fromLocal8Bit("Регион"));
+        model->setHeaderData(1, Qt::Horizontal, QString::fromLocal8Bit("Сокрацение"));
+
+        ui->tableKladr->insertColumn(0);
+        ui->tableKladr->insertColumn(1);
+        ui->tableKladr->model()->setHeaderData(0, Qt::Horizontal, QString::fromLocal8Bit("Регион"));
+        ui->tableKladr->model()->setHeaderData(1, Qt::Horizontal, QString::fromLocal8Bit("Сокрацение"));
+
         QStringList lstList;
+        int j = 0;
         while (odbc_query.next()) {
             //lstKladr.append(odbc_query.value(0).toString());
-            //qDebug() << odbc_query.value(0).toString();
-            lstList << odbc_query.value(0).toString();
+            qDebug() << odbc_query.value(0).toString();
+
+            ui->tableKladr->insertRow(ui->tableKladr->rowCount());
+            ui->tableKladr->setItem(ui->tableKladr->rowCount() - 1,0, new QTableWidgetItem(odbc_query.value(0).toString()));
+            ui->tableKladr->setItem(ui->tableKladr->rowCount() - 1,1, new QTableWidgetItem(odbc_query.value(1).toString()));
+            //ui->tableKladr->ins
+            //lstList << odbc_query.value(0).toString();
         }
 
-        modelKladr->setStringList(lstList);
 
+        //model->setQuery("SELECT distinct `name` , `socr` FROM KLADR WHERE `code` LIKE '%00000000000'", db2);
+        //model->setQuery(odbc_query);
+        //model->setHeaderData(0, Qt::Horizontal, QString::fromLocal8Bit("Регион"));
+        //model->setHeaderData(1, Qt::Horizontal, QString::fromLocal8Bit("Сокрацение"));
+
+        ui->tableKladr->setSelectionBehavior(QAbstractItemView::SelectRows);
+        ui->tableKladr->resizeColumnsToContents();
+        //ui->tableKladr->horizontalHeader()->setResizeMode(QHeaderView::Stretch);
+
+        ui->tableKladr->setModel(model);
     }
 
-    ui->lstKladr->setModel(modelKladr);
+    //ui->lstKladr->setModel(modelKladr);
     db2.close();
     db2.removeDatabase("dbf");
 }
 
 void ImportKLADR::addRegionToList(){
-    QString data = ui->lstKladr->model()->data(ui->lstKladr->currentIndex()).toString();
+    QString data = ui->tableKladr->model()->data(ui->tableKladr->currentIndex()).toString();
     //qDebug() << data;
 
     modelBrowse->insertRow(modelBrowse->rowCount());
-    QModelIndex index = modelBrowse->index(modelBrowse->rowCount()-1);
-    modelBrowse->setData(index, data);
+    //QModelIndex index = modelBrowse->index(modelBrowse->rowCount()-1);
+    //modelBrowse->setData(index, data);
 
-    ui->lstBrowse->setModel(modelBrowse);
+    ui->tableBrowse->setModel(modelBrowse);
 
 }
 
@@ -118,7 +145,7 @@ void ImportKLADR::removeRegionOnList(){
 }
 
 void ImportKLADR::importData(){
-
+    /*
     // foreach(const QModelIndex &index, ui->listView->selectionModel()->selectedIndexes())
     //    list.append(model->itemFromIndex(index)->text());
 
@@ -128,18 +155,40 @@ void ImportKLADR::importData(){
         //b = modelBrowse->data(index).toString();
     }
 
-
     if(modelBrowse->rowCount() < 1){
         //QMessageBox::critical(0, QObject::tr("Database Error"), db.lastError().text());
         return;
     }
 
-    //dbfToMySQL("kladr_kladr", "KLADR");
-    //dbfToMySQL("kladr_street", "STREET");
-    //dbfToMySQL("kladr_doma", "DOMA");
+    QModelIndexList list =ui->lstBrowse->selectionModel()->selectedIndexes();
+
+    QStringList slist;
+    foreach(const QModelIndex &index, list){
+        slist.append( index.data(Qt::DisplayRole ).toString());
+    }
+    qDebug() << slist.join(",");
+    */
+
+    QString slist;
+    for (int i = 0; i < modelBrowse->rowCount(); i++){
+        QModelIndex index = modelBrowse->index(i, 0);
+        QString text = index.data(Qt::DisplayRole).toString();
+        text.prepend("'").append("'");
+
+        if(!slist.isEmpty())
+            slist.append(",");
+
+        slist.append(text);
+    }
+
+    qDebug() << slist;
+
+    dbfToMySQL("kladr_kladr", "KLADR", slist, NULL);
+    dbfToMySQL("kladr_street", "STREET", NULL, NULL);
+    dbfToMySQL("kladr_doma", "DOMA", NULL, NULL);
 }
 
-void ImportKLADR::dbfToMySQL(QString mysqlTableName, QString odbcTableName){
+void ImportKLADR::dbfToMySQL(QString mysqlTableName, QString odbcTableName, QString lstRegion, QString socr){
     QSqlDatabase db2=QSqlDatabase::addDatabase("QODBC", "dbf");
 
     //db2.setDatabaseName(QString("Driver={Microsoft dBase Driver (*.dbf)};datasource=%1").arg(dir + "/KLADR.DBF"));
@@ -165,15 +214,27 @@ void ImportKLADR::dbfToMySQL(QString mysqlTableName, QString odbcTableName){
         mysql_query_dell.exec();
 
         // select kladr
-        QSqlQuery odbc_query = QSqlQuery("SELECT name, socr, code, index, ocatd FROM " + odbcTableName, db2);
+        QString str_odbc_query;
+        if(lstRegion == NULL){
+            str_odbc_query = "SELECT name, socr, code, index, ocatd FROM " + odbcTableName + ";";
+        } else {
+            str_odbc_query = "SELECT name, socr, code, index, ocatd FROM " + odbcTableName + " WHERE `name` IN (" + lstRegion + ") AND `socr` = '" + socr + "'';";
+        }
+
+        qDebug() << str_odbc_query;
+
+        QSqlQuery odbc_query(str_odbc_query, db2);
+
         odbc_query.executedQuery();
 
         int i =1;
         ui->progressBar->setMaximum(odbc_query.size());
+        //qDebug() << odbc_query.size();
         ui->progressBar->setValue(i);
 
         while (odbc_query.next()) {
             i++;
+            qDebug() << "INSERT";
             // add kladr
             QString mysql_str = "INSERT INTO `" + mysqlTableName + "` (`name`, `socr`, `code`, `index`, `ocatd`) VALUE ('" +
                     odbc_query.value(0).toString() + "', '" +

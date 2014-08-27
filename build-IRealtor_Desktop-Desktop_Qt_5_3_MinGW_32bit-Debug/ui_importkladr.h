@@ -19,10 +19,11 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QListView>
 #include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
@@ -39,13 +40,13 @@ public:
     QLabel *label_3;
     QLabel *label_2;
     QHBoxLayout *horizontalLayout_2;
-    QListView *lstKladr;
+    QTableWidget *tableKladr;
     QVBoxLayout *verticalLayout_2;
     QSpacerItem *verticalSpacer;
     QPushButton *pushButton_2;
     QPushButton *pushButton;
     QSpacerItem *verticalSpacer_2;
-    QListView *lstBrowse;
+    QTableView *tableBrowse;
     QProgressBar *progressBar;
     QDialogButtonBox *buttonBox;
 
@@ -98,10 +99,10 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        lstKladr = new QListView(ImportKLADR);
-        lstKladr->setObjectName(QStringLiteral("lstKladr"));
+        tableKladr = new QTableWidget(ImportKLADR);
+        tableKladr->setObjectName(QStringLiteral("tableKladr"));
 
-        horizontalLayout_2->addWidget(lstKladr);
+        horizontalLayout_2->addWidget(tableKladr);
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
@@ -126,10 +127,10 @@ public:
 
         horizontalLayout_2->addLayout(verticalLayout_2);
 
-        lstBrowse = new QListView(ImportKLADR);
-        lstBrowse->setObjectName(QStringLiteral("lstBrowse"));
+        tableBrowse = new QTableView(ImportKLADR);
+        tableBrowse->setObjectName(QStringLiteral("tableBrowse"));
 
-        horizontalLayout_2->addWidget(lstBrowse);
+        horizontalLayout_2->addWidget(tableBrowse);
 
 
         verticalLayout->addLayout(horizontalLayout_2);

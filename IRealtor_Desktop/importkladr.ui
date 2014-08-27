@@ -67,7 +67,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <widget class="QListView" name="lstKladr"/>
+      <widget class="QTableWidget" name="tableKladr"/>
      </item>
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -114,7 +114,7 @@
       </layout>
      </item>
      <item>
-      <widget class="QListView" name="lstBrowse"/>
+      <widget class="QTableView" name="tableBrowse"/>
      </item>
     </layout>
    </item>

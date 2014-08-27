@@ -18,14 +18,16 @@ SOURCES += main.cpp\
     settings.cpp \
     exportxls.cpp \
     dialogadd.cpp \
-    importkladr.cpp
+    importkladr.cpp \
+    sqlmodel.cpp
 
 HEADERS  += mainwindow.h \
     realtyobject.h \
     settings.h \
     exportxls.h \
     dialogadd.h \
-    importkladr.h
+    importkladr.h \
+    sqlmodel.h
 
 FORMS    += mainwindow.ui \
     realtyobject.ui \

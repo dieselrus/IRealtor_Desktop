@@ -6,7 +6,9 @@
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlDriver>
 #include <QtSql/QSqlQuery>
-#include <QStringListModel>
+#include <QSqlTableModel>
+#include <QStandardItemModel>
+#include "sqlmodel.h"
 
 namespace Ui {
 class ImportKLADR;
@@ -29,12 +31,12 @@ private:
     QString strPasswordDB;
     QSqlDatabase db;
 
-    QStringListModel *modelKladr;
-    QStringListModel *modelBrowse;
+    QStandardItemModel *modelKladr;
+    QSqlTableModel *modelBrowse;
 
     bool createConnection();
     void getSettings();
-    void dbfToMySQL(QString mysqlTableName, QString odbcTableName);
+    void dbfToMySQL(QString mysqlTableName, QString odbcTableName, QString lstRegion, QString socr);
 
 private slots:
     void browseDir();

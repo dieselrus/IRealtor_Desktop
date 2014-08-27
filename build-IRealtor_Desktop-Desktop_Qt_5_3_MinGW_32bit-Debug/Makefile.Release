@@ -49,13 +49,15 @@ SOURCES       = ..\IRealtor_Desktop\main.cpp \
 		..\IRealtor_Desktop\settings.cpp \
 		..\IRealtor_Desktop\exportxls.cpp \
 		..\IRealtor_Desktop\dialogadd.cpp \
-		..\IRealtor_Desktop\importkladr.cpp release\qrc_res.cpp \
+		..\IRealtor_Desktop\importkladr.cpp \
+		..\IRealtor_Desktop\sqlmodel.cpp release\qrc_res.cpp \
 		release\moc_mainwindow.cpp \
 		release\moc_realtyobject.cpp \
 		release\moc_settings.cpp \
 		release\moc_exportxls.cpp \
 		release\moc_dialogadd.cpp \
-		release\moc_importkladr.cpp
+		release\moc_importkladr.cpp \
+		release\moc_sqlmodel.cpp
 OBJECTS       = release/main.o \
 		release/mainwindow.o \
 		release/realtyobject.o \
@@ -63,13 +65,15 @@ OBJECTS       = release/main.o \
 		release/exportxls.o \
 		release/dialogadd.o \
 		release/importkladr.o \
+		release/sqlmodel.o \
 		release/qrc_res.o \
 		release/moc_mainwindow.o \
 		release/moc_realtyobject.o \
 		release/moc_settings.o \
 		release/moc_exportxls.o \
 		release/moc_dialogadd.o \
-		release/moc_importkladr.o
+		release/moc_importkladr.o \
+		release/moc_sqlmodel.o
 
 DIST          = 
 QMAKE_TARGET  = IRealtor_Desktop
@@ -110,7 +114,7 @@ dist:
 	$(ZIP) IRealtor_Desktop.zip $(SOURCES) $(DIST) ..\IRealtor_Desktop\IRealtor_Desktop.pro D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\spec_pre.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\qdevice.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\device_config.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\common\shell-win32.conf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\qconfig.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_axbase.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_axbase_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_axcontainer.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_axcontainer_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_axserver.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_axserver_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_bluetooth.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_bluetooth_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_bootstrap_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_clucene_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_concurrent.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_concurrent_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_core.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_core_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_declarative.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_declarative_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_designer.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_designer_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_designercomponents_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_enginio.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_enginio_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_gui.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_gui_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_help.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_help_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_multimedia.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_multimedia_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_multimediawidgets.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_network.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_network_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_nfc.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_nfc_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_opengl.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_opengl_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_openglextensions.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_openglextensions_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_platformsupport_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_positioning.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_positioning_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_printsupport.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_printsupport_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_qml.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_qml_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_qmldevtools_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_qmltest.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_qmltest_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_quick.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_quick_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_quickparticles_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_quickwidgets.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_quickwidgets_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_script.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_script_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_scripttools.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_scripttools_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_sensors.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_sensors_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_serialport.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_serialport_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_sql.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_sql_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_svg.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_svg_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_testlib.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_testlib_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_uitools.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_uitools_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_webkit.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_webkit_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_webkitwidgets.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_webkitwidgets_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_websockets.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_websockets_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_widgets.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_widgets_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_winextras.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_winextras_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_xml.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_xml_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_xmlpatterns.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\qt_functions.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\qt_config.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\qt_config.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\win32-g++\qmake.conf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\spec_post.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\exclusive_builds.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\default_pre.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\default_pre.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\resolve_config.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\exclusive_builds_post.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\default_post.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\build_pass.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\rtti.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\precompile_header.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\warn_on.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\qt.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\resources.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\moc.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\opengl.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\uic.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\windows.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\testcase_targets.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\exceptions.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\yacc.prf D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\lex.prf ..\IRealtor_Desktop\IRealtor_Desktop.pro ..\IRealtor_Desktop\res.qrc D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/qtmain.prl D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Core.prl D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Widgets.prl D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Sql.prl D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Gui.prl  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\main.o release\mainwindow.o release\realtyobject.o release\settings.o release\exportxls.o release\dialogadd.o release\importkladr.o release\qrc_res.o release\moc_mainwindow.o release\moc_realtyobject.o release\moc_settings.o release\moc_exportxls.o release\moc_dialogadd.o release\moc_importkladr.o
+	-$(DEL_FILE) release\main.o release\mainwindow.o release\realtyobject.o release\settings.o release\exportxls.o release\dialogadd.o release\importkladr.o release\sqlmodel.o release\qrc_res.o release\moc_mainwindow.o release\moc_realtyobject.o release\moc_settings.o release\moc_exportxls.o release\moc_dialogadd.o release\moc_importkladr.o release\moc_sqlmodel.o
 
 distclean: clean 
 	-$(DEL_FILE) $(DESTDIR_TARGET)
@@ -133,9 +137,9 @@ release/qrc_res.cpp: ../IRealtor_Desktop/res.qrc \
 		../IRealtor_Desktop/img/trade.png
 	D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\bin\rcc.exe -name res ..\IRealtor_Desktop\res.qrc -o release\qrc_res.cpp
 
-compiler_moc_header_make_all: release/moc_mainwindow.cpp release/moc_realtyobject.cpp release/moc_settings.cpp release/moc_exportxls.cpp release/moc_dialogadd.cpp release/moc_importkladr.cpp
+compiler_moc_header_make_all: release/moc_mainwindow.cpp release/moc_realtyobject.cpp release/moc_settings.cpp release/moc_exportxls.cpp release/moc_dialogadd.cpp release/moc_importkladr.cpp release/moc_sqlmodel.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) release\moc_mainwindow.cpp release\moc_realtyobject.cpp release\moc_settings.cpp release\moc_exportxls.cpp release\moc_dialogadd.cpp release\moc_importkladr.cpp
+	-$(DEL_FILE) release\moc_mainwindow.cpp release\moc_realtyobject.cpp release\moc_settings.cpp release\moc_exportxls.cpp release\moc_dialogadd.cpp release\moc_importkladr.cpp release\moc_sqlmodel.cpp
 release/moc_mainwindow.cpp: D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QMainWindow \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qmainwindow.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qwidget.h \
@@ -258,6 +262,13 @@ release/moc_mainwindow.cpp: D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWid
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlError \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlerror.h \
 		../IRealtor_Desktop/settings.h \
+		../IRealtor_Desktop/importkladr.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlTableModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqltablemodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/QStandardItemModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qstandarditemmodel.h \
 		../IRealtor_Desktop/mainwindow.h
 	D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/win32-g++ -ID:/Project/Qt/IRealtor/IRealtor_Desktop/IRealtor_Desktop -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore -I. ..\IRealtor_Desktop\mainwindow.h -o release\moc_mainwindow.cpp
 
@@ -805,8 +816,96 @@ release/moc_importkladr.cpp: D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWi
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfiledevice.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qvector2d.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtouchdevice.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSql \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsql.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlDatabase \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldatabase.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlDriver \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldriver.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlQuery \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquery.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlTableModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqltablemodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/QStandardItemModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qstandarditemmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qicon.h \
 		../IRealtor_Desktop/importkladr.h
 	D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/win32-g++ -ID:/Project/Qt/IRealtor/IRealtor_Desktop/IRealtor_Desktop -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore -I. ..\IRealtor_Desktop\importkladr.h -o release\moc_importkladr.cpp
+
+release/moc_sqlmodel.cpp: D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlQueryModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qvariant.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qglobal.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qconfig.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfeatures.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsystemdetection.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qprocessordetection.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcompilerdetection.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtypeinfo.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtypetraits.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsysinfo.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlogging.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qflags.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qglobalstatic.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmutex.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qnumeric.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qbasicatomic.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_bootstrap.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qgenericatomic.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_msvc.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_armv7.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_armv6.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_armv5.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_ia64.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_mips.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_x86.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_cxx11.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_gcc.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_unix.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qbytearray.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qrefcount.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qnamespace.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qarraydata.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstring.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qchar.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstringbuilder.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlist.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qalgorithms.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qiterator.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmetatype.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qvarlengtharray.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcontainerfwd.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qisenum.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qobjectdefs.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qobjectdefs_impl.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmap.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qpair.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qdebug.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qhash.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtextstream.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qiodevice.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qobject.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcoreevent.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qscopedpointer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qobject_impl.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlocale.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qshareddata.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qvector.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qpoint.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qset.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcontiguouscache.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstringlist.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qdatastream.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qregexp.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstringmatcher.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldatabase.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsql.h \
+		../IRealtor_Desktop/sqlmodel.h
+	D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/win32-g++ -ID:/Project/Qt/IRealtor/IRealtor_Desktop/IRealtor_Desktop -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore -I. ..\IRealtor_Desktop\sqlmodel.h -o release\moc_sqlmodel.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -966,6 +1065,13 @@ release/main.o: ../IRealtor_Desktop/main.cpp ../IRealtor_Desktop/mainwindow.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlError \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlerror.h \
 		../IRealtor_Desktop/settings.h \
+		../IRealtor_Desktop/importkladr.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlTableModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqltablemodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/QStandardItemModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qstandarditemmodel.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QApplication \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qapplication.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcoreapplication.h \
@@ -1098,6 +1204,13 @@ release/mainwindow.o: ../IRealtor_Desktop/mainwindow.cpp ../IRealtor_Desktop/mai
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlError \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlerror.h \
 		../IRealtor_Desktop/settings.h \
+		../IRealtor_Desktop/importkladr.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlTableModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqltablemodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/QStandardItemModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qstandarditemmodel.h \
 		ui_mainwindow.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QVariant \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QAction \
@@ -1125,7 +1238,6 @@ release/mainwindow.o: ../IRealtor_Desktop/mainwindow.cpp ../IRealtor_Desktop/mai
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qtabbar.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qrubberband.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qframe.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QGridLayout \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qgridlayout.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qlayout.h \
@@ -1160,9 +1272,6 @@ release/mainwindow.o: ../IRealtor_Desktop/mainwindow.cpp ../IRealtor_Desktop/mai
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QToolBar \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qtoolbar.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QVBoxLayout \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlTableModel \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqltablemodel.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlQueryModel \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QMessageBox \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qmessagebox.h
@@ -1963,7 +2072,76 @@ release/importkladr.o: ../IRealtor_Desktop/importkladr.cpp ../IRealtor_Desktop/i
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfiledevice.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qvector2d.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtouchdevice.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSql \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsql.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlDatabase \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldatabase.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlDriver \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldriver.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlQuery \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquery.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlTableModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqltablemodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/QStandardItemModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qstandarditemmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qicon.h \
 		ui_importkladr.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QVariant \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QAction \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qaction.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qactiongroup.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QApplication \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qapplication.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcoreapplication.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qeventloop.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qdesktopwidget.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qguiapplication.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qinputmethod.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QButtonGroup \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qbuttongroup.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QDialogButtonBox \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qdialogbuttonbox.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QHBoxLayout \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qboxlayout.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qlayout.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qlayoutitem.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qgridlayout.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QHeaderView \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qheaderview.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractitemview.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractscrollarea.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qframe.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qitemselectionmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractitemdelegate.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qstyleoption.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractspinbox.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qvalidator.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qregularexpression.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qslider.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractslider.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qstyle.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qtabbar.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qtabwidget.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qrubberband.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QLabel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qlabel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QLineEdit \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qlineedit.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextcursor.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextformat.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpen.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextoption.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QProgressBar \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qprogressbar.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QPushButton \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qpushbutton.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractbutton.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QSpacerItem \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QTableView \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qtableview.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QVBoxLayout \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QFileDialog \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qfiledialog.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qdir.h \
@@ -2002,6 +2180,197 @@ release/importkladr.o: ../IRealtor_Desktop/importkladr.cpp ../IRealtor_Desktop/i
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtemporarydir.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QScopedPointer \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtemporaryfile.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractproxymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qidentityproxymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsortfilterproxymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstringlistmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qjsonarray.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qjsonvalue.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qjsondocument.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qjsonobject.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstracteventdispatcher.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractnativeeventfilter.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qbasictimer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmath.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmetaobject.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmimedata.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qobjectcleanuphandler.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qpointer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsharedmemory.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsignalmapper.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsocketnotifier.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsystemsemaphore.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtimer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtranslator.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qwineventnotifier.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmimedatabase.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmimetype.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfactoryinterface.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlibrary.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qplugin.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qpluginloader.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/quuid.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractstate.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstracttransition.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qeventtransition.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfinalstate.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qhistorystate.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsignaltransition.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstate.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstatemachine.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qexception.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfuture.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfutureinterface.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qrunnable.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qresultstore.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfuturesynchronizer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfuturewatcher.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qreadwritelock.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsemaphore.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qthread.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qthreadpool.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qthreadstorage.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qwaitcondition.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qarraydataops.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qarraydatapointer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qbitarray.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qbytearraymatcher.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcache.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcollator.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcommandlineoption.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcommandlineparser.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcryptographichash.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qelapsedtimer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlinkedlist.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmessageauthenticationcode.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qqueue.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qscopedvaluerollback.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstack.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtextboundaryfinder.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtimeline.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtimezone.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qxmlstream.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtcoreversion.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldriverplugin.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlerror.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlfield.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlindex.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlrecord.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlresult.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlrelationaldelegate.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qitemdelegate.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qlistview.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qcombobox.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlrelationaltablemodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qtsqlversion.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlError
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\importkladr.o ..\IRealtor_Desktop\importkladr.cpp
+
+release/sqlmodel.o: ../IRealtor_Desktop/sqlmodel.cpp D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/QtGui \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/QtGuiDepends \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QtCore \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QtCoreDepends \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractanimation.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qobject.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qobjectdefs.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qnamespace.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qglobal.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qconfig.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfeatures.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsystemdetection.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qprocessordetection.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcompilerdetection.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtypeinfo.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtypetraits.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsysinfo.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlogging.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qflags.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qbasicatomic.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_bootstrap.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qgenericatomic.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_msvc.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_armv7.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_armv6.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_armv5.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_ia64.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_mips.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_x86.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_cxx11.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_gcc.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qatomic_unix.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qglobalstatic.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmutex.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qnumeric.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qobjectdefs_impl.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstring.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qchar.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qbytearray.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qrefcount.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qarraydata.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstringbuilder.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlist.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qalgorithms.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qiterator.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcoreevent.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qscopedpointer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmetatype.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qvarlengtharray.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcontainerfwd.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qisenum.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qobject_impl.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qanimationgroup.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qparallelanimationgroup.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qpauseanimation.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qpropertyanimation.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qvariantanimation.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qeasingcurve.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qvector.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qpoint.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qvariant.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmap.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qpair.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qdebug.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qhash.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtextstream.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qiodevice.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlocale.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qshareddata.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qset.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcontiguouscache.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstringlist.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qdatastream.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qregexp.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstringmatcher.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsequentialanimationgroup.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtextcodec.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qendian.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlibraryinfo.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qdatetime.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsharedpointer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsharedpointer_impl.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qbuffer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qdir.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfileinfo.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfile.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfiledevice.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qdiriterator.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfileselector.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QObject \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QStringList \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qfilesystemwatcher.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlockfile.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qloggingcategory.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qprocess.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qresource.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsavefile.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsettings.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstandardpaths.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtemporarydir.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QScopedPointer \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtemporaryfile.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qurl.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qurlquery.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qabstractproxymodel.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qidentityproxymodel.h \
@@ -2067,9 +2436,13 @@ release/importkladr.o: ../IRealtor_Desktop/importkladr.cpp ../IRealtor_Desktop/i
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcommandlineparser.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qcryptographichash.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qelapsedtimer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qline.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qlinkedlist.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmargins.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qmessageauthenticationcode.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qqueue.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qrect.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qsize.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qregularexpression.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qscopedvaluerollback.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qstack.h \
@@ -2078,39 +2451,120 @@ release/importkladr.o: ../IRealtor_Desktop/importkladr.cpp ../IRealtor_Desktop/i
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtimezone.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qxmlstream.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qtcoreversion.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsql.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldatabase.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldriver.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldriverplugin.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlerror.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlfield.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlindex.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlrecord.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquery.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlresult.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlrelationaldelegate.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qitemdelegate.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractitemdelegate.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qstyleoption.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractspinbox.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qvalidator.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qaccessible.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qcolor.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qrgb.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qevent.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qwindowdefs.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qwindowdefs_win.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qregion.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qkeysequence.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qvector2d.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtouchdevice.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qaccessiblebridge.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qaccessibleobject.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qaccessibleplugin.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qbitmap.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpixmap.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpaintdevice.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qimage.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtransform.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qmatrix.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpolygon.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpainterpath.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qicon.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qslider.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractslider.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qstyle.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qtabbar.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qtabwidget.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qrubberband.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qframe.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qlistview.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractitemview.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qabstractscrollarea.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qcombobox.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlrelationaltablemodel.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqltablemodel.h \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qtsqlversion.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\importkladr.o ..\IRealtor_Desktop\importkladr.cpp
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qiconengine.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qiconengineplugin.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qimageiohandler.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qimagereader.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qimagewriter.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qmovie.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpicture.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpictureformatplugin.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpixmapcache.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qstandarditemmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qbrush.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qfont.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qclipboard.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qcursor.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qdrag.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qgenericplugin.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qgenericpluginfactory.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qguiapplication.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qinputmethod.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qoffscreensurface.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qsurface.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qsurfaceformat.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglcontext.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/QSurfaceFormat \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopengl.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/qt_windows.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopengles2ext.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglext.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglversionfunctions.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpalette.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qscreen.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QList \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QRect \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QSize \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QSizeF \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/QTransform \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qsessionmanager.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qstylehints.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qwindow.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QEvent \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QMargins \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qgenericmatrix.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qmatrix4x4.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qvector3d.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qvector4d.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qquaternion.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglbuffer.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopengldebug.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglframebufferobject.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglfunctions.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglpaintdevice.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglpixeltransferoptions.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QSharedDataPointer \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglshaderprogram.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopengltexture.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopengltimerquery.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qopenglvertexarrayobject.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qbackingstore.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpagedpaintdevice.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpagelayout.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpagesize.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpaintengine.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpainter.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextoption.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpen.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qfontinfo.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qfontmetrics.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qpdfwriter.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qabstracttextdocumentlayout.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextlayout.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextformat.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qglyphrun.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qrawfont.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qfontdatabase.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextcursor.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextdocument.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qstatictext.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qsyntaxhighlighter.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextobject.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextdocumentfragment.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextdocumentwriter.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtextlist.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtexttable.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qdesktopservices.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qvalidator.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui/qtguiversion.h \
+		../IRealtor_Desktop/sqlmodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/QSqlQueryModel \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsqldatabase.h \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql/qsql.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\sqlmodel.o ..\IRealtor_Desktop\sqlmodel.cpp
 
 release/qrc_res.o: release/qrc_res.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\qrc_res.o release\qrc_res.cpp
@@ -2132,6 +2586,9 @@ release/moc_dialogadd.o: release/moc_dialogadd.cpp
 
 release/moc_importkladr.o: release/moc_importkladr.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_importkladr.o release\moc_importkladr.cpp
+
+release/moc_sqlmodel.o: release/moc_sqlmodel.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_sqlmodel.o release\moc_sqlmodel.cpp
 
 ####### Install
 
