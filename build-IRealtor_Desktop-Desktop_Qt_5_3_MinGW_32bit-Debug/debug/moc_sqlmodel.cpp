@@ -60,7 +60,7 @@ void CustomSqlModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 const QMetaObject CustomSqlModel::staticMetaObject = {
-    { &QSqlQueryModel::staticMetaObject, qt_meta_stringdata_CustomSqlModel.data,
+    { &QStandardItemModel::staticMetaObject, qt_meta_stringdata_CustomSqlModel.data,
       qt_meta_data_CustomSqlModel,  qt_static_metacall, 0, 0}
 };
 
@@ -75,12 +75,12 @@ void *CustomSqlModel::qt_metacast(const char *_clname)
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_CustomSqlModel.stringdata))
         return static_cast<void*>(const_cast< CustomSqlModel*>(this));
-    return QSqlQueryModel::qt_metacast(_clname);
+    return QStandardItemModel::qt_metacast(_clname);
 }
 
 int CustomSqlModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QSqlQueryModel::qt_metacall(_c, _id, _a);
+    _id = QStandardItemModel::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     return _id;

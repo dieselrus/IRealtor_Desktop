@@ -685,6 +685,7 @@ public:
         QObject::connect(pushButton_7, SIGNAL(clicked()), RealtyObject, SLOT(addTypeApartament()));
         QObject::connect(pushButton_4, SIGNAL(clicked()), RealtyObject, SLOT(addStatus()));
         QObject::connect(pushButton_8, SIGNAL(clicked()), RealtyObject, SLOT(addDocumentProperty()));
+        QObject::connect(pushButton, SIGNAL(clicked()), RealtyObject, SLOT(selectAddress()));
 
         tabWidget->setCurrentIndex(0);
 

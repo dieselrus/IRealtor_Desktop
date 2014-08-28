@@ -64,7 +64,7 @@ void RealtyObject::getData(){
         QMessageBox::critical(0, QObject::tr("Database Error"),db.lastError().text());
     }
     else{
-        qDebug() << "Connected get data!";
+        //qDebug() << "Connected get data!";
 
         QSqlQuery query;
 
@@ -170,6 +170,13 @@ void RealtyObject::getData(){
     }
 
     db.close();
+}
+
+void RealtyObject::selectAddress(){
+    SelectAddress dial; // создаём диалог
+
+    dial.getRegion();
+    dial.exec();
 }
 
 void RealtyObject::saveData(){
@@ -334,3 +341,5 @@ void RealtyObject::addDocumentProperty(){
 void RealtyObject::updateData(){
     getData();
 }
+
+

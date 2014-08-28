@@ -23,7 +23,6 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTableView>
-#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
@@ -40,7 +39,7 @@ public:
     QLabel *label_3;
     QLabel *label_2;
     QHBoxLayout *horizontalLayout_2;
-    QTableWidget *tableKladr;
+    QTableView *tableKladr;
     QVBoxLayout *verticalLayout_2;
     QSpacerItem *verticalSpacer;
     QPushButton *pushButton_2;
@@ -99,8 +98,9 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        tableKladr = new QTableWidget(ImportKLADR);
+        tableKladr = new QTableView(ImportKLADR);
         tableKladr->setObjectName(QStringLiteral("tableKladr"));
+        tableKladr->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
         horizontalLayout_2->addWidget(tableKladr);
 
@@ -129,6 +129,7 @@ public:
 
         tableBrowse = new QTableView(ImportKLADR);
         tableBrowse->setObjectName(QStringLiteral("tableBrowse"));
+        tableBrowse->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
         horizontalLayout_2->addWidget(tableBrowse);
 

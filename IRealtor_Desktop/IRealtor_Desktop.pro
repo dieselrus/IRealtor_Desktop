@@ -19,7 +19,8 @@ SOURCES += main.cpp\
     exportxls.cpp \
     dialogadd.cpp \
     importkladr.cpp \
-    sqlmodel.cpp
+    sqlmodel.cpp \
+    selectaddress.cpp
 
 HEADERS  += mainwindow.h \
     realtyobject.h \
@@ -27,14 +28,16 @@ HEADERS  += mainwindow.h \
     exportxls.h \
     dialogadd.h \
     importkladr.h \
-    sqlmodel.h
+    sqlmodel.h \
+    selectaddress.h
 
 FORMS    += mainwindow.ui \
     realtyobject.ui \
     settings.ui \
     exportxls.ui \
     dialogadd.ui \
-    importkladr.ui
+    importkladr.ui \
+    selectaddress.ui
 
 RESOURCES += \
     res.qrc

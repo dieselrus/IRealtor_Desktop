@@ -2,14 +2,14 @@
 #include "sqlmodel.h"
 
 CustomSqlModel::CustomSqlModel(QObject *parent)
-    : QSqlQueryModel(parent)
+    : QStandardItemModel(parent)
 {
 }
 
 //! [0]
 QVariant CustomSqlModel::data(const QModelIndex &index, int role) const
 {
-    QVariant value = QSqlQueryModel::data(index, role);
+    QVariant value = QStandardItemModel::data(index, role);
     switch (role)
     {
         case Qt::TextColorRole: // Цвет текста

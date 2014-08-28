@@ -9,6 +9,7 @@
 
 #include <QDebug>
 #include "dialogadd.h"
+#include "selectaddress.h"
 
 namespace Ui {
 class RealtyObject;
@@ -44,6 +45,7 @@ private slots:
     void addMaterial();
     void addTypeApartament();
     void addDocumentProperty();
+    void selectAddress();
 };
 
 #endif // REALTYOBJECT_H

@@ -29,14 +29,14 @@ private:
     QString strPortDB;
     QString strUserDB;
     QString strPasswordDB;
-    QSqlDatabase db;
+    //QSqlDatabase db;
 
     QStandardItemModel *modelKladr;
-    QSqlTableModel *modelBrowse;
+    QStandardItemModel *modelBrowse;
 
-    bool createConnection();
+    //bool createConnection();
     void getSettings();
-    void dbfToMySQL(QString mysqlTableName, QString odbcTableName, QString lstRegion, QString socr);
+    void dbfToMySQL(QString mysqlTableName, QString odbcTableName, QString strRegion);
 
 private slots:
     void browseDir();

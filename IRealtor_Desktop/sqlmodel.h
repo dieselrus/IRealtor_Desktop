@@ -1,9 +1,9 @@
 #ifndef SQLMODEL_H
 #define SQLMODEL_H
-#include <QSqlQueryModel>
+#include <QStandardItemModel>
 
 //! [0]
-class CustomSqlModel : public QSqlQueryModel
+class CustomSqlModel : public QStandardItemModel
 {
     Q_OBJECT
 

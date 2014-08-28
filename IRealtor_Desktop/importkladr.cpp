@@ -4,7 +4,7 @@
 #include <QMessageBox>
 #include <QtSql>
 #include <QSqlError>
-#include <QTableWidgetItem>
+#include <QSqlTableModel>
 
 ImportKLADR::ImportKLADR(QWidget *parent) :
     QDialog(parent),
@@ -13,7 +13,7 @@ ImportKLADR::ImportKLADR(QWidget *parent) :
     ui->setupUi(this);
     getSettings();
 
-    modelBrowse = new QSqlTableModel(this);
+    modelBrowse = new QStandardItemModel(this);
     modelKladr = new QStandardItemModel(this);
 }
 
@@ -22,6 +22,7 @@ ImportKLADR::~ImportKLADR()
     delete ui;
 }
 
+/*
 bool ImportKLADR::createConnection(){
     db = QSqlDatabase::addDatabase("QMYSQL", "odbc_mysql");
     db.setHostName(strServerDB);
@@ -35,6 +36,7 @@ bool ImportKLADR::createConnection(){
     }
     return true;
 }
+*/
 
 void ImportKLADR::getSettings(){
     QSettings options("DSoft", "IRealtor");
@@ -83,44 +85,41 @@ void ImportKLADR::browseDir(){
     {
         qDebug()<<"Error odbc =" << db2.lastError().text();
     } else {
-        QSqlQuery odbc_query = QSqlQuery("SELECT distinct `name` , `socr` FROM KLADR WHERE `code` LIKE '%00000000000'", db2);
+        QSqlQuery odbc_query = QSqlQuery("SELECT distinct `code`, `name` , `socr` FROM KLADR WHERE `code` LIKE '%00000000000'", db2);
+        //QSqlQuery odbc_query = QSqlQuery("SELECT distinct `code`, `name` , `socr` FROM KLADR WHERE `code` REGEXP  '*00000000000'", db2);
         odbc_query.executedQuery();
 
-        QStandardItemModel *model = new QStandardItemModel(this);
-        model->insertColumn(0);
-        model->insertColumn(2);
-        model->setHeaderData(0, Qt::Horizontal, QString::fromLocal8Bit("Регион"));
-        model->setHeaderData(1, Qt::Horizontal, QString::fromLocal8Bit("Сокрацение"));
+        modelKladr->insertColumn(0);
+        modelKladr->insertColumn(1);
+        modelKladr->insertColumn(2);
 
-        ui->tableKladr->insertColumn(0);
-        ui->tableKladr->insertColumn(1);
-        ui->tableKladr->model()->setHeaderData(0, Qt::Horizontal, QString::fromLocal8Bit("Регион"));
-        ui->tableKladr->model()->setHeaderData(1, Qt::Horizontal, QString::fromLocal8Bit("Сокрацение"));
+        modelKladr->setHeaderData(0, Qt::Horizontal, QString("Код"));
+        modelKladr->setHeaderData(1, Qt::Horizontal, QString("Регион"));
+        modelKladr->setHeaderData(2, Qt::Horizontal, QString("Сокрацение"));
 
-        QStringList lstList;
-        int j = 0;
+        modelBrowse->insertColumn(0);
+        modelBrowse->insertColumn(1);
+        modelBrowse->insertColumn(2);
+
+        modelBrowse->setHeaderData(0, Qt::Horizontal, QString("Код"));
+        modelBrowse->setHeaderData(1, Qt::Horizontal, QString("Регион"));
+        modelBrowse->setHeaderData(2, Qt::Horizontal, QString("Сокрацение"));
+        ui->tableBrowse->setModel(modelBrowse);
+
         while (odbc_query.next()) {
-            //lstKladr.append(odbc_query.value(0).toString());
-            qDebug() << odbc_query.value(0).toString();
+            //qDebug() << odbc_query.value(0).toString();
 
-            ui->tableKladr->insertRow(ui->tableKladr->rowCount());
-            ui->tableKladr->setItem(ui->tableKladr->rowCount() - 1,0, new QTableWidgetItem(odbc_query.value(0).toString()));
-            ui->tableKladr->setItem(ui->tableKladr->rowCount() - 1,1, new QTableWidgetItem(odbc_query.value(1).toString()));
-            //ui->tableKladr->ins
-            //lstList << odbc_query.value(0).toString();
+            modelKladr->insertRow(modelKladr->rowCount());
+            modelKladr->setItem(modelKladr->rowCount() - 1,0, new QStandardItem(odbc_query.value(0).toString().left(2)));
+            modelKladr->setItem(modelKladr->rowCount() - 1,1, new QStandardItem(odbc_query.value(1).toString()));
+            modelKladr->setItem(modelKladr->rowCount() - 1,2, new QStandardItem(odbc_query.value(2).toString()));
         }
-
-
-        //model->setQuery("SELECT distinct `name` , `socr` FROM KLADR WHERE `code` LIKE '%00000000000'", db2);
-        //model->setQuery(odbc_query);
-        //model->setHeaderData(0, Qt::Horizontal, QString::fromLocal8Bit("Регион"));
-        //model->setHeaderData(1, Qt::Horizontal, QString::fromLocal8Bit("Сокрацение"));
 
         ui->tableKladr->setSelectionBehavior(QAbstractItemView::SelectRows);
         ui->tableKladr->resizeColumnsToContents();
         //ui->tableKladr->horizontalHeader()->setResizeMode(QHeaderView::Stretch);
 
-        ui->tableKladr->setModel(model);
+        ui->tableKladr->setModel(modelKladr);
     }
 
     //ui->lstKladr->setModel(modelKladr);
@@ -129,12 +128,32 @@ void ImportKLADR::browseDir(){
 }
 
 void ImportKLADR::addRegionToList(){
-    QString data = ui->tableKladr->model()->data(ui->tableKladr->currentIndex()).toString();
-    //qDebug() << data;
+    //QString _data = ui->tableKladr->model()->data(ui->tableKladr->currentIndex()).toString();
+    //qDebug() << _data;
+    //QModelIndex index = ui->tableKladr->currentIndex();
+    //qDebug() << index;
+    //qDebug() <<  ui->tableKladr->model()->itemData(index);
 
-    modelBrowse->insertRow(modelBrowse->rowCount());
+    //qDebug() <<  ui->tableKladr->rowAt(1);
+
+    //modelBrowse->insertRow(modelBrowse->rowCount());
+    //modelBrowse->setItem();
     //QModelIndex index = modelBrowse->index(modelBrowse->rowCount()-1);
     //modelBrowse->setData(index, data);
+
+    modelBrowse->insertRow(modelBrowse->rowCount());
+
+    int row = ui->tableKladr->currentIndex().row();
+
+    //qDebug() << "===" << ui->tableKladr->model()->data(modelKladr->index(row,0)).toString();
+    //qDebug() << "===" << ui->tableKladr->model()->data(modelKladr->index(row,1)).toString();
+    //qDebug() << "===" << ui->tableKladr->model()->data(modelKladr->index(row,2)).toString();
+
+    modelBrowse->setItem(modelBrowse->rowCount() - 1,0, new QStandardItem(ui->tableKladr->model()->data(modelKladr->index(row,0)).toString()));
+    modelBrowse->setItem(modelBrowse->rowCount() - 1,1, new QStandardItem(ui->tableKladr->model()->data(modelKladr->index(row,1)).toString()));
+    modelBrowse->setItem(modelBrowse->rowCount() - 1,2, new QStandardItem(ui->tableKladr->model()->data(modelKladr->index(row,2)).toString()));
+
+    modelKladr->removeRow(row);
 
     ui->tableBrowse->setModel(modelBrowse);
 
@@ -142,53 +161,58 @@ void ImportKLADR::addRegionToList(){
 
 void ImportKLADR::removeRegionOnList(){
 
+    modelKladr->insertRow(modelKladr->rowCount());
+
+    int row = ui->tableBrowse->currentIndex().row();
+
+    modelKladr->setItem(modelBrowse->rowCount() - 1,0, new QStandardItem(ui->tableBrowse->model()->data(modelKladr->index(row,0)).toString()));
+    modelKladr->setItem(modelBrowse->rowCount() - 1,1, new QStandardItem(ui->tableBrowse->model()->data(modelKladr->index(row,1)).toString()));
+    modelKladr->setItem(modelBrowse->rowCount() - 1,2, new QStandardItem(ui->tableBrowse->model()->data(modelKladr->index(row,2)).toString()));
+
+    modelBrowse->removeRow(row);
+
+    ui->tableKladr->setModel(modelKladr);
+
 }
 
 void ImportKLADR::importData(){
-    /*
-    // foreach(const QModelIndex &index, ui->listView->selectionModel()->selectedIndexes())
-    //    list.append(model->itemFromIndex(index)->text());
-
-    QString a, b;
-    foreach(const QModelIndex &index, ui->lstBrowse->selectionModel()->selectedIndexes()){
-        a = ui->lstBrowse->model()->data(index).toString();
-        //b = modelBrowse->data(index).toString();
-    }
-
-    if(modelBrowse->rowCount() < 1){
-        //QMessageBox::critical(0, QObject::tr("Database Error"), db.lastError().text());
-        return;
-    }
-
-    QModelIndexList list =ui->lstBrowse->selectionModel()->selectedIndexes();
-
-    QStringList slist;
-    foreach(const QModelIndex &index, list){
-        slist.append( index.data(Qt::DisplayRole ).toString());
-    }
-    qDebug() << slist.join(",");
-    */
 
     QString slist;
     for (int i = 0; i < modelBrowse->rowCount(); i++){
         QModelIndex index = modelBrowse->index(i, 0);
         QString text = index.data(Qt::DisplayRole).toString();
-        text.prepend("'").append("'");
+        //text.prepend("'").append("'");
+        text.prepend("`code` LIKE '").append("%'");
 
         if(!slist.isEmpty())
-            slist.append(",");
+            slist.append(" OR ");
 
         slist.append(text);
     }
 
-    qDebug() << slist;
+    //qDebug() << slist;
 
-    dbfToMySQL("kladr_kladr", "KLADR", slist, NULL);
-    dbfToMySQL("kladr_street", "STREET", NULL, NULL);
-    dbfToMySQL("kladr_doma", "DOMA", NULL, NULL);
+    dbfToMySQL("kladr_kladr", "KLADR", slist);
+    dbfToMySQL("kladr_street", "STREET", slist);
+    dbfToMySQL("kladr_doma", "DOMA", slist);
+
+    accept();
 }
 
-void ImportKLADR::dbfToMySQL(QString mysqlTableName, QString odbcTableName, QString lstRegion, QString socr){
+void ImportKLADR::dbfToMySQL(QString mysqlTableName, QString odbcTableName, QString strRegion){
+
+    QSqlDatabase db1 = QSqlDatabase::addDatabase("QMYSQL", "odbc_mysql1");
+    db1.setHostName(strServerDB);
+    //db.port(strPortDB);
+    db1.setDatabaseName("IRealtor");
+    db1.setUserName(strUserDB);
+    db1.setPassword(strPasswordDB);
+
+    if (!db1.open()) {
+        qDebug() << "Error open mysql db kladr!";
+        return;
+    }
+
     QSqlDatabase db2=QSqlDatabase::addDatabase("QODBC", "dbf");
 
     //db2.setDatabaseName(QString("Driver={Microsoft dBase Driver (*.dbf)};datasource=%1").arg(dir + "/KLADR.DBF"));
@@ -201,27 +225,28 @@ void ImportKLADR::dbfToMySQL(QString mysqlTableName, QString odbcTableName, QStr
     if(!db2.open())
     {
         qDebug()<<"Error odbc =" << db2.lastError().text();
-    } else if (!db.open() && !createConnection()) {
-        qDebug()<<"Error mysql_odbc =" << db.lastError().text();
     }
-    else
+    else if (!db1.isOpen())
     {
-        db.transaction();
+        qDebug()<<"Error mysql_odbc open db =" << db1.lastError().text();
+    }
+    else if (db2.isOpen() && db1.isOpen())
+    {
+        //db.transaction();
 
         // delete kladr
         QString mysql_str_dell = "DELETE FROM `" + mysqlTableName + "`";
-        QSqlQuery mysql_query_dell = QSqlQuery(mysql_str_dell, db);
+        QSqlQuery mysql_query_dell = QSqlQuery(mysql_str_dell, db1);
         mysql_query_dell.exec();
+        mysql_query_dell.clear();
 
         // select kladr
         QString str_odbc_query;
-        if(lstRegion == NULL){
-            str_odbc_query = "SELECT name, socr, code, index, ocatd FROM " + odbcTableName + ";";
-        } else {
-            str_odbc_query = "SELECT name, socr, code, index, ocatd FROM " + odbcTableName + " WHERE `name` IN (" + lstRegion + ") AND `socr` = '" + socr + "'';";
-        }
+        str_odbc_query = "SELECT distinct name, socr, code, index, ocatd FROM " + odbcTableName + " WHERE " + strRegion + ";";
 
-        qDebug() << str_odbc_query;
+        //qDebug() << str_odbc_query;
+
+        //return;
 
         QSqlQuery odbc_query(str_odbc_query, db2);
 
@@ -234,7 +259,7 @@ void ImportKLADR::dbfToMySQL(QString mysqlTableName, QString odbcTableName, QStr
 
         while (odbc_query.next()) {
             i++;
-            qDebug() << "INSERT";
+            //qDebug() << odbc_query.value(0).toString() << odbc_query.value(1).toString() << odbc_query.value(2).toString() << odbc_query.value(3).toString() << odbc_query.value(4).toString();
             // add kladr
             QString mysql_str = "INSERT INTO `" + mysqlTableName + "` (`name`, `socr`, `code`, `index`, `ocatd`) VALUE ('" +
                     odbc_query.value(0).toString() + "', '" +
@@ -243,25 +268,35 @@ void ImportKLADR::dbfToMySQL(QString mysqlTableName, QString odbcTableName, QStr
                     odbc_query.value(3).toString() + "', '" +
                     odbc_query.value(4).toString() +
                     "');";
+            //qDebug() << mysql_str;
 
-            QSqlQuery mysql_query = QSqlQuery(mysql_str, db);
-            if( !mysql_query.exec(mysql_str) ){
-                qDebug() << "Failed to add kladr. " << mysql_query.lastError().text();
-                QMessageBox::critical(0, QObject::tr("Database Error"), db.lastError().text());
-                db.rollback();
-                return;
+            if (db1.isOpen()) {
+                QSqlQuery mysql_query = QSqlQuery(mysql_str, db1);
+                //mysql_query.exec(mysql_str);
+
+                if( !mysql_query.isActive()){
+                    qDebug() << "Failed to add kladr. " << mysql_query.lastError().text();
+                    QMessageBox::critical(0, QObject::tr("Database Error"), db1.lastError().text());
+                    //db.rollback();
+                    return;
+                }
+
+                //qDebug() << mysql_str;
+                mysql_query.clear();
+
+            } else {
+                qDebug() << "Failed to open db kladr. " << db1.lastError().text();
             }
 
             ui->progressBar->setValue(i);
         }
 
-        db.commit();
+        //db.commit();
     }
 
     db2.close();
-    db.close();
-    db.removeDatabase("odbc_mysql");
+    db1.close();
+    db1.removeDatabase("odbc_mysql1");
     db2.removeDatabase("dbf");
-    accept();
 
 }

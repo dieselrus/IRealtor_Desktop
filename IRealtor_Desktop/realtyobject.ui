@@ -865,12 +865,28 @@
    <slot>addDocumentProperty()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1018</x>
-     <y>171</y>
+     <x>119</x>
+     <y>160</y>
     </hint>
     <hint type="destinationlabel">
      <x>1061</x>
      <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RealtyObject</receiver>
+   <slot>selectAddress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1041</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1073</x>
+     <y>13</y>
     </hint>
    </hints>
   </connection>
@@ -884,5 +900,6 @@
   <slot>addMaterial()</slot>
   <slot>addStatus()</slot>
   <slot>addDocumentProperty()</slot>
+  <slot>selectAddress()</slot>
  </slots>
 </ui>
