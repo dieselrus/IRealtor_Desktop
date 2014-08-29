@@ -59,6 +59,15 @@ void RealtyObject::getObjectData(){
 }
 
 void RealtyObject::getData(){
+
+    ui->cmbDocProperty->clear();
+    ui->cmbMaterial->clear();
+    ui->cmbRegion->clear();
+    ui->cmbStatus->clear();
+    ui->cmbTradeType->clear();
+    ui->cmbType->clear();
+    ui->cmbTypeApartament->clear();
+
     if (!db.open() && !createConnection()){
         qDebug() << "Not connected status!";
         QMessageBox::critical(0, QObject::tr("Database Error"),db.lastError().text());
@@ -171,14 +180,19 @@ void RealtyObject::getData(){
 
     db.close();
 }
-
-void RealtyObject::selectAddress(){
-    SelectAddress dial(this); // создаём диалог
+//////////////////////////////////////////////////////////  ADDRESS /////////////////////////////////////////////////////////////////
+void RealtyObject::selectAdr(){
+    formAddress = new SelectAddress(this); // создаём диалог
     //dial.parentWindow = this;
-    dial.getRegion();
-    dial.exec();
+    formAddress->getRegion();
+    formAddress->exec();
 }
 
+void RealtyObject::setAdderss(){
+    ui->leAddress->setText(formAddress->strAddress);
+}
+
+//////////////////////////////////////////////////////////  SAVE DATA /////////////////////////////////////////////////////////////////
 void RealtyObject::saveData(){
     if (!db.open() && !createConnection()){
         qDebug() << "Not connected!";
@@ -190,7 +204,12 @@ void RealtyObject::saveData(){
 
         QSqlQuery query_address;
         // add address
-        QString sql_address = "INSERT INTO address (view)  VALUE ('" + ui->leAddress->text() + "');";
+        QString sql_address = "INSERT INTO address (`region`, `street`, `hause`, `kvartira`, `view`)  VALUE ('" +
+                ui->leAddress->text().split(",")[1] + "','" +
+                ui->leAddress->text().split(",")[2] + "','" +
+                ui->leAddress->text().split(",")[3] + "','" +
+                ui->leAddress->text().split(",")[4] + "','" +
+                ui->leAddress->text() + "');";
 
         if( !query_address.exec(sql_address) ){
             qDebug() << "Failed to add region. " << query_address.lastError().text();
@@ -342,6 +361,3 @@ void RealtyObject::updateData(){
     getData();
 }
 
-void RealtyObject::setAdderss(QString str){
-    ui->leAddress->setText(str);
-}

@@ -10,7 +10,6 @@
 #include <QSettings>
 #include <QDebug>
 #include <QMessageBox>
-#include "realtyobject.h"
 
 namespace Ui {
 class SelectAddress;
@@ -23,6 +22,7 @@ class SelectAddress : public QDialog
 public:
     explicit SelectAddress(QWidget *parent = 0);
     ~SelectAddress();
+    QString strAddress;
 
 private:
     Ui::SelectAddress *ui;
@@ -42,6 +42,7 @@ private slots:
 
 public slots:
     void getRegion();
+
 };
 
 #endif // SELECTADDRESS_H

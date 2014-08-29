@@ -158,6 +158,7 @@ Makefile: ../IRealtor_Desktop/IRealtor_Desktop.pro D:/DevTools/Qt/Qt5.3.1/5.3/mi
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/resolve_config.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/exclusive_builds_post.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/default_post.prf \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/win32/console.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/win32/rtti.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/precompile_header.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/warn_on.prf \
@@ -166,14 +167,11 @@ Makefile: ../IRealtor_Desktop/IRealtor_Desktop.pro D:/DevTools/Qt/Qt5.3.1/5.3/mi
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/moc.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/win32/opengl.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/uic.prf \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/win32/windows.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/testcase_targets.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/exceptions.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/yacc.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/lex.prf \
 		../IRealtor_Desktop/IRealtor_Desktop.pro \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/qtmaind.prl \
-		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Cored.prl \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Widgets.prl \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Sql.prl \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Gui.prl \
@@ -278,6 +276,7 @@ D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\default_pre.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\resolve_config.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\exclusive_builds_post.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\default_post.prf:
+D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\console.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\rtti.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\precompile_header.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\warn_on.prf:
@@ -286,14 +285,11 @@ D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\resources.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\moc.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\opengl.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\uic.prf:
-D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\win32\windows.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\testcase_targets.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\exceptions.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\yacc.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\lex.prf:
 ..\IRealtor_Desktop\IRealtor_Desktop.pro:
-D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/qtmaind.prl:
-D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Cored.prl:
 D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Widgets.prl:
 D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Sql.prl:
 D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Gui.prl:

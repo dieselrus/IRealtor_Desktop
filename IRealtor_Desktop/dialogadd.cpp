@@ -20,6 +20,8 @@ DialogAdd::DialogAdd(QWidget *parent) :
 
     //QObject::connect(ui->toolButton_2, SIGNAL(clicked()), this, SLOT(removeData()));
 
+    connect(ui->buttonBox, SIGNAL(rejected()), parent, SLOT(updateData()));
+
     getSettings();
 }
 
@@ -115,7 +117,7 @@ void DialogAdd::getData(){
 
     setWindowTitle(strWindowName);
 
-    qDebug() << parent();
+    //qDebug() << parent();
     QSqlTableModel *model = new QSqlTableModel();
     model->setTable(strTableName);          // Имя таблицы базы данных.
     //model->setFilter("salary >= 1000");   // Условие WHERE.

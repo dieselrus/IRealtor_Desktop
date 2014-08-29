@@ -878,7 +878,7 @@
    <sender>pushButton</sender>
    <signal>clicked()</signal>
    <receiver>RealtyObject</receiver>
-   <slot>selectAddress()</slot>
+   <slot>selectAdr()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1041</x>
@@ -900,6 +900,6 @@
   <slot>addMaterial()</slot>
   <slot>addStatus()</slot>
   <slot>addDocumentProperty()</slot>
-  <slot>selectAddress()</slot>
+  <slot>selectAdr()</slot>
  </slots>
 </ui>

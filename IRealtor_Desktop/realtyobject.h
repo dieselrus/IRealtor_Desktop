@@ -25,7 +25,7 @@ public:
     QSqlDatabase db;
     bool createConnection();
     void getObjectData();
-    void setAdderss(QString str);
+    //void setAdderss(QString str);
 
 private:
     Ui::RealtyObject *ui;
@@ -33,7 +33,7 @@ private:
     QString strPortDB;
     QString strUserDB;
     QString strPasswordDB;
-    void updateData();
+    SelectAddress *formAddress;
 
 private slots:
     void saveData();
@@ -46,7 +46,11 @@ private slots:
     void addMaterial();
     void addTypeApartament();
     void addDocumentProperty();
-    void selectAddress();
+    void selectAdr();
+
+public slots:
+    void setAdderss();
+    void updateData();
 };
 
 #endif // REALTYOBJECT_H

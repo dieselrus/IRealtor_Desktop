@@ -9,6 +9,8 @@ SelectAddress::SelectAddress(QWidget *parent) :
 
     //this->parentWindow = parent;
     getSettings();
+
+    connect(ui->buttonBox, SIGNAL(accepted()), parent, SLOT(setAdderss()));
 }
 
 SelectAddress::~SelectAddress()
@@ -100,7 +102,7 @@ void SelectAddress::getStreet(){
         QSqlQuery query = QSqlQuery(db);
         query.clear();
         QString sql = "SELECT distinct name, socr, code FROM `kladr_street` WHERE `code` LIKE '" + ui->cmbSity->currentData().toString() + "%' ORDER BY `name`;";
-        qDebug() << "Street"  << sql;
+        //qDebug() << "Street"  << sql;
         query.exec(sql);
 
         while (query.next()) {
@@ -145,7 +147,7 @@ void SelectAddress::getHaus(){
 }
 
 void SelectAddress::setAddress(){
-    //parentWindow->setAdderss(ui->cmbRegion->currentText() + "," + ui->cmbSity->currentText() + "," + ui->cmbStreet->currentText() + "," + ui->cmbHaus->currentText() + "," + ui->leKvartira->text());
+    strAddress = ui->cmbRegion->currentText() + ", " + ui->cmbSity->currentText() + ", " + ui->cmbStreet->currentText() + ", " + ui->cmbHaus->currentText() + " д., " + ui->leKvartira->text() + " кв.";
 
     accept();
 }
