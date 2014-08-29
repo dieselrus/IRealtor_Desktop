@@ -5,7 +5,7 @@
 #include <QMessageBox>
 
 RealtyObject::RealtyObject(QWidget *parent) :
-    QWidget(parent),
+    QDialog(parent),
     ui(new Ui::RealtyObject)
 {
     ui->setupUi(this);
@@ -173,8 +173,8 @@ void RealtyObject::getData(){
 }
 
 void RealtyObject::selectAddress(){
-    SelectAddress dial; // создаём диалог
-
+    SelectAddress dial(this); // создаём диалог
+    //dial.parentWindow = this;
     dial.getRegion();
     dial.exec();
 }
@@ -262,7 +262,7 @@ void RealtyObject::getSettings(){
 
 void RealtyObject::addRegion(){
 
-    DialogAdd dial; // создаём диалог
+    DialogAdd dial(this); // создаём диалог
 
     dial.strTableName = "region";
     dial.strWindowName = "Район";
@@ -273,7 +273,7 @@ void RealtyObject::addRegion(){
 
 void RealtyObject::addType(){
 
-    DialogAdd dial; // создаём диалог
+    DialogAdd dial(this); // создаём диалог
 
     dial.strTableName = "type";
     dial.strWindowName = "Тип объекта";
@@ -284,7 +284,7 @@ void RealtyObject::addType(){
 
 void RealtyObject::addStatus(){
 
-    DialogAdd dial; // создаём диалог
+    DialogAdd dial(this); // создаём диалог
 
     dial.strTableName = "status";
     dial.strWindowName = "Статус объекта";
@@ -295,7 +295,7 @@ void RealtyObject::addStatus(){
 
 void RealtyObject::addTradeType(){
 
-    DialogAdd dial; // создаём диалог
+    DialogAdd dial(this); // создаём диалог
 
     dial.strTableName = "trade";
     dial.strWindowName = "Тип сделки";
@@ -306,7 +306,7 @@ void RealtyObject::addTradeType(){
 
 void RealtyObject::addMaterial(){
 
-    DialogAdd dial; // создаём диалог
+    DialogAdd dial(this); // создаём диалог
 
     dial.strTableName = "material";
     dial.strWindowName = "Материал изготовления";
@@ -317,7 +317,7 @@ void RealtyObject::addMaterial(){
 
 void RealtyObject::addTypeApartament(){
 
-    DialogAdd dial; // создаём диалог
+    DialogAdd dial(this); // создаём диалог
 
     dial.strTableName = "type_apartment";
     dial.strWindowName = "Тип";
@@ -328,7 +328,7 @@ void RealtyObject::addTypeApartament(){
 
 void RealtyObject::addDocumentProperty(){
 
-    DialogAdd dial; // создаём диалог
+    DialogAdd dial(this); // создаём диалог
 
     dial.strTableName = "document_property";
     dial.strWindowName = "Документ собственности";
@@ -342,4 +342,6 @@ void RealtyObject::updateData(){
     getData();
 }
 
-
+void RealtyObject::setAdderss(QString str){
+    ui->leAddress->setText(str);
+}

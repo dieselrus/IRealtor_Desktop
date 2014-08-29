@@ -10,6 +10,7 @@
 #include <QSettings>
 #include <QDebug>
 #include <QMessageBox>
+#include "realtyobject.h"
 
 namespace Ui {
 class SelectAddress;
@@ -36,6 +37,9 @@ private:
 private slots:
     void getSity();
     void getStreet();
+    void getHaus();
+    void setAddress();
+
 public slots:
     void getRegion();
 };

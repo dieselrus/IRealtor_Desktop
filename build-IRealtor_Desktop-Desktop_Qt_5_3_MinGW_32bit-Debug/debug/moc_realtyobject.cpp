@@ -115,7 +115,7 @@ void RealtyObject::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
 }
 
 const QMetaObject RealtyObject::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_RealtyObject.data,
+    { &QDialog::staticMetaObject, qt_meta_stringdata_RealtyObject.data,
       qt_meta_data_RealtyObject,  qt_static_metacall, 0, 0}
 };
 
@@ -130,12 +130,12 @@ void *RealtyObject::qt_metacast(const char *_clname)
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_RealtyObject.stringdata))
         return static_cast<void*>(const_cast< RealtyObject*>(this));
-    return QWidget::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
 int RealtyObject::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

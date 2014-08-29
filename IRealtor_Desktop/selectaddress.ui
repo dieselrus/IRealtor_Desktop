@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>406</width>
     <height>300</height>
    </rect>
   </property>
@@ -125,17 +125,14 @@
       </widget>
      </item>
      <item>
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Кв.</string>
        </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="leKvartira"/>
      </item>
     </layout>
    </item>
@@ -157,11 +154,11 @@
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
    <receiver>SelectAddress</receiver>
-   <slot>accept()</slot>
+   <slot>setAddress()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
+     <x>257</x>
+     <y>290</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -185,5 +182,59 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>cmbRegion</sender>
+   <signal>activated(QString)</signal>
+   <receiver>SelectAddress</receiver>
+   <slot>getSity()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>7</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbSity</sender>
+   <signal>activated(QString)</signal>
+   <receiver>SelectAddress</receiver>
+   <slot>getStreet()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>373</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>106</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbStreet</sender>
+   <signal>activated(QString)</signal>
+   <receiver>SelectAddress</receiver>
+   <slot>getHaus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>388</x>
+     <y>181</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
+ <slots>
+  <slot>getSity()</slot>
+  <slot>getStreet()</slot>
+  <slot>getHaus()</slot>
+  <slot>setAddress()</slot>
+ </slots>
 </ui>

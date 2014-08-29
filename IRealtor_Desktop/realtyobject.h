@@ -1,7 +1,7 @@
 #ifndef REALTYOBJECT_H
 #define REALTYOBJECT_H
 
-#include <QWidget>
+#include <QDialog>
 #include <QtSql/QSql>
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlDriver>
@@ -15,7 +15,7 @@ namespace Ui {
 class RealtyObject;
 }
 
-class RealtyObject : public QWidget
+class RealtyObject : public QDialog
 {
     Q_OBJECT
 
@@ -25,6 +25,7 @@ public:
     QSqlDatabase db;
     bool createConnection();
     void getObjectData();
+    void setAdderss(QString str);
 
 private:
     Ui::RealtyObject *ui;

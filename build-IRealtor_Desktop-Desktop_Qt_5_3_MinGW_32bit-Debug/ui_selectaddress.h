@@ -20,7 +20,6 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
@@ -43,14 +42,15 @@ public:
     QComboBox *cmbHaus;
     QLabel *label_4;
     QLineEdit *leCorp;
-    QSpacerItem *horizontalSpacer;
+    QLabel *label_6;
+    QLineEdit *leKvartira;
     QDialogButtonBox *buttonBox;
 
     void setupUi(QDialog *SelectAddress)
     {
         if (SelectAddress->objectName().isEmpty())
             SelectAddress->setObjectName(QStringLiteral("SelectAddress"));
-        SelectAddress->resize(400, 300);
+        SelectAddress->resize(406, 300);
         QFont font;
         font.setPointSize(14);
         SelectAddress->setFont(font);
@@ -138,9 +138,15 @@ public:
 
         horizontalLayout_4->addWidget(leCorp);
 
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        label_6 = new QLabel(SelectAddress);
+        label_6->setObjectName(QStringLiteral("label_6"));
 
-        horizontalLayout_4->addItem(horizontalSpacer);
+        horizontalLayout_4->addWidget(label_6);
+
+        leKvartira = new QLineEdit(SelectAddress);
+        leKvartira->setObjectName(QStringLiteral("leKvartira"));
+
+        horizontalLayout_4->addWidget(leKvartira);
 
 
         verticalLayout->addLayout(horizontalLayout_4);
@@ -154,8 +160,11 @@ public:
 
 
         retranslateUi(SelectAddress);
-        QObject::connect(buttonBox, SIGNAL(accepted()), SelectAddress, SLOT(accept()));
+        QObject::connect(buttonBox, SIGNAL(accepted()), SelectAddress, SLOT(setAddress()));
         QObject::connect(buttonBox, SIGNAL(rejected()), SelectAddress, SLOT(reject()));
+        QObject::connect(cmbRegion, SIGNAL(activated(QString)), SelectAddress, SLOT(getSity()));
+        QObject::connect(cmbSity, SIGNAL(activated(QString)), SelectAddress, SLOT(getStreet()));
+        QObject::connect(cmbStreet, SIGNAL(activated(QString)), SelectAddress, SLOT(getHaus()));
 
         QMetaObject::connectSlotsByName(SelectAddress);
     } // setupUi
@@ -168,6 +177,7 @@ public:
         label_2->setText(QApplication::translate("SelectAddress", "\320\243\320\273\320\270\321\206\320\260:", 0));
         label_3->setText(QApplication::translate("SelectAddress", "\320\224\320\276\320\274:", 0));
         label_4->setText(QApplication::translate("SelectAddress", "\320\232\320\276\321\200\320\277.", 0));
+        label_6->setText(QApplication::translate("SelectAddress", "\320\232\320\262.", 0));
     } // retranslateUi
 
 };

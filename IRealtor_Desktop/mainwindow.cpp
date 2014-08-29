@@ -121,7 +121,7 @@ void MainWindow::getStatus(){
 
 // Open form realty objects
 void MainWindow::openFormRealtyObjects(){
-    formRO = new RealtyObject();
+    formRO = new RealtyObject(this);
     formRO->setAttribute(Qt::WA_DeleteOnClose);
     //ui->MainWindow->addSubWindow(formRO);
     formRO->show();
@@ -131,7 +131,7 @@ void MainWindow::openFormRealtyObjects(){
 
 // Open form settings
 void MainWindow::opensettings(){
-    formSettings = new settings();
+    formSettings = new settings(this);
     formSettings->setAttribute(Qt::WA_DeleteOnClose);
     //ui->MainWindow->addSubWindow(formSettings);
     formSettings->show();
@@ -150,7 +150,7 @@ void MainWindow::getSettings(){
 // Open KLADR import form
 void MainWindow::KLADRimport(){
 
-    formKLADRimport = new ImportKLADR;
+    formKLADRimport = new ImportKLADR(this);
     formKLADRimport->setAttribute(Qt::WA_DeleteOnClose);
     //ui->MainWindow->addSubWindow(formKLADRimport);
     formKLADRimport->show();
