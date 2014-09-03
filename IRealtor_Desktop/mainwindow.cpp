@@ -126,7 +126,6 @@ void MainWindow::openFormRealtyObjects(){
     //ui->MainWindow->addSubWindow(formRO);
     formRO->show();
     formRO->activateWindow();
-
 }
 
 // Open form settings
@@ -166,16 +165,30 @@ void MainWindow::readRealtyObjects(){
     model->select();                      // Получить данные.
 
     QSqlQueryModel *_model = new QSqlQueryModel();
-    _model->setQuery("SELECT `realtyobjects`.`id` , `address`.`view` , `region`.`name`, `status`.`name` \
+    _model->setQuery("SELECT `realtyobjects`.`id`, `address`.`view`, `region`.`name`, `realtyobjects`.`rooms`, `realtyobjects`.`price`, `status`.`name` , `type`.`name`, `trade`.`name`\
                      FROM `realtyobjects` \
-                     JOIN `region` ON `realtyobjects`.`region_id` = `region`.`id` \
-                     JOIN `status` ON `realtyobjects`.`status_id` = `status`.`id` \
-                     JOIN `address` ON `realtyobjects`.`address` = `address`.`id`");
-    _model->setHeaderData(2, Qt::Horizontal, tr("Name"));
+                     JOIN `region`  ON `realtyobjects`.`region_id`  = `region`.`id`     \
+                     JOIN `status`  ON `realtyobjects`.`status_id`  = `status`.`id`     \
+                     JOIN `address` ON `realtyobjects`.`address`    = `address`.`id`    \
+                     JOIN `type`    ON `realtyobjects`.`type_id`    = `type`.`id`       \
+                     JOIN `trade`   ON `realtyobjects`.`trade_id`   = `trade`.`id` ");
+
+    _model->setHeaderData(1, Qt::Horizontal, tr("Полный адрес"));
+    _model->setHeaderData(2, Qt::Horizontal, tr("Район"));
+    _model->setHeaderData(3, Qt::Horizontal, tr("Комнат"));
+    _model->setHeaderData(4, Qt::Horizontal, tr("Цена"));
+    _model->setHeaderData(5, Qt::Horizontal, tr("Статус"));
+    _model->setHeaderData(6, Qt::Horizontal, tr("Тип"));
+    _model->setHeaderData(7, Qt::Horizontal, tr("Сделка"));
+    //_model->setHeaderData(8, Qt::Horizontal, tr("Name"));
 
     ui->tvRealtyObjects->setModel(_model);
     ui->tvRealtyObjects->setAlternatingRowColors(true);
     ui->tvRealtyObjects->resizeRowsToContents();
     ui->tvRealtyObjects->resizeColumnsToContents();
+    ui->tvRealtyObjects->setSelectionBehavior(QAbstractItemView::SelectRows);
+    ui->tvRealtyObjects->setColumnHidden(0, true);
+
+
 }
 

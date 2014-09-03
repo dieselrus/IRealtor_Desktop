@@ -105,6 +105,7 @@ void ImportKLADR::browseDir(){
         modelBrowse->setHeaderData(1, Qt::Horizontal, QString("Регион"));
         modelBrowse->setHeaderData(2, Qt::Horizontal, QString("Сокрацение"));
         ui->tableBrowse->setModel(modelBrowse);
+        ui->tableBrowse->verticalHeader()->setVisible(false);
 
         while (odbc_query.next()) {
             //qDebug() << odbc_query.value(0).toString();
@@ -117,6 +118,7 @@ void ImportKLADR::browseDir(){
 
         ui->tableKladr->setSelectionBehavior(QAbstractItemView::SelectRows);
         ui->tableKladr->resizeColumnsToContents();
+        ui->tableKladr->verticalHeader()->setVisible(false);
         //ui->tableKladr->horizontalHeader()->setResizeMode(QHeaderView::Stretch);
 
         ui->tableKladr->setModel(modelKladr);

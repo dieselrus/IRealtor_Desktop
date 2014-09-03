@@ -427,7 +427,7 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(btnAdd, SIGNAL(clicked()), MainWindow, SLOT(openFormRealtyObjects()));
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

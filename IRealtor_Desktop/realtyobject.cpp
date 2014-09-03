@@ -165,7 +165,7 @@ void RealtyObject::getData(){
             ui->cmbTypeApartament->insertItem(index, name, QVariant(index));
         }
 
-        // address
+        /* address
         query.clear();
         query.exec("SELECT id, view FROM address");
 
@@ -175,6 +175,7 @@ void RealtyObject::getData(){
 
             ui->leAddress->setText(name);
         }
+       */
 
     }
 
@@ -267,6 +268,8 @@ void RealtyObject::saveData(){
 
     db.commit();
     db.close();
+
+    accept();
 
 }
 
