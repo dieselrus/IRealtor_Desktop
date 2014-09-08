@@ -17,8 +17,13 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="iconSize">
        <size>
@@ -26,6 +31,139 @@
         <height>48</height>
        </size>
       </property>
+      <widget class="QWidget" name="">
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/img/img/trade.png</normaloff>:/img/img/trade.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Рабочий стол</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="4" column="6">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Динамика</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3" colspan="2">
+         <widget class="QLabel" name="label_9">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Агенты и их объекты недвижимости</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="6" rowspan="2">
+         <widget class="QTableView" name="tableView_2"/>
+        </item>
+        <item row="3" column="3">
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>В аренде 0</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QTableView" name="tableView_4"/>
+           </item>
+          </layout>
+          <zorder>tableView</zorder>
+          <zorder>tableView_4</zorder>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Текущие сделки (CRM)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3" colspan="2">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Статистика</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3" colspan="2">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>Продажа</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QTableView" name="tableView_3"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="6" column="3" colspan="2">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>Аренда</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QTableView" name="tableView_5"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="5" column="6" rowspan="2">
+         <widget class="QCustomPlot" name="widget" native="true"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>В продаже 0</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QTableView" name="tableView"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
       <widget class="QWidget" name="tab">
        <attribute name="icon">
         <iconset resource="res.qrc">
@@ -448,15 +586,6 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab_2">
-       <attribute name="icon">
-        <iconset resource="res.qrc">
-         <normaloff>:/img/img/trade.png</normaloff>:/img/img/trade.png</iconset>
-       </attribute>
-       <attribute name="title">
-        <string>Tab 2</string>
-       </attribute>
-      </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="icon">
         <iconset resource="res.qrc">
@@ -529,6 +658,14 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="res.qrc"/>
  </resources>
@@ -549,8 +686,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>tabWidget</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>changeTab()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>539</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>842</x>
+     <y>38</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>openFormRealtyObjects()</slot>
+  <slot>changeTab()</slot>
  </slots>
 </ui>
