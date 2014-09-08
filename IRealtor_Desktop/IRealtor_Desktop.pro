@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui sql printsupport
 
 CONFIG += console
 
@@ -22,7 +22,8 @@ SOURCES += main.cpp\
     dialogadd.cpp \
     importkladr.cpp \
     sqlmodel.cpp \
-    selectaddress.cpp
+    selectaddress.cpp \
+    qcustomplot.cpp
 
 HEADERS  += mainwindow.h \
     realtyobject.h \
@@ -31,7 +32,8 @@ HEADERS  += mainwindow.h \
     dialogadd.h \
     importkladr.h \
     sqlmodel.h \
-    selectaddress.h
+    selectaddress.h \
+    qcustomplot.h
 
 FORMS    += mainwindow.ui \
     realtyobject.ui \

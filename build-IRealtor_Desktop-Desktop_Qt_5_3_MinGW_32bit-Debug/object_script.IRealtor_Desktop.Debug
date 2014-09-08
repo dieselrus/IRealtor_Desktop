@@ -8,6 +8,7 @@ INPUT(
 ./debug\importkladr.o
 ./debug\sqlmodel.o
 ./debug\selectaddress.o
+./debug\qcustomplot.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_realtyobject.o
@@ -17,4 +18,5 @@ INPUT(
 ./debug\moc_importkladr.o
 ./debug\moc_sqlmodel.o
 ./debug\moc_selectaddress.o
+./debug\moc_qcustomplot.o
 );
