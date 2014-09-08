@@ -397,7 +397,6 @@ debug/moc_realtyobject.cpp: D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWid
 		../IRealtor_Desktop/selectaddress.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QMessageBox \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qmessagebox.h \
-		../IRealtor_Desktop/realtyobject.h \
 		../IRealtor_Desktop/realtyobject.h
 	D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/win32-g++ -ID:/Project/Qt/IRealtor/IRealtor_Desktop/IRealtor_Desktop -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore -I. ..\IRealtor_Desktop\realtyobject.h -o debug\moc_realtyobject.cpp
 
@@ -1053,9 +1052,6 @@ debug/moc_selectaddress.cpp: D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWi
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QDebug \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QMessageBox \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qmessagebox.h \
-		../IRealtor_Desktop/realtyobject.h \
-		../IRealtor_Desktop/dialogadd.h \
-		../IRealtor_Desktop/selectaddress.h \
 		../IRealtor_Desktop/selectaddress.h
 	D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/win32-g++ -ID:/Project/Qt/IRealtor/IRealtor_Desktop/IRealtor_Desktop -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtSql -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtGui -ID:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore -I. ..\IRealtor_Desktop\selectaddress.h -o debug\moc_selectaddress.cpp
 
@@ -2842,8 +2838,6 @@ debug/selectaddress.o: ../IRealtor_Desktop/selectaddress.cpp ../IRealtor_Desktop
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QDebug \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QMessageBox \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/qmessagebox.h \
-		../IRealtor_Desktop/realtyobject.h \
-		../IRealtor_Desktop/dialogadd.h \
 		ui_selectaddress.h \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtCore/QVariant \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/include/QtWidgets/QAction \

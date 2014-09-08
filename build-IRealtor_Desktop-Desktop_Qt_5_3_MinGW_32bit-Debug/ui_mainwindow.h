@@ -32,6 +32,7 @@
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "qcustomplot.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -45,6 +46,26 @@ public:
     QWidget *centralWidget;
     QVBoxLayout *verticalLayout;
     QTabWidget *tabWidget;
+    QWidget *widget;
+    QGridLayout *gridLayout;
+    QLabel *label_10;
+    QLabel *label_9;
+    QTableView *tableView_2;
+    QGroupBox *groupBox_6;
+    QVBoxLayout *verticalLayout_6;
+    QTableView *tableView_4;
+    QLabel *label_8;
+    QLabel *label_7;
+    QGroupBox *groupBox_4;
+    QVBoxLayout *verticalLayout_4;
+    QTableView *tableView_3;
+    QGroupBox *groupBox_5;
+    QVBoxLayout *verticalLayout_5;
+    QTableView *tableView_5;
+    QCustomPlot *widget1;
+    QGroupBox *groupBox_7;
+    QVBoxLayout *verticalLayout_7;
+    QTableView *tableView;
     QWidget *tab;
     QVBoxLayout *verticalLayout_2;
     QGridLayout *gridLayout_2;
@@ -93,7 +114,6 @@ public:
     QPushButton *btnAdd;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
-    QWidget *tab_2;
     QWidget *tab_3;
     QMenuBar *menuBar;
     QMenu *menu;
@@ -122,7 +142,121 @@ public:
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
+        QFont font;
+        font.setPointSize(14);
+        tabWidget->setFont(font);
         tabWidget->setIconSize(QSize(48, 48));
+        widget = new QWidget();
+        widget->setObjectName(QStringLiteral("widget"));
+        gridLayout = new QGridLayout(widget);
+        gridLayout->setSpacing(6);
+        gridLayout->setContentsMargins(11, 11, 11, 11);
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        label_10 = new QLabel(widget);
+        label_10->setObjectName(QStringLiteral("label_10"));
+        label_10->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_10, 4, 6, 1, 1);
+
+        label_9 = new QLabel(widget);
+        label_9->setObjectName(QStringLiteral("label_9"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(label_9->sizePolicy().hasHeightForWidth());
+        label_9->setSizePolicy(sizePolicy);
+        label_9->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_9, 4, 3, 1, 2);
+
+        tableView_2 = new QTableView(widget);
+        tableView_2->setObjectName(QStringLiteral("tableView_2"));
+
+        gridLayout->addWidget(tableView_2, 2, 6, 2, 1);
+
+        groupBox_6 = new QGroupBox(widget);
+        groupBox_6->setObjectName(QStringLiteral("groupBox_6"));
+        QFont font1;
+        font1.setPointSize(12);
+        groupBox_6->setFont(font1);
+        verticalLayout_6 = new QVBoxLayout(groupBox_6);
+        verticalLayout_6->setSpacing(6);
+        verticalLayout_6->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
+        tableView_4 = new QTableView(groupBox_6);
+        tableView_4->setObjectName(QStringLiteral("tableView_4"));
+
+        verticalLayout_6->addWidget(tableView_4);
+
+        tableView_4->raise();
+
+        gridLayout->addWidget(groupBox_6, 3, 3, 1, 1);
+
+        label_8 = new QLabel(widget);
+        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_8, 1, 6, 1, 1);
+
+        label_7 = new QLabel(widget);
+        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_7, 1, 3, 1, 2);
+
+        groupBox_4 = new QGroupBox(widget);
+        groupBox_4->setObjectName(QStringLiteral("groupBox_4"));
+        groupBox_4->setFont(font1);
+        verticalLayout_4 = new QVBoxLayout(groupBox_4);
+        verticalLayout_4->setSpacing(6);
+        verticalLayout_4->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        tableView_3 = new QTableView(groupBox_4);
+        tableView_3->setObjectName(QStringLiteral("tableView_3"));
+
+        verticalLayout_4->addWidget(tableView_3);
+
+
+        gridLayout->addWidget(groupBox_4, 5, 3, 1, 2);
+
+        groupBox_5 = new QGroupBox(widget);
+        groupBox_5->setObjectName(QStringLiteral("groupBox_5"));
+        groupBox_5->setFont(font1);
+        verticalLayout_5 = new QVBoxLayout(groupBox_5);
+        verticalLayout_5->setSpacing(6);
+        verticalLayout_5->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
+        tableView_5 = new QTableView(groupBox_5);
+        tableView_5->setObjectName(QStringLiteral("tableView_5"));
+
+        verticalLayout_5->addWidget(tableView_5);
+
+
+        gridLayout->addWidget(groupBox_5, 6, 3, 1, 2);
+
+        widget1 = new QCustomPlot(widget);
+        widget1->setObjectName(QStringLiteral("widget1"));
+
+        gridLayout->addWidget(widget1, 5, 6, 2, 1);
+
+        groupBox_7 = new QGroupBox(widget);
+        groupBox_7->setObjectName(QStringLiteral("groupBox_7"));
+        groupBox_7->setFont(font1);
+        verticalLayout_7 = new QVBoxLayout(groupBox_7);
+        verticalLayout_7->setSpacing(6);
+        verticalLayout_7->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_7->setObjectName(QStringLiteral("verticalLayout_7"));
+        tableView = new QTableView(groupBox_7);
+        tableView->setObjectName(QStringLiteral("tableView"));
+
+        verticalLayout_7->addWidget(tableView);
+
+
+        gridLayout->addWidget(groupBox_7, 2, 3, 1, 1);
+
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/img/img/trade.png"), QSize(), QIcon::Normal, QIcon::Off);
+        tabWidget->addTab(widget, icon, QString());
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         verticalLayout_2 = new QVBoxLayout(tab);
@@ -134,8 +268,6 @@ public:
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
         cbxRegion = new QComboBox(tab);
         cbxRegion->setObjectName(QStringLiteral("cbxRegion"));
-        QFont font;
-        font.setPointSize(14);
         cbxRegion->setFont(font);
 
         gridLayout_2->addWidget(cbxRegion, 0, 1, 1, 4);
@@ -182,9 +314,9 @@ public:
 
         groupBox = new QGroupBox(tab);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        QFont font1;
-        font1.setPointSize(20);
-        groupBox->setFont(font1);
+        QFont font2;
+        font2.setPointSize(20);
+        groupBox->setFont(font2);
         gridLayout_3 = new QGridLayout(groupBox);
         gridLayout_3->setSpacing(6);
         gridLayout_3->setContentsMargins(11, 11, 11, 11);
@@ -347,9 +479,9 @@ public:
 
         verticalLayout_2->addWidget(btnFind);
 
-        QIcon icon;
-        icon.addFile(QStringLiteral(":/img/img/Haus.png"), QSize(), QIcon::Normal, QIcon::Off);
-        tabWidget->addTab(tab, icon, QString());
+        QIcon icon1;
+        icon1.addFile(QStringLiteral(":/img/img/Haus.png"), QSize(), QIcon::Normal, QIcon::Off);
+        tabWidget->addTab(tab, icon1, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName(QStringLiteral("tab_4"));
         verticalLayout_3 = new QVBoxLayout(tab_4);
@@ -385,12 +517,7 @@ public:
 
         verticalLayout_3->addLayout(horizontalLayout);
 
-        tabWidget->addTab(tab_4, icon, QString());
-        tab_2 = new QWidget();
-        tab_2->setObjectName(QStringLiteral("tab_2"));
-        QIcon icon1;
-        icon1.addFile(QStringLiteral(":/img/img/trade.png"), QSize(), QIcon::Normal, QIcon::Off);
-        tabWidget->addTab(tab_2, icon1, QString());
+        tabWidget->addTab(tab_4, icon1, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
         QIcon icon2;
@@ -426,8 +553,9 @@ public:
 
         retranslateUi(MainWindow);
         QObject::connect(btnAdd, SIGNAL(clicked()), MainWindow, SLOT(openFormRealtyObjects()));
+        QObject::connect(tabWidget, SIGNAL(currentChanged(int)), MainWindow, SLOT(changeTab()));
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -440,6 +568,15 @@ public:
         action_kladr->setText(QApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \320\232\320\233\320\220\320\224\320\240", 0));
         action_settings->setText(QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", 0));
         action_close->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\271\321\202\320\270", 0));
+        label_10->setText(QApplication::translate("MainWindow", "\320\224\320\270\320\275\320\260\320\274\320\270\320\272\320\260", 0));
+        label_9->setText(QApplication::translate("MainWindow", "\320\220\320\263\320\265\320\275\321\202\321\213 \320\270 \320\270\321\205 \320\276\320\261\321\212\320\265\320\272\321\202\321\213 \320\275\320\265\320\264\320\262\320\270\320\266\320\270\320\274\320\276\321\201\321\202\320\270", 0));
+        groupBox_6->setTitle(QApplication::translate("MainWindow", "\320\222 \320\260\321\200\320\265\320\275\320\264\320\265 0", 0));
+        label_8->setText(QApplication::translate("MainWindow", "\320\242\320\265\320\272\321\203\321\211\320\270\320\265 \321\201\320\264\320\265\320\273\320\272\320\270 (CRM)", 0));
+        label_7->setText(QApplication::translate("MainWindow", "\320\241\321\202\320\260\321\202\320\270\321\201\321\202\320\270\320\272\320\260", 0));
+        groupBox_4->setTitle(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\264\320\260\320\266\320\260", 0));
+        groupBox_5->setTitle(QApplication::translate("MainWindow", "\320\220\321\200\320\265\320\275\320\264\320\260", 0));
+        groupBox_7->setTitle(QApplication::translate("MainWindow", "\320\222 \320\277\321\200\320\276\320\264\320\260\320\266\320\265 0", 0));
+        tabWidget->setTabText(tabWidget->indexOf(widget), QApplication::translate("MainWindow", "\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273", 0));
         groupBox_3->setTitle(QApplication::translate("MainWindow", "\320\221\320\273\320\260\320\263\320\276\321\203\321\201\321\202\321\200\320\276\320\271\321\201\321\202\320\262\320\276", 0));
         label_21->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\201\321\202\320\276\321\217\320\275\320\270\320\265 \321\200\320\265\320\274\320\276\320\275\321\202\320\260", 0));
         label_22->setText(QApplication::translate("MainWindow", "\320\234\320\260\321\202\320\265\321\200\320\270\320\260\320\273 \320\267\320\264\320\260\320\275\320\270\321\217", 0));
@@ -462,7 +599,6 @@ public:
         pushButton_3->setText(QApplication::translate("MainWindow", "PushButton", 0));
         pushButton_4->setText(QApplication::translate("MainWindow", "PushButton", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "\320\236\320\261\321\212\320\265\320\272\321\202\321\213 \320\275\320\265\320\264\320\262\320\270\320\266\320\270\320\274\320\276\321\201\321\202\320\270", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Tab 2", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "\320\241\321\202\321\200\320\260\320\275\320\270\321\206\320\260", 0));
         menu->setTitle(QApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273", 0));
         menu_2->setTitle(QApplication::translate("MainWindow", "\320\243\321\202\320\270\320\273\320\270\321\202\321\213", 0));
