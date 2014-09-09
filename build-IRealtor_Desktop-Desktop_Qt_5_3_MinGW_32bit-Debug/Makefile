@@ -172,8 +172,18 @@ Makefile: ../IRealtor_Desktop/IRealtor_Desktop.pro D:/DevTools/Qt/Qt5.3.1/5.3/mi
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/yacc.prf \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/mkspecs/features/lex.prf \
 		../IRealtor_Desktop/IRealtor_Desktop.pro \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5WebKitWidgets.prl \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Quick.prl \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5MultimediaWidgets.prl \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5OpenGL.prl \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5PrintSupport.prl \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5WebKit.prl \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Qml.prl \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Multimedia.prl \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Widgets.prl \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Network.prl \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Positioning.prl \
+		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Sensors.prl \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Sql.prl \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Gui.prl \
 		D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Core.prl
@@ -291,8 +301,18 @@ D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\exceptions.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\yacc.prf:
 D:\DevTools\Qt\Qt5.3.1\5.3\mingw482_32\mkspecs\features\lex.prf:
 ..\IRealtor_Desktop\IRealtor_Desktop.pro:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5WebKitWidgets.prl:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Quick.prl:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5MultimediaWidgets.prl:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5OpenGL.prl:
 D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5PrintSupport.prl:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5WebKit.prl:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Qml.prl:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Multimedia.prl:
 D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Widgets.prl:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Network.prl:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Positioning.prl:
+D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Sensors.prl:
 D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Sql.prl:
 D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Gui.prl:
 D:/DevTools/Qt/Qt5.3.1/5.3/mingw482_32/lib/Qt5Core.prl:

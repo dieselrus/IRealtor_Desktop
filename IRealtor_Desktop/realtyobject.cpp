@@ -180,6 +180,8 @@ void RealtyObject::getData(){
     }
 
     db.close();
+
+    showMap("иркутская обл., Иркутск г., Советская ул., 58");
 }
 //////////////////////////////////////////////////////////  ADDRESS /////////////////////////////////////////////////////////////////
 void RealtyObject::selectAdr(){
@@ -364,3 +366,82 @@ void RealtyObject::updateData(){
     getData();
 }
 
+void RealtyObject::showMap(QString _address)
+{
+    QString htmlText = "<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd""> \
+            <meta http-equiv=""X-UA-Compatible"" content=""IE=edge,chrome=1""> \
+            <html xmlns=""http://www.w3.org/1999/xhtml""> \
+            <head> \
+                <title>~~address~~</title> \
+                <meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"" /> \
+                <script src=""http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"" type=""text/javascript""></script> \
+                <script type=""text/javascript""> \
+                    ymaps.ready(init); \
+                    var myMap, myPlacemark; \
+             \
+                    function init(){  \
+                        myMap = new ymaps.Map (""map"", { \
+                            center: [55.76, 37.64], \
+                            zoom: 7, \
+                            behaviors: ['default', 'scrollZoom'] \
+                        }); \
+                     \
+                        // В метод add можно передать строковый идентификатор \
+                        // элемента управления и его параметры. \
+                        myMap.controls \
+                            // Кнопка изменения масштаба. \
+                            .add('zoomControl', { left: 5, top: 5 }) \
+                            // Список типов карты  \
+                            .add('typeSelector') \
+                            // Стандартный набор кнопок \
+                            .add('mapTools', { left: 35, top: 5 }); \
+                     \
+                        // Поиск координат центра Нижнего Новгорода. \
+                        ymaps.geocode('~~address~~', { \
+                            /** \
+                             * Опции запроса \
+                             * @see http://api.yandex.ru/maps/doc/jsapi/2.x/ref/reference/geocode.xml \
+                             */ \
+                            // boundedBy: myMap.getBounds(), // Сортировка результатов от центра окна карты \
+                            // strictBounds: true, // Вместе с опцией boundedBy будет искать строго внутри области, указанной в boundedBy \
+                            results: 1 // Если нужен только один результат, экономим трафик пользователей \
+                        }).then(function (res) { \
+                                // Выбираем первый результат геокодирования. \
+                                var firstGeoObject = res.geoObjects.get(0), \
+                                    // Координаты геообъекта. \
+                                    coords = firstGeoObject.geometry.getCoordinates(), \
+                                    // Область видимости геообъекта. \
+                                    bounds = firstGeoObject.properties.get('boundedBy'); \
+             \
+                                // Добавляем первый найденный геообъект на карту. \
+                                myMap.geoObjects.add(firstGeoObject); \
+                                // Масштабируем карту на область видимости геообъекта. \
+                                myMap.setBounds(bounds, { \
+                                    checkZoomRange: true // проверяем наличие тайлов на данном масштабе. \
+                                });   \
+                        });			 \
+                         \
+                         \
+                         \
+                        //myPlacemark = new ymaps.Placemark([56.76, 37.64], { \
+                        //    hintContent: 'Москва!', \
+                        //    balloonContent: 'Столица России' \
+                        //}); \
+                         \
+                        myMap.geoObjects.add(myPlacemark); \
+                         \
+                        //alert(myGeocode.geoObjects.get(0).geometry.getCoordinates()); \
+                    } \
+                </script> \
+            </head> \
+             \
+            <body> \
+                <div id=""map"" style=""width: 600px; height: 400px""></div> \
+            </body> \
+             \
+            </html>";
+
+          htmlText.replace("~~address~~", _address);
+
+          ui->webView1->setHtml(htmlText);
+}

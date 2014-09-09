@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>847</width>
-    <height>617</height>
+    <height>665</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,7 +31,7 @@
         <height>48</height>
        </size>
       </property>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="widget">
        <attribute name="icon">
         <iconset resource="res.qrc">
          <normaloff>:/img/img/trade.png</normaloff>:/img/img/trade.png</iconset>
@@ -40,6 +40,9 @@
         <string>Рабочий стол</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout">
+        <item row="5" column="6" rowspan="2">
+         <widget class="QCustomPlot" name="widget" native="true"/>
+        </item>
         <item row="4" column="6">
          <widget class="QLabel" name="label_10">
           <property name="text">
@@ -69,6 +72,16 @@
         <item row="2" column="6" rowspan="2">
          <widget class="QTableView" name="tableView_2"/>
         </item>
+        <item row="1" column="3" colspan="2">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Статистика</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
         <item row="3" column="3">
          <widget class="QGroupBox" name="groupBox_6">
           <property name="font">
@@ -82,45 +95,6 @@
           <layout class="QVBoxLayout" name="verticalLayout_6">
            <item>
             <widget class="QTableView" name="tableView_4"/>
-           </item>
-          </layout>
-          <zorder>tableView</zorder>
-          <zorder>tableView_4</zorder>
-         </widget>
-        </item>
-        <item row="1" column="6">
-         <widget class="QLabel" name="label_8">
-          <property name="text">
-           <string>Текущие сделки (CRM)</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="3" colspan="2">
-         <widget class="QLabel" name="label_7">
-          <property name="text">
-           <string>Статистика</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="3" colspan="2">
-         <widget class="QGroupBox" name="groupBox_4">
-          <property name="font">
-           <font>
-            <pointsize>12</pointsize>
-           </font>
-          </property>
-          <property name="title">
-           <string>Продажа</string>
-          </property>
-          <layout class="QVBoxLayout" name="verticalLayout_4">
-           <item>
-            <widget class="QTableView" name="tableView_3"/>
            </item>
           </layout>
          </widget>
@@ -142,8 +116,22 @@
           </layout>
          </widget>
         </item>
-        <item row="5" column="6" rowspan="2">
-         <widget class="QCustomPlot" name="widget" native="true"/>
+        <item row="5" column="3" colspan="2">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>Продажа</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QTableView" name="tableView_3"/>
+           </item>
+          </layout>
+         </widget>
         </item>
         <item row="2" column="3">
          <widget class="QGroupBox" name="groupBox_7">
@@ -161,6 +149,34 @@
            </item>
           </layout>
          </widget>
+        </item>
+        <item row="1" column="6">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Текущие задачи</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="cmbAddTask">
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="cmbDelTask">
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </widget>
@@ -677,8 +693,8 @@
    <slot>openFormRealtyObjects()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>172</x>
-     <y>557</y>
+     <x>184</x>
+     <y>621</y>
     </hint>
     <hint type="destinationlabel">
      <x>190</x>
@@ -702,9 +718,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>cmbAddTask</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openTaskForm()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>772</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>846</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>openFormRealtyObjects()</slot>
   <slot>changeTab()</slot>
+  <slot>openTaskForm()</slot>
  </slots>
 </ui>

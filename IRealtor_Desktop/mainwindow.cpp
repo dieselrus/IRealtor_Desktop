@@ -189,6 +189,20 @@ void MainWindow::readRealtyObjects(){
     ui->tvRealtyObjects->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->tvRealtyObjects->setColumnHidden(0, true);
 
-
 }
 
+// openn form add task
+void MainWindow::openTaskForm()
+{
+    formTask = new addTask(this);
+    //formTask->
+    formTask->setAttribute(Qt::WA_DeleteOnClose);
+    //ui->MainWindow->addSubWindow(formKLADRimport);
+    formTask->exec();
+}
+
+// update tab realtyobjects
+void MainWindow::changeTab()
+{
+    readRealtyObjects();
+}

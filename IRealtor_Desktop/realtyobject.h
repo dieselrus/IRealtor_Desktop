@@ -35,6 +35,8 @@ private:
     QString strPasswordDB;
     SelectAddress *formAddress;
 
+    void showMap(QString _address);
+
 private slots:
     void saveData();
     void getData();

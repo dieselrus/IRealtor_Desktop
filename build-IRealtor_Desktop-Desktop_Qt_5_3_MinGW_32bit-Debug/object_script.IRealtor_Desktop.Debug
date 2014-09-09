@@ -9,6 +9,7 @@ INPUT(
 ./debug\sqlmodel.o
 ./debug\selectaddress.o
 ./debug\qcustomplot.o
+./debug\addtask.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_realtyobject.o
@@ -19,4 +20,5 @@ INPUT(
 ./debug\moc_sqlmodel.o
 ./debug\moc_selectaddress.o
 ./debug\moc_qcustomplot.o
+./debug\moc_addtask.o
 );

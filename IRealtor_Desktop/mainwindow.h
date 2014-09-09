@@ -10,6 +10,7 @@
 #include "realtyobject.h"
 #include "settings.h"
 #include "importkladr.h"
+#include "addtask.h"
 
 namespace Ui {
 class MainWindow;
@@ -35,6 +36,7 @@ private:
     RealtyObject *formRO;
     settings *formSettings;
     ImportKLADR *formKLADRimport;
+    addTask *formTask;
 
     QString strServerDB;
     QString strPortDB;
@@ -45,6 +47,8 @@ private slots:
     void openFormRealtyObjects();
     void opensettings();
     void KLADRimport();
+    void openTaskForm();
+    void changeTab();
 
 public slots:
     void readRealtyObjects();

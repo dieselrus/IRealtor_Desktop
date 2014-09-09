@@ -10,6 +10,7 @@
 #define UI_REALTYOBJECT_H
 
 #include <QtCore/QVariant>
+#include <QtWebKitWidgets/QWebView>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
@@ -144,6 +145,7 @@ public:
     QListView *listView;
     QWidget *tab_7;
     QVBoxLayout *verticalLayout_2;
+    QWebView *webView1;
     QWidget *tab_6;
     QVBoxLayout *verticalLayout_3;
     QTextEdit *teDescription;
@@ -652,6 +654,12 @@ public:
         tab_7->setObjectName(QStringLiteral("tab_7"));
         verticalLayout_2 = new QVBoxLayout(tab_7);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        webView1 = new QWebView(tab_7);
+        webView1->setObjectName(QStringLiteral("webView1"));
+        webView1->setUrl(QUrl(QStringLiteral("about:blank")));
+
+        verticalLayout_2->addWidget(webView1);
+
         tabWidget->addTab(tab_7, QString());
         tab_6 = new QWidget();
         tab_6->setObjectName(QStringLiteral("tab_6"));
@@ -687,7 +695,7 @@ public:
         QObject::connect(pushButton_8, SIGNAL(clicked()), RealtyObject, SLOT(addDocumentProperty()));
         QObject::connect(pushButton, SIGNAL(clicked()), RealtyObject, SLOT(selectAdr()));
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(6);
 
 
         QMetaObject::connectSlotsByName(RealtyObject);

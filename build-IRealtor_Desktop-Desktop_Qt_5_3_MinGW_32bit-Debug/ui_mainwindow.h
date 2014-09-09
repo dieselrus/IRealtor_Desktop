@@ -30,6 +30,7 @@
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTableView>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 #include "qcustomplot.h"
@@ -48,24 +49,27 @@ public:
     QTabWidget *tabWidget;
     QWidget *widget;
     QGridLayout *gridLayout;
+    QCustomPlot *widget1;
     QLabel *label_10;
     QLabel *label_9;
     QTableView *tableView_2;
+    QLabel *label_7;
     QGroupBox *groupBox_6;
     QVBoxLayout *verticalLayout_6;
     QTableView *tableView_4;
-    QLabel *label_8;
-    QLabel *label_7;
-    QGroupBox *groupBox_4;
-    QVBoxLayout *verticalLayout_4;
-    QTableView *tableView_3;
     QGroupBox *groupBox_5;
     QVBoxLayout *verticalLayout_5;
     QTableView *tableView_5;
-    QCustomPlot *widget1;
+    QGroupBox *groupBox_4;
+    QVBoxLayout *verticalLayout_4;
+    QTableView *tableView_3;
     QGroupBox *groupBox_7;
     QVBoxLayout *verticalLayout_7;
     QTableView *tableView;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *label_3;
+    QToolButton *cmbAddTask;
+    QToolButton *cmbDelTask;
     QWidget *tab;
     QVBoxLayout *verticalLayout_2;
     QGridLayout *gridLayout_2;
@@ -125,7 +129,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(847, 617);
+        MainWindow->resize(847, 665);
         action_Exel = new QAction(MainWindow);
         action_Exel->setObjectName(QStringLiteral("action_Exel"));
         action_kladr = new QAction(MainWindow);
@@ -152,6 +156,11 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        widget1 = new QCustomPlot(widget);
+        widget1->setObjectName(QStringLiteral("widget1"));
+
+        gridLayout->addWidget(widget1, 5, 6, 2, 1);
+
         label_10 = new QLabel(widget);
         label_10->setObjectName(QStringLiteral("label_10"));
         label_10->setAlignment(Qt::AlignCenter);
@@ -174,6 +183,12 @@ public:
 
         gridLayout->addWidget(tableView_2, 2, 6, 2, 1);
 
+        label_7 = new QLabel(widget);
+        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_7, 1, 3, 1, 2);
+
         groupBox_6 = new QGroupBox(widget);
         groupBox_6->setObjectName(QStringLiteral("groupBox_6"));
         QFont font1;
@@ -188,36 +203,8 @@ public:
 
         verticalLayout_6->addWidget(tableView_4);
 
-        tableView_4->raise();
 
         gridLayout->addWidget(groupBox_6, 3, 3, 1, 1);
-
-        label_8 = new QLabel(widget);
-        label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(label_8, 1, 6, 1, 1);
-
-        label_7 = new QLabel(widget);
-        label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setAlignment(Qt::AlignCenter);
-
-        gridLayout->addWidget(label_7, 1, 3, 1, 2);
-
-        groupBox_4 = new QGroupBox(widget);
-        groupBox_4->setObjectName(QStringLiteral("groupBox_4"));
-        groupBox_4->setFont(font1);
-        verticalLayout_4 = new QVBoxLayout(groupBox_4);
-        verticalLayout_4->setSpacing(6);
-        verticalLayout_4->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
-        tableView_3 = new QTableView(groupBox_4);
-        tableView_3->setObjectName(QStringLiteral("tableView_3"));
-
-        verticalLayout_4->addWidget(tableView_3);
-
-
-        gridLayout->addWidget(groupBox_4, 5, 3, 1, 2);
 
         groupBox_5 = new QGroupBox(widget);
         groupBox_5->setObjectName(QStringLiteral("groupBox_5"));
@@ -234,10 +221,20 @@ public:
 
         gridLayout->addWidget(groupBox_5, 6, 3, 1, 2);
 
-        widget1 = new QCustomPlot(widget);
-        widget1->setObjectName(QStringLiteral("widget1"));
+        groupBox_4 = new QGroupBox(widget);
+        groupBox_4->setObjectName(QStringLiteral("groupBox_4"));
+        groupBox_4->setFont(font1);
+        verticalLayout_4 = new QVBoxLayout(groupBox_4);
+        verticalLayout_4->setSpacing(6);
+        verticalLayout_4->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        tableView_3 = new QTableView(groupBox_4);
+        tableView_3->setObjectName(QStringLiteral("tableView_3"));
 
-        gridLayout->addWidget(widget1, 5, 6, 2, 1);
+        verticalLayout_4->addWidget(tableView_3);
+
+
+        gridLayout->addWidget(groupBox_4, 5, 3, 1, 2);
 
         groupBox_7 = new QGroupBox(widget);
         groupBox_7->setObjectName(QStringLiteral("groupBox_7"));
@@ -253,6 +250,28 @@ public:
 
 
         gridLayout->addWidget(groupBox_7, 2, 3, 1, 1);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setSpacing(6);
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        label_3 = new QLabel(widget);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setAlignment(Qt::AlignCenter);
+
+        horizontalLayout_3->addWidget(label_3);
+
+        cmbAddTask = new QToolButton(widget);
+        cmbAddTask->setObjectName(QStringLiteral("cmbAddTask"));
+
+        horizontalLayout_3->addWidget(cmbAddTask);
+
+        cmbDelTask = new QToolButton(widget);
+        cmbDelTask->setObjectName(QStringLiteral("cmbDelTask"));
+
+        horizontalLayout_3->addWidget(cmbDelTask);
+
+
+        gridLayout->addLayout(horizontalLayout_3, 1, 6, 1, 1);
 
         QIcon icon;
         icon.addFile(QStringLiteral(":/img/img/trade.png"), QSize(), QIcon::Normal, QIcon::Off);
@@ -554,6 +573,7 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(btnAdd, SIGNAL(clicked()), MainWindow, SLOT(openFormRealtyObjects()));
         QObject::connect(tabWidget, SIGNAL(currentChanged(int)), MainWindow, SLOT(changeTab()));
+        QObject::connect(cmbAddTask, SIGNAL(clicked()), MainWindow, SLOT(openTaskForm()));
 
         tabWidget->setCurrentIndex(0);
 
@@ -570,12 +590,14 @@ public:
         action_close->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\271\321\202\320\270", 0));
         label_10->setText(QApplication::translate("MainWindow", "\320\224\320\270\320\275\320\260\320\274\320\270\320\272\320\260", 0));
         label_9->setText(QApplication::translate("MainWindow", "\320\220\320\263\320\265\320\275\321\202\321\213 \320\270 \320\270\321\205 \320\276\320\261\321\212\320\265\320\272\321\202\321\213 \320\275\320\265\320\264\320\262\320\270\320\266\320\270\320\274\320\276\321\201\321\202\320\270", 0));
-        groupBox_6->setTitle(QApplication::translate("MainWindow", "\320\222 \320\260\321\200\320\265\320\275\320\264\320\265 0", 0));
-        label_8->setText(QApplication::translate("MainWindow", "\320\242\320\265\320\272\321\203\321\211\320\270\320\265 \321\201\320\264\320\265\320\273\320\272\320\270 (CRM)", 0));
         label_7->setText(QApplication::translate("MainWindow", "\320\241\321\202\320\260\321\202\320\270\321\201\321\202\320\270\320\272\320\260", 0));
-        groupBox_4->setTitle(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\264\320\260\320\266\320\260", 0));
+        groupBox_6->setTitle(QApplication::translate("MainWindow", "\320\222 \320\260\321\200\320\265\320\275\320\264\320\265 0", 0));
         groupBox_5->setTitle(QApplication::translate("MainWindow", "\320\220\321\200\320\265\320\275\320\264\320\260", 0));
+        groupBox_4->setTitle(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\264\320\260\320\266\320\260", 0));
         groupBox_7->setTitle(QApplication::translate("MainWindow", "\320\222 \320\277\321\200\320\276\320\264\320\260\320\266\320\265 0", 0));
+        label_3->setText(QApplication::translate("MainWindow", "\320\242\320\265\320\272\321\203\321\211\320\270\320\265 \320\267\320\260\320\264\320\260\321\207\320\270", 0));
+        cmbAddTask->setText(QApplication::translate("MainWindow", "+", 0));
+        cmbDelTask->setText(QApplication::translate("MainWindow", "-", 0));
         tabWidget->setTabText(tabWidget->indexOf(widget), QApplication::translate("MainWindow", "\320\240\320\260\320\261\320\276\321\207\320\270\320\271 \321\201\321\202\320\276\320\273", 0));
         groupBox_3->setTitle(QApplication::translate("MainWindow", "\320\221\320\273\320\260\320\263\320\276\321\203\321\201\321\202\321\200\320\276\320\271\321\201\321\202\320\262\320\276", 0));
         label_21->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\201\321\202\320\276\321\217\320\275\320\270\320\265 \321\200\320\265\320\274\320\276\320\275\321\202\320\260", 0));

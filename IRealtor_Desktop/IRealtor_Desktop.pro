@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql printsupport
+QT       += core gui sql printsupport webkitwidgets #webkit webkitwidgets
 
 CONFIG += console
 
@@ -23,7 +23,8 @@ SOURCES += main.cpp\
     importkladr.cpp \
     sqlmodel.cpp \
     selectaddress.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    addtask.cpp
 
 HEADERS  += mainwindow.h \
     realtyobject.h \
@@ -33,7 +34,8 @@ HEADERS  += mainwindow.h \
     importkladr.h \
     sqlmodel.h \
     selectaddress.h \
-    qcustomplot.h
+    qcustomplot.h \
+    addtask.h
 
 FORMS    += mainwindow.ui \
     realtyobject.ui \
@@ -41,7 +43,8 @@ FORMS    += mainwindow.ui \
     exportxls.ui \
     dialogadd.ui \
     importkladr.ui \
-    selectaddress.ui
+    selectaddress.ui \
+    addtask.ui
 
 RESOURCES += \
     res.qrc
