@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql printsupport webkitwidgets #webkit webkitwidgets
+QT       += core gui sql printsupport  network xml webkitwidgets #webkit
 
 CONFIG += console
 
@@ -24,7 +24,8 @@ SOURCES += main.cpp\
     sqlmodel.cpp \
     selectaddress.cpp \
     qcustomplot.cpp \
-    addtask.cpp
+    addtask.cpp \
+    map.cpp
 
 HEADERS  += mainwindow.h \
     realtyobject.h \
@@ -35,7 +36,8 @@ HEADERS  += mainwindow.h \
     sqlmodel.h \
     selectaddress.h \
     qcustomplot.h \
-    addtask.h
+    addtask.h \
+    map.h
 
 FORMS    += mainwindow.ui \
     realtyobject.ui \

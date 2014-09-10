@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <style type="text/css">
+      html, body, #map {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+    <!--
+        Подключаем API карт 2.x
+        Параметры:
+          - load=package.full - полная сборка;
+       - lang=ru-RU - язык русский.
+    -->
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"
+            type="text/javascript"></script>
+    <script type="text/javascript">
+        // Как только будет загружен API и готов DOM, выполняем инициализацию
+        ymaps.ready(init);
+  var myMap;
+        function init () {
+            // Создание экземпляра карты и его привязка к контейнеру с
+            // заданным id ("map")
+            myMap = new ymaps.Map('map', {
+                    // При инициализации карты, обязательно нужно указать
+                    // ее центр и коэффициент масштабирования
+                    center: [55.76, 37.64], // Москва
+                    zoom: 10
+                });
+    //myPlacemark = new ymaps.Placemark([55.8, 37.6]);
+    //myMap.geoObjects
+                //.add(myPlacemark);
+                //.add(myGeoObject);
+        }
+      </script>
+</head>
+<body>
+<div id="map"></div>
+</body>
+</html>

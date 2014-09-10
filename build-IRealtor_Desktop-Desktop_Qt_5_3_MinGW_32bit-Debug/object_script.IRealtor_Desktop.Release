@@ -10,6 +10,7 @@ INPUT(
 ./release\selectaddress.o
 ./release\qcustomplot.o
 ./release\addtask.o
+./release\map.o
 ./release\qrc_res.o
 ./release\moc_mainwindow.o
 ./release\moc_realtyobject.o
@@ -21,4 +22,5 @@ INPUT(
 ./release\moc_selectaddress.o
 ./release\moc_qcustomplot.o
 ./release\moc_addtask.o
+./release\moc_map.o
 );

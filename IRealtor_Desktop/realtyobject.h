@@ -35,7 +35,7 @@ private:
     QString strPasswordDB;
     SelectAddress *formAddress;
 
-    void showMap(QString _address);
+    //void showMap(QString _address);
 
 private slots:
     void saveData();
@@ -49,6 +49,7 @@ private slots:
     void addTypeApartament();
     void addDocumentProperty();
     void selectAdr();
+    void populateJavaScriptWindowObject();
 
 public slots:
     void setAdderss();

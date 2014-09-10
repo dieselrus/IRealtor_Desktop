@@ -10,6 +10,7 @@ INPUT(
 ./debug\selectaddress.o
 ./debug\qcustomplot.o
 ./debug\addtask.o
+./debug\map.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_realtyobject.o
@@ -21,4 +22,5 @@ INPUT(
 ./debug\moc_selectaddress.o
 ./debug\moc_qcustomplot.o
 ./debug\moc_addtask.o
+./debug\moc_map.o
 );

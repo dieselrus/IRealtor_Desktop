@@ -114,7 +114,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>6</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -701,7 +701,7 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="QWebView" name="webView1">
+        <widget class="Map" name="map">
          <property name="url">
           <url>
            <string>about:blank</string>
@@ -743,6 +743,11 @@
    <class>QWebView</class>
    <extends>QWidget</extends>
    <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+  <customwidget>
+   <class>Map</class>
+   <extends>QWebView</extends>
+   <header>map.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

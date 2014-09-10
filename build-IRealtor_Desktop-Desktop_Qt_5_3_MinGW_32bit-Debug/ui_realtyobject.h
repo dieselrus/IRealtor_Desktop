@@ -35,6 +35,7 @@
 #include <QtWidgets/QToolButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "map.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -145,7 +146,7 @@ public:
     QListView *listView;
     QWidget *tab_7;
     QVBoxLayout *verticalLayout_2;
-    QWebView *webView1;
+    Map *map;
     QWidget *tab_6;
     QVBoxLayout *verticalLayout_3;
     QTextEdit *teDescription;
@@ -654,11 +655,11 @@ public:
         tab_7->setObjectName(QStringLiteral("tab_7"));
         verticalLayout_2 = new QVBoxLayout(tab_7);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        webView1 = new QWebView(tab_7);
-        webView1->setObjectName(QStringLiteral("webView1"));
-        webView1->setUrl(QUrl(QStringLiteral("about:blank")));
+        map = new Map(tab_7);
+        map->setObjectName(QStringLiteral("map"));
+        map->setUrl(QUrl(QStringLiteral("about:blank")));
 
-        verticalLayout_2->addWidget(webView1);
+        verticalLayout_2->addWidget(map);
 
         tabWidget->addTab(tab_7, QString());
         tab_6 = new QWidget();
@@ -695,7 +696,7 @@ public:
         QObject::connect(pushButton_8, SIGNAL(clicked()), RealtyObject, SLOT(addDocumentProperty()));
         QObject::connect(pushButton, SIGNAL(clicked()), RealtyObject, SLOT(selectAdr()));
 
-        tabWidget->setCurrentIndex(6);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(RealtyObject);
